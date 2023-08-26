@@ -1,0 +1,13 @@
+{
+	"values": [
+		"models_admin:models/chair_1/remove/model",
+		"models_admin:models/shelf_1/remove/model",
+		"models_admin:models/glass_cabinet_1/remove/model",
+		"models_admin:models/glass_armorstand_cabinet_1/remove/model",
+		"models_admin:models/slab/remove/model",
+		"models_admin:models/vertical_slab/remove/model",
+		"models_admin:models/kitchen_cabinet_1/closed/remove/model",
+		"models_admin:models/kitchen_cabinet_1/open/remove/model",
+		"models_admin:models/table_1/remove/model"
+	]
+}

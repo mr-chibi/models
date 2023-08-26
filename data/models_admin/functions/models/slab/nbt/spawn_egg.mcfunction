@@ -1,0 +1,2 @@
+# [Slab] (Done):
+execute as @e[type=minecraft:marker,tag=model_spawn_egg,limit=1,sort=nearest] at @s[tag=slab] if entity @p[distance=0..5,tag=holding_model_spawn_egg] run function models_admin:models/slab/place/model

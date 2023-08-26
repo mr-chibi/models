@@ -1,0 +1,3 @@
+# Limit "Redo & Undo Textures" at "10":
+execute if entity @e[type=block_display,distance=0..3,tag=primary_pallete] if entity @e[type=marker,distance=0..3,tag=remodel] as @e[type=marker,distance=0..3,tag=remodel] at @s run scoreboard players add @s model_primary_pallete 1
+execute if entity @e[type=block_display,distance=0..3,tag=primary_pallete] if entity @e[type=marker,distance=0..3,tag=remodel] as @e[type=marker,distance=0..3,tag=remodel] at @s run scoreboard players set @s[scores={model_primary_pallete=10..}] model_primary_pallete 10

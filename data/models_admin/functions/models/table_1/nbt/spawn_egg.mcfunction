@@ -1,0 +1,5 @@
+# [Dinning Table] (Done):
+execute as @s[y_rotation=135..-135,tag=holding_model_spawn_egg] as @e[type=minecraft:marker,tag=model_spawn_egg,limit=1,sort=nearest] at @s[tag=table_1] run function models_admin:models/table_1/place/north
+execute as @s[y_rotation=-135..-45,tag=holding_model_spawn_egg] as @e[type=minecraft:marker,tag=model_spawn_egg,limit=1,sort=nearest] at @s[tag=table_1] run function models_admin:models/table_1/place/east
+execute as @s[y_rotation=-45..45,tag=holding_model_spawn_egg] as @e[type=minecraft:marker,tag=model_spawn_egg,limit=1,sort=nearest] at @s[tag=table_1] run function models_admin:models/table_1/place/south
+execute as @s[y_rotation=45..135,tag=holding_model_spawn_egg] as @e[type=minecraft:marker,tag=model_spawn_egg,limit=1,sort=nearest] at @s[tag=table_1] run function models_admin:models/table_1/place/west

@@ -1,0 +1,7 @@
+{
+	"values": [
+		"models_admin:models/pallete/nbt/primary/undo",
+		"models_admin:models/pallete/nbt/secondary/undo",
+		"models_admin:models/pallete/nbt/triad/undo"
+	]
+}

@@ -1,0 +1,1 @@
+execute as @s[tag=kitchen_cabinet_1_closed] if entity @p[distance=0..5] as @p at @s run trigger model_place set 7

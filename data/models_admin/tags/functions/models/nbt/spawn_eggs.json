@@ -1,0 +1,13 @@
+{
+	"values": [
+		"models_admin:models/chair_1/nbt/spawn_egg",
+		"models_admin:models/shelf_1/nbt/spawn_egg",
+		"models_admin:models/glass_cabinet_1/nbt/spawn_egg",
+		"models_admin:models/glass_armorstand_cabinet_1/nbt/spawn_egg",
+		"models_admin:models/slab/nbt/spawn_egg",
+		"models_admin:models/vertical_slab/nbt/spawn_egg",
+		"models_admin:models/kitchen_cabinet_1/closed/nbt/spawn_egg",
+		"models_admin:models/kitchen_cabinet_1/open/nbt/spawn_egg",
+		"models_admin:models/table_1/nbt/spawn_egg"
+	]
+}
