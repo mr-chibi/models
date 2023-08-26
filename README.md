@@ -1,5 +1,5 @@
 ##  Mr_Chibi's Models Datapack
-> 3D Models created by mr_chibi, into minecraft as a datapack for players to craft, place, & interact with.
+> Models created by mr_chibi, into minecraft as a datapack for players to craft, place, & interact with.
 
 ###  Overview: 💭 
 > Main focus allow players "Survival" or "Creative" customize models how they like there building style.
