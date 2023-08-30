@@ -2,10 +2,9 @@
 tellraw @s [{"text": "Recipe: Kitchen Cabinet Open", "color": "yellow", "bold":true}]
 
 # Check "Player", for Material Amount:
-execute store result score @s model_requirement_1 run data get entity @s Inventory[{id:"minecraft:quartz_bricks"}].Count
-execute store result score @s model_requirement_2 run data get entity @s Inventory[{id:"minecraft:stripped_spruce_log"}].Count
-execute store result score @s model_requirement_3 run data get entity @s Inventory[{id:"minecraft:dark_oak_planks"}].Count
-
+execute store result score @s model_requirement_1 run clear @s minecraft:quartz_bricks 0
+execute store result score @s model_requirement_2 run clear @s minecraft:stripped_spruce_log 0
+execute store result score @s model_requirement_3 run clear @s minecraft:dark_oak_planks 0
 
 # Check if "Player" Has "1 quartz_bricks":
 execute if score @s model_requirement_1 matches ..0 run scoreboard players add @s model_error 1

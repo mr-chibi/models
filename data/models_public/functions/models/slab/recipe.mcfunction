@@ -2,8 +2,7 @@
 tellraw @s [{"text": "Recipe: Customizable Slab", "color": "yellow", "bold":true}]
 
 # Check "Player", for Material Amount:
-execute store result score @s model_requirement_1 run data get entity @s Inventory[{id:"minecraft:stripped_spruce_log"}].Count
-
+execute store result score @s model_requirement_1 run clear @s minecraft:stripped_spruce_log 0
 
 # Check if "Player" Has "6 stripped_spruce_log":
 execute if score @s model_requirement_1 matches ..2 run scoreboard players add @s model_error 1

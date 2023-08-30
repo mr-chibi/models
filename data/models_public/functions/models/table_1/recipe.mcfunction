@@ -2,9 +2,8 @@
 tellraw @s [{"text": "Recipe: Wooden Table", "color": "yellow", "bold":true}]
 
 # Check "Player", for Material Amount:
-execute store result score @s model_requirement_1 run data get entity @s Inventory[{id:"minecraft:mangrove_wood"}].Count
-execute store result score @s model_requirement_2 run data get entity @s Inventory[{id:"minecraft:spruce_slab"}].Count
-
+execute store result score @s model_requirement_1 run clear @s minecraft:mangrove_wood 0
+execute store result score @s model_requirement_2 run clear @s minecraft:spruce_slab 0
 
 # Check if "Player" Has "18 mangrove_wood":
 execute if score @s model_requirement_1 matches ..17 run scoreboard players add @s model_error 1
