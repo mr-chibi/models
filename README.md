@@ -20,6 +20,7 @@
 * Tool only **Model Admins** can access.
 * **Public Users** Don't have access to placing custom made models.
 * Forge Models can be "**Copied**", "**Pasted**", "**Scaled**", "**Axis**", "**Saved Into Spawn Eggs**", & "**Edited**".
+* If you'd like more information about how to use new forging tools please, visit this [page](https://github.com/mr-chibi/models/wiki/How-to-use-Forging).
 
 
 ###  Template Sharing 🎁 
