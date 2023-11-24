@@ -16,7 +16,7 @@
 * **Schematic**, Are pieces of paper that have saved NBT data of textures on models for specific models.
 
 ###  What's Forge Modeling? 🖌️
-> Allows Model Admin's create custom forge models.
+> Allows Model Admin's create custom forge models. Main focus of the tool to allow more blocks into game and adding depth.
 * Tool only **Model Admins** can access.
 * **Public Users** Don't have access to placing custom made models.
 * Forge Models can be "**Copied**", "**Pasted**", "**Scaled**", "**Axis**", "**Saved Into Spawn Eggs**", & "**Edited**".
