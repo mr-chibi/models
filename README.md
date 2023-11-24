@@ -15,6 +15,13 @@
 * **Unlimited Access**, Meaning, admins don't have craft items they can have access to it in catalogue or use wiki to use shortcut commands more information can be found at this [page](https://github.com/mr-chibi/models/wiki/Model-IDs).
 * **Schematic**, Are pieces of paper that have saved NBT data of textures on models for specific models.
 
+###  What's Forge Modeling? 🖌️
+> Allows Model Admin's create custom forge models.
+* Tool only **Model Admins** can access.
+* **Public Users** Don't have access to placing custom made models.
+* Forge Models can be "**Copied**", "**Pasted**", "**Scaled**", "**Axis**", "**Saved Into Spawn Eggs**", & "**Edited**".
+
+
 ###  Template Sharing 🎁 
 > What is template sharing? How can I access?
 * **Model Admins**, Can access creating model templates put them on display for users. For them to buy for design use.
