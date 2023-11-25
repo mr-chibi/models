@@ -13,9 +13,8 @@
 * **Commands**, such as, Selection, Remove, Schematic, Copy, & Paste.
 * **Schematic**, Are pieces of paper that have saved NBT data of textures on models for specific models.
 
-###  Template Sharing 🎁 
-> What is template sharing? How can I access?
-* **Model Admins**, Can access creating model templates and share with other admins to share their designs.
+### Sharing your creations: 🎁 
+> Using minecrafts save hotbar keybinds you can save and transfer them to other servers and place them in shulker boxes.
 
 ###  Have any FAQs? ❓ 
 > Please visit our wiki, on the side panel there are a bunch of links with some additonal information!
