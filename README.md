@@ -15,7 +15,7 @@
 
 ###  Template Sharing 🎁 
 > What is template sharing? How can I access?
-* **Model Admins**, Can access creating model templates put them on display for users. For them to buy for design use.
+* **Model Admins**, Can access creating model templates and share with other admins to share their designs.
 
 ###  Have any FAQs? ❓ 
 > Please visit our wiki, on the side panel there are a bunch of links with some additonal information!
