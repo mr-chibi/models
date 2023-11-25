@@ -1,5 +1,6 @@
 {
 	"values": [
-		"models:scoreboards/uninstall"
+		"models:scoreboards/uninstall",
+		"models_forge:scoreboards/uninstall"
 	]
 }

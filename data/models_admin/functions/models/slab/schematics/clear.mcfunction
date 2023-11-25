@@ -1,1 +1,0 @@
-execute as @e[type=minecraft:block_display,distance=0..3,sort=nearest,tag=slab,limit=1] at @s if score @s model_ids = @p[distance=0..5] model_ids as @p at @s run clear @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:paper",tag:{Tags:["slab_schematic"]}}]}] minecraft:paper{Tags:["slab_schematic"]} 1

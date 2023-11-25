@@ -1,2 +1,0 @@
-#
-execute as @e[type=minecraft:block_display,tag=slab,tag=slab_top_side,distance=0..3,sort=nearest,limit=1] at @s align xyz run summon minecraft:armor_stand ~0.5 ~ ~0.5 {CustomNameVisible:1b,CustomName:"{\"text\":\"Selector\"}",ActiveEffects:[{Id:24,Amplifer:0b,Duration:-1}],NoGravity:1b,Tags:["remove_slab","1"]}

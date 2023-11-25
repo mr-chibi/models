@@ -1,1 +1,0 @@
-execute as @s[tag=glass_armorstand_cabinet_1] if entity @p[distance=0..5] as @p at @s run trigger model_place set 4

@@ -1,4 +1,0 @@
-#
-execute as @e[type=minecraft:marker,distance=0..5,tag=model_command_history] at @s if data entity @s {data:{model_block_redo:["redo_vertical_slab"]}} as @e[type=minecraft:block_display,tag=vertical_slab,distance=0..5,sort=nearest,limit=6] at @s run setblock ~ ~ ~ minecraft:air
-execute as @e[type=minecraft:marker,distance=0..5,tag=model_command_history] at @s if data entity @s {data:{model_block_redo:["redo_vertical_slab"]}} as @e[type=minecraft:block_display,tag=vertical_slab,distance=0..5,sort=nearest,limit=6] at @s run kill @s
-execute as @e[type=minecraft:marker,distance=0..5,tag=model_command_history] at @s if data entity @s {data:{model_block_redo:["redo_vertical_slab"]}} run data modify entity @s[nbt=!{data:{model_block_undo:["undo_vertical_slab"]}}] data.model_block_undo insert 0 value "undo_vertical_slab"

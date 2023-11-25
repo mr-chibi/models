@@ -1,0 +1,5 @@
+# [Forge Model] (Done):
+execute as @s[y_rotation=135..-135,tag=holding_forge_spawn_egg] as @e[type=minecraft:marker,tag=forge_spawn_egg,limit=1,sort=nearest] at @s[tag=forge_model] run function models_forge:models/place/north
+execute as @s[y_rotation=-135..-45,tag=holding_forge_spawn_egg] as @e[type=minecraft:marker,tag=forge_spawn_egg,limit=1,sort=nearest] at @s[tag=forge_model] run function models_forge:models/place/east
+execute as @s[y_rotation=-45..45,tag=holding_forge_spawn_egg] as @e[type=minecraft:marker,tag=forge_spawn_egg,limit=1,sort=nearest] at @s[tag=forge_model] run function models_forge:models/place/south
+execute as @s[y_rotation=45..135,tag=holding_forge_spawn_egg] as @e[type=minecraft:marker,tag=forge_spawn_egg,limit=1,sort=nearest] at @s[tag=forge_model] run function models_forge:models/place/west

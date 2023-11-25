@@ -1,12 +1,5 @@
 {
 	"values": [
-		"models_admin:models/chair_1/schematics/load",
-		"models_admin:models/glass_armorstand_cabinet_1/schematics/load",
-		"models_admin:models/glass_cabinet_1/schematics/load",
-		"models_admin:models/kitchen_cabinet_1/closed/schematics/load",
-		"models_admin:models/shelf_1/schematics/load",
-		"models_admin:models/slab/schematics/load",
-		"models_admin:models/table_1/schematics/load",
-		"models_admin:models/vertical_slab/schematics/load"
+		"models_forge:models/schematics/load"
 	]
 }

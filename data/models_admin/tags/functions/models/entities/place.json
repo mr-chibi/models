@@ -1,13 +1,5 @@
 {
 	"values": [
-		"models_admin:models/chair_1/entities/place",
-		"models_admin:models/shelf_1/entities/place",
-		"models_admin:models/glass_cabinet_1/entities/place",
-		"models_admin:models/glass_armorstand_cabinet_1/entities/place",
-		"models_admin:models/slab/entities/place",
-		"models_admin:models/vertical_slab/entities/place",
-		"models_admin:models/kitchen_cabinet_1/closed/entities/place",
-		"models_admin:models/kitchen_cabinet_1/open/entities/place",
-		"models_admin:models/table_1/entities/place"
+		"models_forge:models/entities/place"
 	]
 }

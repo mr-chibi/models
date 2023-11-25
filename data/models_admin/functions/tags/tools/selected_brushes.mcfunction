@@ -9,8 +9,5 @@ execute if score @s[nbt={SelectedItem:{id:"minecraft:brush",tag:{display:{Name:"
 execute if score @s[nbt={SelectedItem:{id:"minecraft:brush",tag:{display:{Name:"[{\"text\": \"Redo Brush\", \"color\": \"yellow\"}]"}}}}] model_brush matches 1 run trigger model_redo
 execute if score @s[nbt={SelectedItem:{id:"minecraft:brush",tag:{display:{Name:"[{\"text\": \"Eraser Brush\", \"color\": \"red\"}]"}}}}] model_brush matches 1 run trigger model_remove
 
-#
-function models_admin:tags/tools/tips
-
 # Reset Tool:
 scoreboard players set @s[scores={model_brush=1..}] model_brush 0

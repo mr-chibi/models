@@ -6,7 +6,8 @@ execute unless entity @e[type=block_display,tag=primary_pallete] run tellraw @s 
 execute unless entity @e[type=block_display,tag=primary_pallete] run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 2 1
 
 # Update Block Model Pallete:
-execute as @s align xyz anchored eyes positioned ^ ^ ^2 as @e[type=block_display,tag=primary_pallete,sort=nearest] at @s if entity @p[distance=0..5] run data modify entity @s block_state.Name set string entity @p[scores={model_primary_pallete=1}] Inventory[{Slot:-106b}].id
+execute as @s align xyz anchored eyes positioned ^ ^ ^2 unless entity @e[type=block_display,tag=primary_pallete,tag=selected_forge_model,sort=nearest,distance=0..5] as @e[type=block_display,tag=primary_pallete,sort=nearest] at @s if entity @p[distance=0..5] run data modify entity @s block_state.Name set string entity @p[scores={model_primary_pallete=1}] Inventory[{Slot:-106b}].id
+execute as @s align xyz anchored eyes positioned ^ ^ ^2 if entity @e[type=block_display,tag=primary_pallete,tag=selected_forge_model,sort=nearest,distance=0..5] as @e[type=block_display,tag=primary_pallete,tag=selected_forge_model,sort=nearest] at @s if entity @p[distance=0..5] run data modify entity @s block_state.Name set string entity @p[scores={model_primary_pallete=1}] Inventory[{Slot:-106b}].id
 
 # Change Block Model Texture:
 execute if entity @e[type=block_display,distance=0..3,tag=primary_pallete] if entity @e[type=marker,distance=0..3,tag=remodel] run data modify entity @e[type=minecraft:marker,distance=0..5,tag=remodel,limit=1] data.primary_pallete insert 0 from entity @s Inventory[{Slot:-106b}].id

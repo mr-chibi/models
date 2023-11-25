@@ -1,12 +1,5 @@
 {
 	"values": [
-		"models_admin:models/chair_1/schematics/create",
-		"models_admin:models/glass_armorstand_cabinet_1/schematics/create",
-		"models_admin:models/glass_cabinet_1/schematics/create",
-		"models_admin:models/kitchen_cabinet_1/closed/schematics/create",
-		"models_admin:models/shelf_1/schematics/create",
-		"models_admin:models/slab/schematics/create",
-		"models_admin:models/table_1/schematics/create",
-		"models_admin:models/vertical_slab/schematics/create"
+		"models_forge:models/schematics/create"
 	]
 }

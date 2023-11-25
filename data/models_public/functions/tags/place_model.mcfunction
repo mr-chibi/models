@@ -1,9 +1,0 @@
-execute as @s[tag=wooden_chair_1] if entity @p[distance=0..5] as @p at @s run trigger model_place set 1
-execute as @s[tag=wooden_shelf_1] if entity @p[distance=0..5] as @p at @s run trigger model_place set 2
-execute as @s[tag=glass_cabinet_1] if entity @p[distance=0..5] as @p at @s run trigger model_place set 3
-execute as @s[tag=glass_armorstand_cabinet_1] if entity @p[distance=0..5] as @p at @s run trigger model_place set 4
-execute as @s[tag=slab] if entity @p[distance=0..5] as @p at @s run trigger model_place set 5
-execute as @s[tag=vertical_slab] if entity @p[distance=0..5] as @p at @s run trigger model_place set 6
-execute as @s[tag=kitchen_cabinet_1_closed] if entity @p[distance=0..5] as @p at @s run trigger model_place set 7
-execute as @s[tag=kitchen_cabinet_1_open] if entity @p[distance=0..5] as @p at @s run trigger model_place set 8
-execute as @s[tag=table_1] if entity @p[distance=0..5] as @p at @s run trigger model_place set 9

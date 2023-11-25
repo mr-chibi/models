@@ -1,3 +1,0 @@
-#
-execute as @e[type=minecraft:block_display,tag=shelf_1,tag=primary_pallete,limit=29,sort=nearest] at @s if entity @p[distance=0..5] run data modify entity @s block_state.Name set string entity @p[nbt={Inventory:[{Slot:-106b, id:"minecraft:paper", tag:{Tags:["shelf_1_schematic"]}}]}] Inventory[{Slot:-106b}].tag.primary_pallete
-execute as @e[type=minecraft:block_display,tag=shelf_1,tag=secondary_pallete,limit=29,sort=nearest] at @s if entity @p[distance=0..5] run data modify entity @s block_state.Name set string entity @p[nbt={Inventory:[{Slot:-106b, id:"minecraft:paper", tag:{Tags:["shelf_1_schematic"]}}]}] Inventory[{Slot:-106b}].tag.secondary_pallete

@@ -1,5 +1,0 @@
-# [Kitchen Cabinet Open] (Done):
-execute as @s[y_rotation=135..-135,tag=holding_model_spawn_egg] as @e[type=minecraft:marker,tag=model_spawn_egg,limit=1,sort=nearest] at @s[tag=kitchen_cabinet_1_open] run function models_admin:models/kitchen_cabinet_1/open/place/north
-execute as @s[y_rotation=-135..-45,tag=holding_model_spawn_egg] as @e[type=minecraft:marker,tag=model_spawn_egg,limit=1,sort=nearest] at @s[tag=kitchen_cabinet_1_open] run function models_admin:models/kitchen_cabinet_1/open/place/east
-execute as @s[y_rotation=-45..45,tag=holding_model_spawn_egg] as @e[type=minecraft:marker,tag=model_spawn_egg,limit=1,sort=nearest] at @s[tag=kitchen_cabinet_1_open] run function models_admin:models/kitchen_cabinet_1/open/place/south
-execute as @s[y_rotation=45..135,tag=holding_model_spawn_egg] as @e[type=minecraft:marker,tag=model_spawn_egg,limit=1,sort=nearest] at @s[tag=kitchen_cabinet_1_open] run function models_admin:models/kitchen_cabinet_1/open/place/west

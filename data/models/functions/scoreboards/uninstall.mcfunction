@@ -5,30 +5,17 @@ team remove model_admin
 scoreboard objectives remove model_primary_pallete
 scoreboard objectives remove model_secondary_pallete
 scoreboard objectives remove model_triad_pallete
-scoreboard objectives remove model_catalog
 scoreboard objectives remove model_tools
-scoreboard objectives remove model_give
 scoreboard objectives remove model_place
 scoreboard objectives remove model_remove
 scoreboard objectives remove model_sel
 scoreboard objectives remove model_schematic
-scoreboard objectives remove model_undo
-scoreboard objectives remove model_redo
 scoreboard objectives remove model_copy
 scoreboard objectives remove model_paste
 
 # [Public User, Model]:
 scoreboard objectives remove model_ids
 scoreboard objectives remove model_render
-
-#
-scoreboard objectives remove model_used_spawnegg
-
-# [Public Crafting Requirements]:
-scoreboard objectives remove model_error
-scoreboard objectives remove model_requirement_1
-scoreboard objectives remove model_requirement_2
-scoreboard objectives remove model_requirement_3
 
 # [Tools]:
 scoreboard objectives remove model_brush
