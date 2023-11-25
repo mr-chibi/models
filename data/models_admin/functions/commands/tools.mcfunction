@@ -5,8 +5,6 @@ clear @s minecraft:brush{display:{Name:"[{\"text\": \"Triad Pallete Brush\", \"c
 clear @s minecraft:brush{display:{Name:"[{\"text\": \"Load Schematic Brush\", \"color\": \"aqua\"}]",Lore:["{\"text\": \"Hold in main hand.\", \"color\": \"#4A6DEC\"}", "{\"text\": \"Schematic in off hand & right click!\", \"color\": \"#4A6DEC\"}"]}} 1
 clear @s minecraft:brush{display:{Name:"[{\"text\": \"Paste Brush\", \"color\": \"yellow\"}]",Lore:["{\"text\": \"Right click, paste in model from copy command!\", \"color\": \"#4A6DEC\"}"]}, Tags:["model_paste_brush"]} 1
 clear @s minecraft:brush{display:{Name:"[{\"text\": \"Sel Brush\", \"color\": \"yellow\"}]",Lore:["{\"text\": \"Right click, to stop current selection!\", \"color\": \"#4A6DEC\"}"]}} 1
-clear @s minecraft:brush{display:{Name:"[{\"text\": \"Undo Brush\", \"color\": \"yellow\"}]",Lore:["{\"text\": \"Right click, Undo Previous Command!\", \"color\": \"#4A6DEC\"}"]}} 1
-clear @s minecraft:brush{display:{Name:"[{\"text\": \"Redo Brush\", \"color\": \"yellow\"}]",Lore:["{\"text\": \"Right click, Redo Previous Command!\", \"color\": \"#4A6DEC\"}"]}} 1
 clear @s minecraft:brush{display:{Name:"[{\"text\": \"Eraser Brush\", \"color\": \"red\"}]",Lore:["{\"text\": \"Right click, remove models!\", \"color\": \"#4A6DEC\"}"]}} 1
 
 # Give Player Tools:
@@ -16,8 +14,6 @@ give @s minecraft:brush{display:{Name:"[{\"text\": \"Triad Pallete Brush\", \"co
 give @s minecraft:brush{display:{Name:"[{\"text\": \"Load Schematic Brush\", \"color\": \"aqua\"}]",Lore:["{\"text\": \"Hold in main hand.\", \"color\": \"#4A6DEC\"}", "{\"text\": \"Schematic in off hand & right click!\", \"color\": \"#4A6DEC\"}"]}} 1
 give @s minecraft:brush{display:{Name:"[{\"text\": \"Paste Brush\", \"color\": \"yellow\"}]",Lore:["{\"text\": \"Right click, paste in model from copy command!\", \"color\": \"#4A6DEC\"}"]}, Tags:["model_paste_brush"]} 1
 give @s minecraft:brush{display:{Name:"[{\"text\": \"Sel Brush\", \"color\": \"yellow\"}]",Lore:["{\"text\": \"Right click, to stop current selection!\", \"color\": \"#4A6DEC\"}"]}} 1
-give @s minecraft:brush{display:{Name:"[{\"text\": \"Undo Brush\", \"color\": \"yellow\"}]",Lore:["{\"text\": \"Right click, Undo Previous Command!\", \"color\": \"#4A6DEC\"}"]}} 1
-give @s minecraft:brush{display:{Name:"[{\"text\": \"Redo Brush\", \"color\": \"yellow\"}]",Lore:["{\"text\": \"Right click, Redo Previous Command!\", \"color\": \"#4A6DEC\"}"]}} 1
 give @s minecraft:brush{display:{Name:"[{\"text\": \"Eraser Brush\", \"color\": \"red\"}]",Lore:["{\"text\": \"Right click, remove models!\", \"color\": \"#4A6DEC\"}"]}} 1
 
 # Reset Command:
