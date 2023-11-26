@@ -20,7 +20,6 @@ execute as @e[type=minecraft:block_display,distance=0..5,limit=1,sort=nearest,ta
 execute as @e[type=minecraft:block_display,distance=0..5,limit=1,sort=nearest,tag=forge_layer,tag=!forge_layer_added] at @s run data modify entity @s transformation.scale set from entity @e[type=minecraft:marker,tag=forge_layer,limit=1,distance=0..2,sort=nearest] data.layering[0].transformation.scale
 execute as @e[type=minecraft:block_display,distance=0..5,limit=1,sort=nearest,tag=forge_layer,tag=!forge_layer_added] at @s run data modify entity @s block_state.Name set from entity @e[type=minecraft:marker,tag=forge_layer,limit=1,distance=0..2,sort=nearest] data.layering[0].block_state.Name
 execute as @e[type=minecraft:block_display,distance=0..5,limit=1,sort=nearest,tag=forge_layer,tag=!forge_layer_added] at @s run data modify entity @s Rotation set from entity @e[type=minecraft:marker,tag=forge_layer,limit=1,distance=0..2,sort=nearest] data.layering[0].Rotation
-execute as @e[type=minecraft:block_display,distance=0..5,limit=1,sort=nearest,tag=forge_layer,tag=!forge_layer_added] at @s run data modify entity @s Tags set from entity @e[type=minecraft:marker,tag=forge_layer,limit=1,distance=0..2,sort=nearest] data.layering[0].Tags
 
 # When data is finished, add tag: "forge_layer_added"
 execute as @e[type=minecraft:block_display,distance=0..5,limit=1,sort=nearest,tag=forge_layer,tag=!forge_layer_added] at @s run tag @s add forge_layer_added
