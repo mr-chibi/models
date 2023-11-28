@@ -3,7 +3,7 @@ function models_forge:commands/axis/x/unselected
 function models_forge:commands/axis/x/selected
 
 # Error Message
-tellraw @s[scores={forge_axis_x=62..}] [{"text": "[", "color": "white"},{"text": "Mr_Chibis Models", "color":"#632FF1"}, {"text": "] ", "color": "white"},{"text":"Error, axis X can only be 1-21.", "color": "red"}]
+tellraw @s[scores={forge_axis_x=62..}] [{"text": "[", "color": "white"},{"text": "Mr_Chibis Models", "color":"#632FF1"}, {"text": "] ", "color": "white"},{"text":"Error, axis X can only be 1-61.", "color": "red"}]
 
 # Update Message:
 tellraw @s[scores={forge_axis_x=..61}] [{"text": "[", "color": "white"},{"text": "Mr_Chibis Models", "color":"#632FF1"}, {"text": "] ", "color": "white"},{"text":"Updated axis X.", "color": "#A3A3A3"}]
