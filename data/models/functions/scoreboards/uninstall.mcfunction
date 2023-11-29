@@ -1,3 +1,6 @@
+#
+function models_forge:scoreboards/uninstall
+
 # [Admin Prefixes]:
 team remove model_admin
 

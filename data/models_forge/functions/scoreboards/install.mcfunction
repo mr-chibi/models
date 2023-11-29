@@ -11,6 +11,12 @@ scoreboard objectives add forge_scale_x trigger
 scoreboard objectives add forge_scale_y trigger
 scoreboard objectives add forge_scale_z trigger
 
+# [Forging Tool Rotate]:
+scoreboard objectives add forge_rotate trigger
+
+# [Forging Tool Angle]:
+scoreboard objectives add forge_angle trigger
+
 # [Forging Tool Pallete Type]:
 scoreboard objectives add forge_pallete trigger
 

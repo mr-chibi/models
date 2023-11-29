@@ -11,6 +11,12 @@ scoreboard players enable @s[team=model_admin] forge_scale_x
 scoreboard players enable @s[team=model_admin] forge_scale_y
 scoreboard players enable @s[team=model_admin] forge_scale_z
 
+# [Forging Tool Rotation]:
+scoreboard players enable @s[team=model_admin] forge_rotate
+
+# [Forging Tool Angle]:
+scoreboard players enable @s[team=model_admin] forge_angle
+
 # [Forging Tool Pallete Type]:
 scoreboard players enable @s[team=model_admin] forge_pallete
 

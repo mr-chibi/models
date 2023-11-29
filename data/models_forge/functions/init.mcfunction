@@ -15,6 +15,12 @@ execute as @s[scores={forge_scale_y=1..}] run function models_forge:commands/sca
 execute as @s[scores={forge_scale_z=1..}] run function models_forge:commands/scale/z/init
 
 #
+execute as @s[scores={forge_rotate=1..}] run function models_forge:commands/rotation/init
+
+#
+execute as @s[scores={forge_angle=1..}] run function models_forge:commands/angle/init
+
+#
 execute as @s[scores={forge_pallete=1..}] run function models_forge:commands/pallete/init
 
 #
