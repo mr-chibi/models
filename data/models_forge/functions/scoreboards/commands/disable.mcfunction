@@ -13,9 +13,12 @@ scoreboard players reset @s forge_scale_z
 
 # [Forging Tool Rotation]:
 scoreboard players reset @s forge_rotate
+scoreboard players reset @s forge_rotate_x
 
 # [Forging Tool Angle]:
-scoreboard players reset @s forge_angle
+scoreboard players reset @s forge_angle_x
+scoreboard players reset @s forge_angle_y
+scoreboard players reset @s forge_angle_z
 
 # [Forging Tool Pallete Type]:
 scoreboard players reset @s forge_pallete

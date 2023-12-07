@@ -23,6 +23,9 @@ scoreboard objectives remove model_render
 # [Tools]:
 scoreboard objectives remove model_brush
 
+#
+scoreboard objectives remove model_spawn
+
 # Remove pack message:
 execute as @a at @s run tellraw @s [{"text": "[", "color": "white"},{"text": "Mr_Chibis Models", "color":"#632FF1"}, {"text": "] ", "color": "white"},{"text":"Successfully removed all datapack scoreboard data. ", "color": "#A3A3A3"}]
 execute as @a at @s run tellraw @s [{"text": "[", "color": "white"},{"text": "Mr_Chibis Models", "color":"#632FF1"}, {"text": "] ", "color": "white"}, {"text":"Do ", "color": "#A3A3A3"}, {"text": "/datapack disable [pack]", "color": "red"}, {"text":" remove datapack! ", "color": "#A3A3A3"}]
