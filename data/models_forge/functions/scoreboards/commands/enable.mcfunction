@@ -20,6 +20,11 @@ scoreboard players enable @s[team=model_admin] forge_angle_x
 scoreboard players enable @s[team=model_admin] forge_angle_y
 scoreboard players enable @s[team=model_admin] forge_angle_z
 
+# [Forging Tool Align]:
+scoreboard players enable @s[team=model_admin] forge_align_x
+scoreboard players enable @s[team=model_admin] forge_align_y
+scoreboard players enable @s[team=model_admin] forge_align_z
+
 # [Forging Tool Pallete Type]:
 scoreboard players enable @s[team=model_admin] forge_pallete
 

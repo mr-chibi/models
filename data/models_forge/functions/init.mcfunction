@@ -24,6 +24,11 @@ execute as @s[scores={forge_angle_y=1..}] run function models_forge:commands/ang
 execute as @s[scores={forge_angle_z=1..}] run function models_forge:commands/angle/z/init
 
 #
+execute as @s[scores={forge_align_x=1..}] run function models_forge:commands/align/x/init
+execute as @s[scores={forge_align_y=1..}] run function models_forge:commands/align/y/init
+execute as @s[scores={forge_align_z=1..}] run function models_forge:commands/align/z/init
+
+#
 execute as @s[scores={forge_pallete=1..}] run function models_forge:commands/pallete/init
 
 #

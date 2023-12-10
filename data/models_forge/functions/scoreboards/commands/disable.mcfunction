@@ -20,6 +20,11 @@ scoreboard players reset @s forge_angle_x
 scoreboard players reset @s forge_angle_y
 scoreboard players reset @s forge_angle_z
 
+# [Forging Tool Align]:
+scoreboard players reset @s forge_align_x
+scoreboard players reset @s forge_align_y
+scoreboard players reset @s forge_align_z
+
 # [Forging Tool Pallete Type]:
 scoreboard players reset @s forge_pallete
 

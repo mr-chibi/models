@@ -20,6 +20,11 @@ scoreboard objectives add forge_angle_x trigger
 scoreboard objectives add forge_angle_y trigger
 scoreboard objectives add forge_angle_z trigger
 
+# [Forging Tool Align]:
+scoreboard objectives add forge_align_x trigger
+scoreboard objectives add forge_align_y trigger
+scoreboard objectives add forge_align_z trigger
+
 # [Forging Tool Pallete Type]:
 scoreboard objectives add forge_pallete trigger
 

@@ -21,6 +21,11 @@ scoreboard objectives remove forge_angle_y
 scoreboard objectives remove forge_angle_z
 
 #
+scoreboard objectives remove forge_align_x
+scoreboard objectives remove forge_align_y
+scoreboard objectives remove forge_align_z
+
+#
 scoreboard objectives remove forge_pallete
 
 #
