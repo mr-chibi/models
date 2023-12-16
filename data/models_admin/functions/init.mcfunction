@@ -4,6 +4,12 @@ function models_admin:scoreboards/commands/enable
 # Forge functionallity [Enable]:
 function models_forge:init
 
+# Forge UI functionallity [Enable]:
+function models_ui:init
+
+# Toggle Commands when "Admin Mode" [List/Give]:
+execute as @s[scores={model_ui=1..}] run function models_admin:commands/ui
+
 # Toggle Commands when "Admin Mode":
 execute as @s[scores={model_primary_pallete=1..}] run function models_admin:commands/primary_pallete
 execute as @s[scores={model_secondary_pallete=1..}] run function models_admin:commands/secondary_pallete

@@ -1,0 +1,1 @@
+kill @e[type=item,nbt={Item:{id:"minecraft:loom",tag:{Tags:["kitchen_counters_category"]}}}]

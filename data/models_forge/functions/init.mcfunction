@@ -5,8 +5,15 @@ function models_forge:scoreboards/commands/enable
 execute as @s[scores={forge_create=1..}] run function models_forge:commands/create
 
 #
+execute as @s[scores={forge_axis_x=..-1}] run function models_forge:commands/axis/x/init
 execute as @s[scores={forge_axis_x=1..}] run function models_forge:commands/axis/x/init
+
+#
+execute as @s[scores={forge_axis_y=..-1}] run function models_forge:commands/axis/y/init
 execute as @s[scores={forge_axis_y=1..}] run function models_forge:commands/axis/y/init
+
+#
+execute as @s[scores={forge_axis_z=..-1}] run function models_forge:commands/axis/z/init
 execute as @s[scores={forge_axis_z=1..}] run function models_forge:commands/axis/z/init
 
 #

@@ -1,0 +1,1 @@
+kill @e[type=item,nbt={Item:{id:"minecraft:cherry_sapling",tag:{Tags:["exterior_category"]}}}]

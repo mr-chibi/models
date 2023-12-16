@@ -1,14 +1,14 @@
 #####################################################################################
 # Update Forge Layers [Selected]
 #####################################################################################
-execute if entity @e[type=block_display,tag=forge_layer,sort=nearest,distance=0..5] as @e[type=minecraft:block_display,tag=forge_layer,sort=nearest,distance=0..5] at @s run data modify entity @s transformation.scale[0] set from entity @s transformation.scale[1]
-execute if entity @e[type=block_display,tag=forge_layer,sort=nearest,distance=0..5] as @e[type=minecraft:block_display,tag=forge_layer,sort=nearest,distance=0..5] at @s run data modify entity @s transformation.scale[2] set from entity @s transformation.scale[1]
+execute if entity @e[type=block_display,tag=forge_layer,sort=nearest,distance=0..5] as @e[type=minecraft:block_display,tag=forge_layer,tag=selected_forge_layer,sort=nearest,distance=0..3,limit=1] at @s run data modify entity @s transformation.scale[0] set from entity @s transformation.scale[1]
+execute if entity @e[type=block_display,tag=forge_layer,sort=nearest,distance=0..5] as @e[type=minecraft:block_display,tag=forge_layer,tag=selected_forge_layer,sort=nearest,distance=0..3,limit=1] at @s run data modify entity @s transformation.scale[2] set from entity @s transformation.scale[1]
 
 #####################################################################################
 # Update Model Layers [UnSelected]
 #####################################################################################
-execute if entity @e[type=block_display,tag=forge_model,sort=nearest,distance=0..5] as @e[type=minecraft:block_display,tag=forge_model,sort=nearest,distance=0..5] at @s run data modify entity @s transformation.scale[0] set from entity @s transformation.scale[1]
-execute if entity @e[type=block_display,tag=forge_model,sort=nearest,distance=0..5] as @e[type=minecraft:block_display,tag=forge_model,sort=nearest,distance=0..5] at @s run data modify entity @s transformation.scale[2] set from entity @s transformation.scale[1]
+execute if entity @e[type=block_display,tag=forge_model,sort=nearest,distance=0..5] as @e[type=minecraft:block_display,tag=forge_model,sort=nearest,distance=0..3,limit=1] at @s run data modify entity @s transformation.scale[0] set from entity @s transformation.scale[1]
+execute if entity @e[type=block_display,tag=forge_model,sort=nearest,distance=0..5] as @e[type=minecraft:block_display,tag=forge_model,sort=nearest,distance=0..3,limit=1] at @s run data modify entity @s transformation.scale[2] set from entity @s transformation.scale[1]
 
 #####################################################################################
 # Update Message

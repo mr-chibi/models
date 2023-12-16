@@ -14,12 +14,10 @@ scoreboard objectives add model_sel trigger
 scoreboard objectives add model_schematic trigger
 scoreboard objectives add model_copy trigger
 scoreboard objectives add model_paste trigger
+scoreboard objectives add model_ui trigger
 
 # [Public User, Model]:
 scoreboard objectives add model_ids dummy
-
-#
-scoreboard objectives add model_spawn minecraft.used:minecraft.rabbit_spawn_egg
 
 # [Tools]:
 scoreboard objectives add model_brush minecraft.used:minecraft.brush

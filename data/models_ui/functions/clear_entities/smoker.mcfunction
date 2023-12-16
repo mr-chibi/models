@@ -1,0 +1,1 @@
+kill @e[type=item,nbt={Item:{id:"minecraft:smoker",tag:{Tags:["kitchen_category"]}}}]

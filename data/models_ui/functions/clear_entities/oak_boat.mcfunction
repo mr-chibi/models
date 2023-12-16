@@ -1,0 +1,1 @@
+kill @e[type=item,nbt={Item:{id:"minecraft:oak_boat",tag:{Tags:["ship_category"]}}}]

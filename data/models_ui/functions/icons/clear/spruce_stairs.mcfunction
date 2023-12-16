@@ -1,0 +1,2 @@
+execute if data entity @s Inventory[{id:"minecraft:spruce_stairs",tag:{Tags:["living_room_category"]}}] run clear @s minecraft:spruce_stairs{Tags:["living_room_category"]}
+execute if data entity @s Inventory[{id:"minecraft:spruce_stairs",tag:{Tags:["dinning_chairs_category"]}}] run clear @s minecraft:spruce_stairs{Tags:["dinning_chairs_category"]}

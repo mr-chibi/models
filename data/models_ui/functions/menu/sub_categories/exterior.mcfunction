@@ -1,0 +1,5 @@
+# Toggle [Selected Sub] Categories: [Dinning]
+execute as @e[type=minecraft:marker,distance=0..4,sort=nearest,tag=models_ui,nbt={data:{model_selected_category:"doors", model_page:1}}] at @s if block ~ ~ ~ minecraft:chest run function models_ui:category/exterior/doors/ui
+execute as @e[type=minecraft:marker,distance=0..4,sort=nearest,tag=models_ui,nbt={data:{model_selected_category:"windows", model_page:1}}] at @s if block ~ ~ ~ minecraft:chest run function models_ui:category/exterior/windows/ui
+execute as @e[type=minecraft:marker,distance=0..4,sort=nearest,tag=models_ui,nbt={data:{model_selected_category:"fences", model_page:1}}] at @s if block ~ ~ ~ minecraft:chest run function models_ui:category/exterior/fences/ui
+execute as @e[type=minecraft:marker,distance=0..4,sort=nearest,tag=models_ui,nbt={data:{model_selected_category:"garden", model_page:1}}] at @s if block ~ ~ ~ minecraft:chest run function models_ui:category/exterior/garden/ui

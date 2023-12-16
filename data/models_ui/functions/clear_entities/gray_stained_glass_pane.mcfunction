@@ -1,0 +1,1 @@
+kill @e[type=item,nbt={Item:{id:"minecraft:gray_stained_glass_pane",tag:{Tags:["test"]}}}]

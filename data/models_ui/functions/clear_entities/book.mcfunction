@@ -1,0 +1,1 @@
+kill @e[type=item,nbt={Item:{id:"minecraft:book",tag:{Tags:["main_category"]}}}]
