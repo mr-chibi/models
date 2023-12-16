@@ -30,6 +30,12 @@ execute if entity @e[type=minecraft:marker,tag=forge_paste_compiler,distance=0..
 #
 execute if entity @e[type=minecraft:marker,tag=forge_paste_compiler,distance=0..5,sort=nearest,limit=1] as @e[type=minecraft:marker,distance=0..5,tag=forge_paste_compiler,sort=nearest,limit=1] at @s if score @s model_render = max model_render run scoreboard players set @s model_render 0
 
+
+#
+execute as @s[team=!model_admin,tag=forge_render_paste] if entity @e[type=minecraft:marker,tag=forge_paste_compiler,distance=0..5,sort=nearest,limit=1] as @e[type=minecraft:marker,distance=0..5,tag=forge_paste_compiler,sort=nearest,limit=1] at @s[scores={forge_total_layers=..0}] as @e[type=minecraft:block_display,distance=0..5,tag=forge_layer] at @s store result score @s model_ids run data get entity @s UUID[0]
+execute as @s[team=!model_admin,tag=forge_render_paste] if entity @e[type=minecraft:marker,tag=forge_paste_compiler,distance=0..5,sort=nearest,limit=1] as @e[type=minecraft:marker,distance=0..5,tag=forge_paste_compiler,sort=nearest,limit=1] at @s[scores={forge_total_layers=..0}] as @e[type=minecraft:block_display,distance=0..5,tag=forge_layer] at @s store result score @s model_ids run scoreboard players get @p[team=!model_admin,tag=forge_render_paste] model_ids
+
+
 #
 execute if entity @e[type=minecraft:marker,tag=forge_paste_compiler,distance=0..5,sort=nearest,limit=1] as @e[type=minecraft:marker,distance=0..5,tag=forge_paste_compiler,sort=nearest,limit=1] at @s[scores={forge_total_layers=..0}] run tellraw @p [{"text": "[", "color": "white"},{"text": "Mr_Chibis Models", "color":"#632FF1"}, {"text": "] ", "color": "white"}, {"text": "Rendering Complete!!", "color": "green"}]
 

@@ -46,7 +46,7 @@ execute as @s[scores={forge_edit_layer=1..}] run function models_forge:commands/
 #
 execute as @s[scores={forge_save=1..}] run function models_forge:commands/save
 
-#
+# Spawning Mechanic
 function models_forge:commands/spawn
 
 # Rendering Engine:
