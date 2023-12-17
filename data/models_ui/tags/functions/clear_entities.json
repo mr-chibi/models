@@ -13,6 +13,7 @@
 		"models_ui:clear_entities/painting",		
 		"models_ui:clear_entities/rail",
 		"models_ui:clear_entities/red_bed",
+		"models_ui:clear_entities/redstone_lamp",
 		"models_ui:clear_entities/scaffolding",
 		"models_ui:clear_entities/smoker",
 		"models_ui:clear_entities/spruce_stairs",

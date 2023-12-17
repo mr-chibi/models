@@ -18,9 +18,9 @@ data modify block ~ ~ ~ Items[{Slot:9b}] merge value {id:"minecraft:jungle_door"
 data modify block ~ ~ ~ Items[{Slot:10b}] merge value {id:"minecraft:tinted_glass",Count:1b,tag:{display:{Name:"[{\"text\": \"Windows\", \"color\": \"aqua\"}]"},Tags:["windows_category"]}}
 data modify block ~ ~ ~ Items[{Slot:11b}] merge value {id:"minecraft:oak_fence",Count:1b,tag:{display:{Name:"[{\"text\": \"Fences\", \"color\": \"aqua\"}]"},Tags:["fence_category"]}}
 data modify block ~ ~ ~ Items[{Slot:12b}] merge value {id:"minecraft:torchflower",Count:1b,tag:{display:{Name:"[{\"text\": \"Garden\", \"color\": \"aqua\"}]"},Tags:["garden_category"]}}
+data modify block ~ ~ ~ Items[{Slot:13b}] merge value {id:"minecraft:redstone_lamp",Count:1b,tag:{display:{Name:"[{\"text\": \"Lamps\", \"color\": \"aqua\"}]"},Tags:["lamps_category"]}}
 
 #
-data modify block ~ ~ ~ Items[{Slot:13b}] merge value {id:"minecraft:gray_stained_glass_pane",Count:1b,tag:{display:{Name:""},Tags:["test"]}}
 data modify block ~ ~ ~ Items[{Slot:14b}] merge value {id:"minecraft:gray_stained_glass_pane",Count:1b,tag:{display:{Name:""},Tags:["test"]}}
 data modify block ~ ~ ~ Items[{Slot:15b}] merge value {id:"minecraft:gray_stained_glass_pane",Count:1b,tag:{display:{Name:""},Tags:["test"]}}
 data modify block ~ ~ ~ Items[{Slot:16b}] merge value {id:"minecraft:gray_stained_glass_pane",Count:1b,tag:{display:{Name:""},Tags:["test"]}}
