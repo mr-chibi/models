@@ -2,7 +2,7 @@
 function #models_ui:categories
 
 # Toggle Btns:
-execute as @e[type=minecraft:marker,distance=0..4,sort=nearest,tag=models_ui] at @s run function #models_ui:toggle_btn
+function #models_ui:toggle_btn
 
 # Remove Player Items:
 function #models_ui:clear_icons
