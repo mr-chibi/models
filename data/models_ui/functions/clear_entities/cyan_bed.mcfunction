@@ -1,1 +1,0 @@
-kill @e[type=item,nbt={Item:{id:"minecraft:cyan_bed",tag:{Tags:["interior_category"]}}}]

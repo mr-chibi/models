@@ -1,1 +1,0 @@
-kill @e[type=item,nbt={Item:{id:"minecraft:torchflower",tag:{Tags:["garden_category"]}}}]

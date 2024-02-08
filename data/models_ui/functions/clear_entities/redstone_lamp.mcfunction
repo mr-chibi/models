@@ -1,1 +1,0 @@
-kill @e[type=item,nbt={Item:{id:"minecraft:redstone_lamp",tag:{Tags:["lamps_category"]}}}]

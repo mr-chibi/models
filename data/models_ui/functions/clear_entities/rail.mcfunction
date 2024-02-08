@@ -1,1 +1,0 @@
-kill @e[type=item,nbt={Item:{id:"minecraft:rail",tag:{Tags:["staircase_railing_category"]}}}]

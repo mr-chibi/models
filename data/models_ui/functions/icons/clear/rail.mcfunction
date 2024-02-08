@@ -1,1 +1,0 @@
-execute if data entity @s Inventory[{id:"minecraft:rail",tag:{Tags:["staircase_railing_category"]}}] run clear @s minecraft:rail{Tags:["staircase_railing_category"]}

@@ -1,1 +1,0 @@
-kill @e[type=item,nbt={Item:{id:"minecraft:tinted_glass",tag:{Tags:["door_category"]}}}]
