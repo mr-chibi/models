@@ -1,4 +1,0 @@
-# Toggle [Selected Sub] Categories: [Decoration]
-execute as @e[type=minecraft:marker,distance=0..4,sort=nearest,tag=models_ui,nbt={data:{model_selected_category:"picture_frames", model_page:1}}] at @s if block ~ ~ ~ minecraft:chest run function models_ui:category/decoration/picture_frames/ui
-execute as @e[type=minecraft:marker,distance=0..4,sort=nearest,tag=models_ui,nbt={data:{model_selected_category:"ship_decoration", model_page:1}}] at @s if block ~ ~ ~ minecraft:chest run function models_ui:category/decoration/ship/ui
-execute as @e[type=minecraft:marker,distance=0..4,sort=nearest,tag=models_ui,nbt={data:{model_selected_category:"staircase_railing", model_page:1}}] at @s if block ~ ~ ~ minecraft:chest run function models_ui:category/decoration/staircase_railing/ui

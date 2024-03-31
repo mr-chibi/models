@@ -1,3 +1,0 @@
-# Toggle [Selected Sub] Categories: [Decoration]
-execute as @e[type=minecraft:marker,distance=0..4,sort=nearest,tag=models_ui,nbt={data:{model_selected_category:"cabinets", model_page:1}}] at @s if block ~ ~ ~ minecraft:chest run function models_ui:category/living_room/cabinets/ui
-execute as @e[type=minecraft:marker,distance=0..4,sort=nearest,tag=models_ui,nbt={data:{model_selected_category:"sofas", model_page:1}}] at @s if block ~ ~ ~ minecraft:chest run function models_ui:category/living_room/sofas/ui

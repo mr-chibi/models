@@ -37,6 +37,9 @@ scoreboard objectives remove forge_add_layer
 scoreboard objectives remove forge_edit_layer
 
 #
+scoreboard objectives remove forge_animation
+
+#
 scoreboard objectives remove forge_save
 
 #

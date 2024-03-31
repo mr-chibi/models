@@ -61,9 +61,6 @@ execute as @s[tag=forge_render_copy] run function models_forge:tags/copy
 execute as @s[tag=forge_render_paste] run function models_forge:tags/paste
 execute as @s[tag=forge_render_save] run function models_forge:tags/save
 
-#
-function models_forge:tags/test
-
 # Forge GUI:
 execute unless entity @e[type=block_display,tag=forge_layer,tag=selected_forge_layer,sort=nearest,distance=0..5] run function models_forge:tags/gui/unselected
 execute if entity @e[type=block_display,tag=forge_layer,tag=selected_forge_layer,sort=nearest,distance=0..5] run function models_forge:tags/gui/selected

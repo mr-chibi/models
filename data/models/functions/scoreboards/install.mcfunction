@@ -9,7 +9,6 @@ scoreboard objectives add model_secondary_pallete trigger
 scoreboard objectives add model_triad_pallete trigger
 scoreboard objectives add model_tools trigger
 scoreboard objectives add model_place trigger
-scoreboard objectives add model_remove trigger
 scoreboard objectives add model_sel trigger
 scoreboard objectives add model_schematic trigger
 scoreboard objectives add model_copy trigger
@@ -21,3 +20,4 @@ scoreboard objectives add model_ids dummy
 
 # [Tools]:
 scoreboard objectives add model_brush minecraft.used:minecraft.brush
+scoreboard objectives add model_raycast_brush minecraft.used:minecraft.carrot_on_a_stick

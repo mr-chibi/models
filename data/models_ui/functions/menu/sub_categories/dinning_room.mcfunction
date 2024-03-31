@@ -1,2 +1,0 @@
-# Toggle [Selected Sub] Categories: [Dinning]
-execute as @e[type=minecraft:marker,distance=0..4,sort=nearest,tag=models_ui,nbt={data:{model_selected_category:"dinning_chairs", model_page:1}}] at @s if block ~ ~ ~ minecraft:chest run function models_ui:category/dinning_room/dinning_chairs/ui

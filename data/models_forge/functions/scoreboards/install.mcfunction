@@ -36,6 +36,9 @@ scoreboard objectives add forge_layers trigger
 scoreboard objectives add forge_add_layer trigger
 scoreboard objectives add forge_edit_layer trigger
 
+#
+scoreboard objectives add forge_animation trigger
+
 # [Forging Tool Save]:
 scoreboard objectives add forge_save trigger
 
