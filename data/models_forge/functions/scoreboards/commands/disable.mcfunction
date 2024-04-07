@@ -35,3 +35,6 @@ scoreboard players reset @s forge_edit_layer
 
 # [Forging Tool Save]:
 scoreboard players reset @s forge_save
+
+# [Forging Tool Update]:
+scoreboard players reset @s forge_save

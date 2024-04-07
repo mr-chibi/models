@@ -10,8 +10,8 @@ execute if entity @e[type=minecraft:marker,distance=0..5,tag=forge_copy_compiler
 execute if entity @e[type=minecraft:marker,distance=0..5,tag=forge_copy_compiler,sort=nearest,limit=1] if score @s model_render = max model_render as @e[type=minecraft:marker,distance=0..5,tag=forge_copy_compiler,sort=nearest] at @s run tellraw @p [{"text": "[", "color": "white"},{"text": "Mr_Chibis Models", "color":"#632FF1"}, {"text": "] ", "color": "white"}, {"text": "Copying.. Forge Model Layer ","color": "#A3A3A3"}, {"score":{"name":"@s","objective":"forge_total_layers"},"color":"#A3A3A3"}, {"text": ".","color": "#A3A3A3"}]
 
 #
-execute as @s[tag=copied_forged_model] if entity @e[type=minecraft:marker,distance=0..5,tag=forge_copy_compiler,sort=nearest,limit=1] if score @s model_render = max model_render as @e[type=minecraft:block_display,tag=forge_model,distance=0..5,sort=nearest,tag=!forge_copy_brush,limit=1] at @s run data modify entity @e[type=minecraft:marker,distance=0..5,tag=forge_copy_compiler,sort=nearest,limit=1] data.layers insert 0 from entity @s
-execute as @s[tag=copied_forged_layer] if entity @e[type=minecraft:marker,distance=0..5,tag=forge_copy_compiler,sort=nearest,limit=1] if score @s model_render = max model_render as @e[type=minecraft:block_display,tag=forge_layer,distance=0..5,sort=nearest,tag=!forge_copy_brush,limit=1] at @s run data modify entity @e[type=minecraft:marker,distance=0..5,tag=forge_copy_compiler,sort=nearest,limit=1] data.layers insert 0 from entity @s
+function models_forge:tags/copy/insert_layers
+function models_forge:tags/copy/insert_models
 
 #
 execute as @s[tag=copied_forged_model] if entity @e[type=minecraft:marker,distance=0..5,tag=forge_copy_compiler,sort=nearest,limit=1] if score @s model_render = max model_render as @e[type=minecraft:block_display,tag=forge_model,distance=0..5,sort=nearest,tag=!forge_copy_brush,limit=1] at @s run tag @s add forge_copy_brush

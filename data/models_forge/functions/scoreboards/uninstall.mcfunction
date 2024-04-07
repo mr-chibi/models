@@ -43,4 +43,7 @@ scoreboard objectives remove forge_animation
 scoreboard objectives remove forge_save
 
 #
+scoreboard objectives remove forge_update
+
+#
 scoreboard objectives remove forge_spawn

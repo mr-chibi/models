@@ -8,7 +8,7 @@ execute as @s[y_rotation=45..135] unless entity @e[type=minecraft:marker,tag=for
 execute if entity @e[type=minecraft:marker,tag=forge_paste_compiler,distance=0..5,sort=nearest,limit=1] as @e[type=minecraft:marker,tag=forge_paste_compiler,distance=0..5,sort=nearest,limit=1] at @s store result score @s forge_total_layers if data entity @p SelectedItem.tag.layers[]
 
 #
-execute if entity @e[type=minecraft:marker,tag=forge_paste_compiler,distance=0..5,sort=nearest,limit=1] as @e[type=minecraft:marker,tag=forge_paste_compiler,distance=0..5,sort=nearest,limit=1] at @s run scoreboard players add @s model_render 0
+execute if entity @e[type=minecraft:marker,tag=forge_paste_compiler,distance=0..5,sort=nearest,limit=1] as @e[type=minecraft:marker,tag=forge_paste_compiler,distance=0..5,sort=nearest,limit=1] at @s run scoreboard players set @s model_render 0
 
 #
 execute if entity @e[type=minecraft:marker,tag=forge_paste_compiler,distance=0..5,sort=nearest,limit=1] as @e[type=minecraft:marker,distance=0..5,tag=forge_paste_compiler,sort=nearest,limit=1] at @s run data modify entity @s data.layers set from entity @p[distance=0..5,sort=nearest] SelectedItem.tag.layers

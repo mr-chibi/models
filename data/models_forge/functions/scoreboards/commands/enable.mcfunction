@@ -35,3 +35,6 @@ scoreboard players enable @s[team=model_admin] forge_edit_layer
 
 # [Forging Tool Save]:
 scoreboard players enable @s[team=model_admin] forge_save
+
+# [Forging Tool Update]:
+scoreboard players enable @s[team=model_admin] forge_update

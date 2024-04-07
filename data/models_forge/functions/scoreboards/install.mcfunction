@@ -42,5 +42,8 @@ scoreboard objectives add forge_animation trigger
 # [Forging Tool Save]:
 scoreboard objectives add forge_save trigger
 
+# [Forging Update]:
+scoreboard objectives add forge_update trigger
+
 # [Forging Spawn Tool]:
 scoreboard objectives add forge_spawn minecraft.used:minecraft.allay_spawn_egg

@@ -53,6 +53,9 @@ execute as @s[scores={forge_edit_layer=1..}] run function models_forge:commands/
 #
 execute as @s[scores={forge_save=1..}] run function models_forge:commands/save
 
+# Update:
+execute as @s[scores={forge_update=1..}] run function models_forge:commands/update
+
 # Spawning Mechanic
 function models_forge:commands/spawn
 
@@ -60,6 +63,9 @@ function models_forge:commands/spawn
 execute as @s[tag=forge_render_copy] run function models_forge:tags/copy
 execute as @s[tag=forge_render_paste] run function models_forge:tags/paste
 execute as @s[tag=forge_render_save] run function models_forge:tags/save
+
+# Rendering Engine [Update]:
+execute as @s[tag=forge_render_update] run function models_forge:tags/update
 
 # Forge GUI:
 execute unless entity @e[type=block_display,tag=forge_layer,tag=selected_forge_layer,sort=nearest,distance=0..5] run function models_forge:tags/gui/unselected

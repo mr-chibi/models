@@ -1,5 +1,5 @@
 #
-scoreboard players add @s model_render 0
+scoreboard players set @s model_render -1
 
 # Add Render Tag:
 execute unless entity @e[type=minecraft:marker,tag=model_forge_paste_compiler,distance=0..5,sort=nearest] run tag @s add model_render_paste

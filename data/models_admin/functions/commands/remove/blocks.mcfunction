@@ -9,7 +9,13 @@ execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=queen_bed_
 # [Decorations]:
 execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=1x1_picture_frame,sort=nearest,distance=..1] run function models_menu:give/decoration/frames/1_x_1_picture_frame
 execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=ship_wheel,sort=nearest,distance=..1] run function models_menu:give/decoration/ship_wheel
-execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=wooden_stair_railing,sort=nearest,distance=..1] run function models_menu:give/decoration/wooden_stair_railing
+
+# [Desks]:
+execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=gray_wooden_desk,sort=nearest,distance=..1] run function models_menu:give/decoration/desks/gray_wooden_desk
+
+# [Stairs]:
+execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=quartz_stair_railing,sort=nearest,distance=..1] run function models_menu:give/decoration/stairs/quartz_stair_railing
+execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=wooden_stair_railing,sort=nearest,distance=..1] run function models_menu:give/decoration/stairs/wooden_stair_railing
 
 # [Exterior]:
 execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=metal_lamp,sort=nearest,distance=..1] run function models_menu:give/exterior/metal_lamp
