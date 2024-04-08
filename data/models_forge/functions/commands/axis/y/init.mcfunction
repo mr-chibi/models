@@ -1,11 +1,11 @@
 # Move "Singular Layer" If not Holding Brush:
-execute as @s[nbt=!{SelectedItem:{id:"minecraft:brush",tag:{display:{Name:"[{\"text\": \"Primary Pallete Brush\", \"color\": \"aqua\"}]"}}}},nbt=!{SelectedItem:{id:"minecraft:brush",tag:{display:{Name:"[{\"text\": \"Secondary Pallete Brush\", \"color\": \"aqua\"}]"}}}},nbt=!{SelectedItem:{id:"minecraft:brush",tag:{display:{Name:"[{\"text\": \"Triad Pallete Brush\", \"color\": \"aqua\"}]"}}}}] run function models_forge:commands/axis/y/unselected
-execute as @s[nbt=!{SelectedItem:{id:"minecraft:brush",tag:{display:{Name:"[{\"text\": \"Primary Pallete Brush\", \"color\": \"aqua\"}]"}}}},nbt=!{SelectedItem:{id:"minecraft:brush",tag:{display:{Name:"[{\"text\": \"Secondary Pallete Brush\", \"color\": \"aqua\"}]"}}}},nbt=!{SelectedItem:{id:"minecraft:brush",tag:{display:{Name:"[{\"text\": \"Triad Pallete Brush\", \"color\": \"aqua\"}]"}}}}] run function models_forge:commands/axis/y/selected
+execute as @s[nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:"[{\"text\": \"Primary Pallete Brush\", \"color\": \"aqua\"}]"}}}},nbt=!{SelectedItem:{id:"minecraft:brush",tag:{display:{Name:"[{\"text\": \"Secondary Pallete Brush\", \"color\": \"aqua\"}]"}}}},nbt=!{SelectedItem:{id:"minecraft:brush",tag:{display:{Name:"[{\"text\": \"Triad Pallete Brush\", \"color\": \"aqua\"}]"}}}}] run function models_forge:commands/axis/y/unselected
+execute as @s[nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:"[{\"text\": \"Primary Pallete Brush\", \"color\": \"aqua\"}]"}}}},nbt=!{SelectedItem:{id:"minecraft:brush",tag:{display:{Name:"[{\"text\": \"Secondary Pallete Brush\", \"color\": \"aqua\"}]"}}}},nbt=!{SelectedItem:{id:"minecraft:brush",tag:{display:{Name:"[{\"text\": \"Triad Pallete Brush\", \"color\": \"aqua\"}]"}}}}] run function models_forge:commands/axis/y/selected
 
 # Move All [Layers] by Brush Type:
-execute as @s[nbt={SelectedItem:{id:"minecraft:brush",tag:{display:{Name:"[{\"text\": \"Primary Pallete Brush\", \"color\": \"aqua\"}]"}}}}] run function models_forge:commands/axis/y/layers/primary
-execute as @s[nbt={SelectedItem:{id:"minecraft:brush",tag:{display:{Name:"[{\"text\": \"Secondary Pallete Brush\", \"color\": \"aqua\"}]"}}}}] run function models_forge:commands/axis/y/layers/secondary
-execute as @s[nbt={SelectedItem:{id:"minecraft:brush",tag:{display:{Name:"[{\"text\": \"Triad Pallete Brush\", \"color\": \"aqua\"}]"}}}}] run function models_forge:commands/axis/y/layers/triad
+execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:"[{\"text\": \"Primary Pallete Brush\", \"color\": \"aqua\"}]"}}}}] run function models_forge:commands/axis/y/layers/primary
+execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:"[{\"text\": \"Secondary Pallete Brush\", \"color\": \"aqua\"}]"}}}}] run function models_forge:commands/axis/y/layers/secondary
+execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:"[{\"text\": \"Triad Pallete Brush\", \"color\": \"aqua\"}]"}}}}] run function models_forge:commands/axis/y/layers/triad
 
 # Error Message
 tellraw @s[scores={forge_axis_y=62..}] [{"text": "[", "color": "white"},{"text": "Mr_Chibis Models", "color":"#632FF1"}, {"text": "] ", "color": "white"},{"text":"Error, axis Y can go up to 61.", "color": "red"}]

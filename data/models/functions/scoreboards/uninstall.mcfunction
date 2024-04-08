@@ -11,7 +11,6 @@ scoreboard objectives remove model_triad_pallete
 scoreboard objectives remove model_tools
 scoreboard objectives remove model_place
 scoreboard objectives remove model_sel
-scoreboard objectives remove model_schematic
 scoreboard objectives remove model_copy
 scoreboard objectives remove model_paste
 scoreboard objectives remove model_ui

@@ -7,7 +7,6 @@ function models_public:scoreboards/commands/enable
 ##########################################
 execute as @s[scores={model_tools=1..}] run function models_public:commands/tools
 execute as @s[scores={model_primary_pallete=1..}] run function models_public:commands/primary_pallete
-execute as @s[scores={model_primary_pallete=1..}] run function models_public:commands/primary_pallete
 execute as @s[scores={model_secondary_pallete=1..}] run function models_public:commands/secondary_pallete
 execute as @s[scores={model_triad_pallete=1..}] run function models_public:commands/triad_pallete
 execute as @s[scores={model_raycast_brush=1..},tag=modelRemove] run function models_public:commands/remove

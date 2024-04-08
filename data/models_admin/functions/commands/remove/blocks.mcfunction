@@ -20,6 +20,10 @@ execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=wooden_sta
 # [Exterior]:
 execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=metal_lamp,sort=nearest,distance=..1] run function models_menu:give/exterior/metal_lamp
 execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=wooden_swing_bench,sort=nearest,distance=..1] run function models_menu:give/exterior/wooden_swing_bench
+execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=dark_oak_bench,sort=nearest,distance=..1] run function models_menu:give/exterior/dark_oak_bench
+execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=wooden_lawn_chair,sort=nearest,distance=..1] run function models_menu:give/exterior/wooden_lawn_chair
+
+# [Windows]:
 execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=white_wooden_glass_window,sort=nearest,distance=..1] run function models_menu:give/exterior/windows/white_wooden_glass_window
 
 # [Exterior Doors]:
