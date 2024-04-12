@@ -7,7 +7,7 @@ execute if entity @e[type=minecraft:marker,tag=forge_paste_compiler,distance=0..
 ###########################################################
 # Rendering Message:
 ###########################################################
-# execute if entity @e[type=minecraft:marker,tag=forge_paste_compiler,distance=0..5,sort=nearest,limit=1] as @e[type=minecraft:marker,distance=0..5,tag=forge_paste_compiler,sort=nearest,limit=1] at @s if score @s model_render = max model_render run tellraw @p [{"text": "[", "color": "white"},{"text": "Mr_Chibis Models", "color":"#632FF1"}, {"text": "] ", "color": "white"}, {"text": "Rendering in Layer ", "color": "#A3A3A3"}, {"score":{"name":"@s","objective":"forge_total_layers"}, "color": "#A3A3A3"}, {"text": ".", "color": "#A3A3A3"}]
+execute if entity @e[type=minecraft:marker,tag=forge_paste_compiler,distance=0..5,sort=nearest,limit=1] as @e[type=minecraft:marker,distance=0..5,tag=forge_paste_compiler,sort=nearest,limit=1] at @s if score @s model_render = max model_render run tellraw @p [{"text": "[", "color": "white"},{"text": "Mr_Chibis Models", "color":"#632FF1"}, {"text": "] ", "color": "white"}, {"text": "Rendering in Layer ", "color": "#A3A3A3"}, {"score":{"name":"@s","objective":"forge_total_layers"}, "color": "#A3A3A3"}, {"text": ".", "color": "#A3A3A3"}]
 
 ###########################################################
 # Summon Render By Players, Direction:
