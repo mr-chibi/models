@@ -5,10 +5,11 @@ function models_forge:scoreboards/uninstall
 team remove model_admin
 
 # [Commands]
+scoreboard objectives remove model_tools
+scoreboard objectives remove model_texture
 scoreboard objectives remove model_primary_pallete
 scoreboard objectives remove model_secondary_pallete
 scoreboard objectives remove model_triad_pallete
-scoreboard objectives remove model_tools
 scoreboard objectives remove model_place
 scoreboard objectives remove model_sel
 scoreboard objectives remove model_copy
@@ -22,6 +23,10 @@ scoreboard objectives remove model_render
 # [Tools]:
 scoreboard objectives remove model_brush
 scoreboard objectives remove model_raycast_brush
+
+# [Detect]:
+scoreboard objectives remove model_break_fence
+scoreboard objectives remove model_break_cobblestone_slab
 
 # Remove pack message:
 execute as @a at @s run tellraw @s [{"text": "[", "color": "white"},{"text": "Mr_Chibis Models", "color":"#632FF1"}, {"text": "] ", "color": "white"},{"text":"Successfully removed all datapack scoreboard data. ", "color": "#A3A3A3"}]

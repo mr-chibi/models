@@ -6,10 +6,18 @@ function models_public:scoreboards/commands/enable
 # Commands:
 ##########################################
 execute as @s[scores={model_tools=1..}] run function models_public:commands/tools
+execute as @s[scores={model_texture=1..}] run function models_public:commands/texture
 execute as @s[scores={model_primary_pallete=1..}] run function models_public:commands/primary_pallete
 execute as @s[scores={model_secondary_pallete=1..}] run function models_public:commands/secondary_pallete
 execute as @s[scores={model_triad_pallete=1..}] run function models_public:commands/triad_pallete
 execute as @s[scores={model_raycast_brush=1..},tag=modelRemove] run function models_public:commands/remove
+
+##########################################
+# Limited Admin Commands, for Public User:
+##########################################
+execute as @s[scores={forge_pallete=1..}] run function models_public:commands/pallete/init
+execute as @s[scores={forge_layers=1..}] run function models_forge:commands/layers/init
+execute as @s[scores={forge_edit_layer=1..}] run function models_public:commands/layers/edit
 
 ##########################################
 # Pasting Model Mechanics

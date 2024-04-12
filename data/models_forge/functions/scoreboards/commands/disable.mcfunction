@@ -25,16 +25,11 @@ scoreboard players reset @s forge_align_x
 scoreboard players reset @s forge_align_y
 scoreboard players reset @s forge_align_z
 
-# [Forging Tool Pallete Type]:
-scoreboard players reset @s forge_pallete
-
 # [Forging Tool Layering]:
 scoreboard players reset @s forge_add_layer
-scoreboard players reset @s forge_layers
-scoreboard players reset @s forge_edit_layer
 
 # [Forging Tool Save]:
 scoreboard players reset @s forge_save
 
 # [Forging Tool Update]:
-scoreboard players reset @s forge_save
+scoreboard players reset @s forge_update

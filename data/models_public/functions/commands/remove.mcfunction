@@ -17,4 +17,4 @@ execute if score @s model_ids = @e[type=minecraft:block_display,tag=forge_layer,
 execute if score @s model_ids = @e[type=minecraft:block_display,tag=forge_layer,distance=..1,sort=nearest,limit=1] model_ids run kill @e[type=minecraft:block_display,tag=forge_layer,sort=nearest,distance=..1]
 
 # Repeat:
-execute if block ~ ~ ~ minecraft:air positioned ^ ^ ^1 positioned ^ ^0.25 ^ run function models_public:commands/remove
+execute if block ~ ~ ~ minecraft:air positioned ^ ^0.150 ^1 positioned ^ ^0.12 ^ run function models_public:commands/remove

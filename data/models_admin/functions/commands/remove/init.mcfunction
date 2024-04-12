@@ -15,4 +15,4 @@ kill @e[type=minecraft:block_display,tag=forge_layer,sort=nearest,distance=..1]
 kill @e[type=minecraft:block_display,tag=forge_model,sort=nearest,distance=..1]
 
 # Repeat:
-execute if block ~ ~ ~ minecraft:air positioned ^ ^ ^1 positioned ^ ^0.25 ^ run function models_admin:commands/remove/init
+execute if block ~ ~ ~ minecraft:air positioned ^ ^0.150 ^1 positioned ^ ^0.12 ^ run function models_admin:commands/remove/init

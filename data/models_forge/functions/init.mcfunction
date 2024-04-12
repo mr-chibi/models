@@ -51,6 +51,9 @@ execute as @s[scores={forge_add_layer=1..}] run function models_forge:commands/l
 execute as @s[scores={forge_edit_layer=1..}] run function models_forge:commands/layers/edit/init
 
 #
+execute as @s[scores={forge_collision=1..}] run function models_forge:commands/collision/init
+
+#
 execute as @s[scores={forge_save=1..}] run function models_forge:commands/save
 
 # Update:

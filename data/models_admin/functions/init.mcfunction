@@ -9,6 +9,7 @@ execute as @s[scores={model_ui=1..}] run function models_menu:init
 
 # Toggle Commands when "Admin Mode":
 execute as @s[scores={model_tools=1..}] run function models_admin:commands/tools
+execute as @s[scores={model_texture=1..}] run function models_admin:commands/texture
 execute as @s[scores={model_primary_pallete=1..}] run function models_admin:commands/primary_pallete
 execute as @s[scores={model_secondary_pallete=1..}] run function models_admin:commands/secondary_pallete
 execute as @s[scores={model_triad_pallete=1..}] run function models_admin:commands/triad_pallete

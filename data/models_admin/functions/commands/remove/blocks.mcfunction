@@ -9,6 +9,12 @@ execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=queen_bed_
 # [Decorations]:
 execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=1x1_picture_frame,sort=nearest,distance=..1] run function models_menu:give/decoration/frames/1_x_1_picture_frame
 execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=ship_wheel,sort=nearest,distance=..1] run function models_menu:give/decoration/ship_wheel
+execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=wooden_grandfather_clock,sort=nearest,distance=..1] run function models_menu:give/decoration/wooden_grandfather_clock
+
+
+# [Slabs]:
+execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=universal_slab,sort=nearest,distance=..1] run function models_menu:give/decoration/universal_slab
+execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=universal_vertical_slab,sort=nearest,distance=..1] run function models_menu:give/decoration/universal_vertical_slab
 
 # [Desks]:
 execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=gray_wooden_desk,sort=nearest,distance=..1] run function models_menu:give/decoration/desks/gray_wooden_desk
