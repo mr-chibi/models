@@ -1,8 +1,0 @@
-{
-	"values": [
-		"models:scoreboards/install",
-		"models:scoreboards/render",
-		"models:scoreboards/keyframes",
-		"models_forge:scoreboards/install"
-	]
-}
