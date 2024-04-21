@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+	margin: auto;
+	scroll-behavior: smooth;
+	font-family: "Roboto Mono", monospace;	
+	font-size: 13px;
+	line-height: 25px;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	font-family: "Quicksand", sans-serif;
+	font-weight: normal;
+}
+
+h1 { font-size: 18pt; }
+h2 { font-size: 16pt; }
+h3 { font-size: 14pt; }
+h4 { font-size: 12pt; }
+h5 { font-size: 10pt; }
+h6 { font-size: 8pt; }
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+
+.text-shadow {
+	text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.75);
+}
+
+.font-normal {
+	font-weight: normal;
+}
+
+.font-italic {
+	font-style: italic;
+}
+
+.font-bold {
+	font-weight: bold;
+}

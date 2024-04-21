@@ -1,0 +1,35 @@
+section.footer-nav {
+	background: #282A2E;
+	border-top: 1px solid #72777F;
+}
+
+section.footer-nav nav.navigation #logo {
+	font-weight: normal;
+	font-size: 16pt;
+}
+
+section.footer-nav nav.navigation ul li a {
+	color: #89909C;
+	font-weight: normal;
+}
+
+section.footer-nav nav.navigation ul li a.active {
+	color: #ffffff;
+}
+
+section.footer-nav nav.navigation ul li:hover a {
+	transition: 1s ease;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+footer.footer {
+	padding: 1%;
+	background: #44474B;
+	border-top: 1px solid #72777F;
+	color: #B8BAC0;
+}
+
+footer.footer a {
+	color: #ffffff;
+}

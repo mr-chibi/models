@@ -1,0 +1,28 @@
+nav#video-menu-wrapper {
+	width: 100%;
+}
+
+nav#video-menu-wrapper ul#vid-menu {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+nav#video-menu-wrapper ul#vid-menu figure {
+	flex-grow: 1;
+	height: 190px;
+	border: 4px double #fff;
+	color: #fff;
+	cursor: pointer;
+}
+
+section#vid-content {
+	width: 100%;
+}
+
+section#vid-content .videos {
+	display: none;
+}

@@ -1,0 +1,45 @@
+/**/
+@import url('pages/home/videos.css');
+
+/**/
+.col-10 {
+	width: 90%;
+	margin: 2%;
+	padding: 3%;
+}
+
+.col-7 {
+	width: 58%;
+	margin: 2%;
+	padding: 3%;
+}
+
+.col-6 {
+	width: 48%;
+	margin: 2%;
+	padding: 3%;
+}
+
+.col-5 {
+	width: 40%;
+	margin: 2%;
+	padding: 3%;
+}
+
+.col-4 {
+	width: 28%;
+	margin: 2%;
+	padding: 3%;
+}
+
+.col-3 {
+	width: 23%;
+	margin: 2%;
+	padding: 3%;
+}
+
+.col-2 {
+	width: 8%;
+	margin: 2%;
+	padding: 3%;
+}

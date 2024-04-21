@@ -1,0 +1,9 @@
+/**/
+@import url('tags/font.css');
+@import url('tags/figures.css');
+@import url('tags/flex.css');
+
+/**/
+@import url('content/header.css');
+@import url('content/pages.css');
+@import url('content/footer.css');

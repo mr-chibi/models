@@ -1,0 +1,39 @@
+figure {
+	position: relative;
+}
+
+.clear-left {
+	float: left;
+	clear: left;
+}
+
+.clear-right {
+	float: right;
+	clear: right;
+}
+
+.clear-both {
+	clear: both;
+}
+
+img.center {
+	display: block;
+	margin: 3% auto;
+}
+
+figure img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+figure figcaption.caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(255, 255, 255, 0.75);
+	text-align: center;
+	padding: 2%;
+	color: #333;
+}
