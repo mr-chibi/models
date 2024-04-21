@@ -1,0 +1,17 @@
+{
+	"values": [
+		// Creative Menu: [Interior]
+		"models_menu:nbt/bedroom",
+		"models_menu:nbt/kitchen",
+		"models_menu:nbt/dinning",
+		"models_menu:nbt/living",
+		"models_menu:nbt/decoration",
+
+		// Creative Menu: [Exterior]
+		"models_menu:nbt/exterior/init",
+		"models_menu:nbt/exterior/doors",
+		"models_menu:nbt/exterior/fences",
+		"models_menu:nbt/exterior/garden",
+		"models_menu:nbt/exterior/windows"
+	]
+}

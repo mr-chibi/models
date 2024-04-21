@@ -1,0 +1,7 @@
+# Load Scale [X,Y,Z]
+execute as @e[type=minecraft:block_display,tag=forge_model,tag=selected_forge_model,limit=1,sort=nearest] at @s if entity @p[distance=0..5] run data modify entity @s transformation.scale[0] set from entity @p[nbt={Inventory:[{Slot:-106b, id:"minecraft:paper", tag:{Tags:["forge_model_schematic"]}}]}] Inventory[{Slot:-106b}].tag.scale_x
+execute as @e[type=minecraft:block_display,tag=forge_model,tag=selected_forge_model,limit=1,sort=nearest] at @s if entity @p[distance=0..5] run data modify entity @s transformation.scale[1] set from entity @p[nbt={Inventory:[{Slot:-106b, id:"minecraft:paper", tag:{Tags:["forge_model_schematic"]}}]}] Inventory[{Slot:-106b}].tag.scale_y
+execute as @e[type=minecraft:block_display,tag=forge_model,tag=selected_forge_model,limit=1,sort=nearest] at @s if entity @p[distance=0..5] run data modify entity @s transformation.scale[2] set from entity @p[nbt={Inventory:[{Slot:-106b, id:"minecraft:paper", tag:{Tags:["forge_model_schematic"]}}]}] Inventory[{Slot:-106b}].tag.scale_z
+
+# Load Pallete Type:
+execute as @e[type=minecraft:block_display,tag=forge_model,tag=selected_forge_model,limit=1,sort=nearest] at @s if entity @p[distance=0..5] run data modify entity @s block_state.Name set string entity @p[nbt={Inventory:[{Slot:-106b, id:"minecraft:paper", tag:{Tags:["forge_model_schematic"]}}]}] Inventory[{Slot:-106b}].tag.texture

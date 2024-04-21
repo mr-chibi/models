@@ -1,0 +1,3 @@
+tellraw @s[scores={forge_pallete=2}] [{"text": "[", "color": "white"},{"text": "Mr_Chibis Models", "color":"#632FF1"}, {"text": "] ", "color": "white"},{"text":"Set Pallete Type as Primary.", "color": "#A3A3A3"}]
+tellraw @s[scores={forge_pallete=3}] [{"text": "[", "color": "white"},{"text": "Mr_Chibis Models", "color":"#632FF1"}, {"text": "] ", "color": "white"},{"text":"Set Pallete Type as Secondary.", "color": "#A3A3A3"}]
+tellraw @s[scores={forge_pallete=4}] [{"text": "[", "color": "white"},{"text": "Mr_Chibis Models", "color":"#632FF1"}, {"text": "] ", "color": "white"},{"text":"Set Pallete Type as Triad.", "color": "#A3A3A3"}]
