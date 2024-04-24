@@ -27,6 +27,23 @@
 	</header>
 
 
+	<section style="background: #303030;">
+		<div class="wrapper flex flex-wrap flex-row">
+			<figure id="slideshow">
+				<figcaption class="caption" id="slideshow-caption"></figcaption>
+			</figure>
+		</div>
+	</section>
+
+
+	<section style="background: #202020;">
+		<div class="wrapper flex flex-wrap flex-row" id="slideshow-menu">
+			<button type="button" class="slideshow-btn" id="prev" onclick="toggle_slide(-1);"> < </button>
+			<button type="button" class="slideshow-btn" id="next" onclick="toggle_slide(1);"> > </button>
+		</div>
+	</section>
+
+
 	<section style="background: #010101;">
 		<div class="wrapper flex flex-wrap flex-column">
 			<section id="vid-content">
@@ -153,5 +170,6 @@
 	</footer>
 
 	<script type="text/javascript" src="js/menu.js"></script>
+	<script type="text/javascript" src="js/slideshow.js"></script>
 </body>
 </html>

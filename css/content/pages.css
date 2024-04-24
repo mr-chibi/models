@@ -1,5 +1,6 @@
 /**/
 @import url('pages/home/videos.css');
+@import url('pages/home/slideshow.css');
 
 /**/
 .col-10 {
@@ -33,7 +34,7 @@
 }
 
 .col-3 {
-	width: 23%;
+	width: 20%;
 	margin: 2%;
 	padding: 3%;
 }

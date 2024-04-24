@@ -4,6 +4,10 @@
 @import url('tags/flex.css');
 
 /**/
+@import url('animations/fade.css');
+@import url('animations/hightlight.css');
+
+/**/
 @import url('content/header.css');
 @import url('content/pages.css');
 @import url('content/footer.css');

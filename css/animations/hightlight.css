@@ -1,0 +1,10 @@
+@keyframes highlight {
+
+	from {
+		border: 1px solid #fff;
+	}
+
+	to {
+		outline: 8px double #ddd;
+	}
+}
