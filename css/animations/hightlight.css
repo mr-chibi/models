@@ -8,3 +8,15 @@
 		outline: 8px double #ddd;
 	}
 }
+
+
+@keyframes highlight-gray {
+
+	from {
+		border: 1px solid #aaa;
+	}
+
+	to {
+		outline: 8px double #ddd;
+	}
+}

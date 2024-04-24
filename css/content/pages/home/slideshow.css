@@ -1,4 +1,7 @@
 #slideshow {
+	-webkit-box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.45);
+	-moz-box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.45);
+	box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.45);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -10,7 +13,8 @@
 
 .slideshow-thumbnail {
 	width: 18.5%;
-	border: 1px solid #ccc;
+	border: 1px Ridge #505050;
+	outline: 3px outset #707070;
 	cursor: pointer;
 }
 
@@ -33,6 +37,7 @@
 
 #slideshow-menu {
 	position: relative;
+	padding: 2% 1.5%;
 }
 
 #slideshow {
@@ -58,6 +63,8 @@ button#prev, button#next {
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
+	border: 1px groove #303030;
+	outline: 3px groove #606060;
 }
 
 button#prev:hover, button#next:hover {
