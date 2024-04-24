@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: auto;
-	scroll-behavior: smooth;
 	font-family: "Quicksand", sans-serif;
 	font-size: 13px;
 	line-height: 25px;
