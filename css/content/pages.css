@@ -45,3 +45,9 @@
 	margin: 2%;
 	padding: 3%;
 }
+
+@media only screen and (max-width:425px) {
+	.col-10, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2 {
+		width: 90%;
+	}
+}

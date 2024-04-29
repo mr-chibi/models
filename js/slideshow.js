@@ -38,6 +38,7 @@ function slideshow() {
 	}
 
 	//
+	slides.style.animation = "fadeIn 500ms ease";
 	slides.style.background = "url(images/models/"+slide[i][0]+".png) no-repeat center";
 	slide_caption.innerHTML=slide[i][1];
 }

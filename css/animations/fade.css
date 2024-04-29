@@ -6,6 +6,7 @@
 	}
 
 	to {
+		display: block;
 		opacity: 1.0;
 	}
 }
@@ -19,6 +20,7 @@
 	}
 
 	to {
+		display: none;
 		opacity: 0;
 	}
 }

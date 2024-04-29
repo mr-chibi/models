@@ -2,7 +2,7 @@
 	clear: both;
 	margin: auto;
 	padding: 1%;
-	width: 1280px;
+	max-width: 1280px;
 }
 
 header#heading {
@@ -20,6 +20,12 @@ nav.navigation {
 	padding-bottom: 0.5%;
 }
 
+@media only screen and (max-width:425px) {
+	nav.navigation {
+		flex-direction: column;
+	}
+}
+
 nav.navigation #logo {
 	display: flex;
 	flex-grow: 0.025;
@@ -28,6 +34,14 @@ nav.navigation #logo {
 	padding: 1%;
 	color: #fff;
 	text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (max-width:425px) {
+	nav.navigation #logo {
+		padding: 2.5%;
+		flex-grow: 1;
+		flex-direction: column;
+	}
 }
 
 nav.navigation ul {
@@ -40,11 +54,24 @@ nav.navigation ul {
 	list-style-type: none;
 }
 
+@media only screen and (max-width:425px) {
+	nav.navigation ul {
+		display: none;
+		flex-direction: column;
+	}
+}
+
 nav.navigation ul li {
 	position: relative;
 	padding: 1.5% 2%;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+@media only screen and (max-width:425px) {
+	nav.navigation ul li {
+		border: 1px solid red;
+	}
 }
 
 nav.navigation ul li a {
