@@ -8,8 +8,8 @@
 header#heading {
 	position: sticky;
 	top: 0px;
-	background: #202020;
-	border-bottom: 7px solid rgba(0, 0, 0, 0.35);
+	background: #151515;
+	border-bottom: 7px solid rgba(0, 0, 0, 0.65);
 	z-index: 1;
 }
 
@@ -20,7 +20,7 @@ nav.navigation {
 	padding-bottom: 0.5%;
 }
 
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:768px) {
 	nav.navigation {
 		flex-direction: column;
 	}
@@ -36,7 +36,7 @@ nav.navigation #logo {
 	text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.75);
 }
 
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:768px) {
 	nav.navigation #logo {
 		padding: 2.5%;
 		flex-grow: 1;
@@ -54,7 +54,7 @@ nav.navigation ul {
 	list-style-type: none;
 }
 
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:768px) {
 	nav.navigation ul {
 		display: none;
 		flex-direction: column;
@@ -68,7 +68,7 @@ nav.navigation ul li {
 	text-transform: uppercase;
 }
 
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:768px) {
 	nav.navigation ul li {
 		border: 1px solid red;
 	}

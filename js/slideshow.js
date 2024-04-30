@@ -44,9 +44,9 @@ function slideshow() {
 	slide_caption.innerHTML=slide[i][1];
 }
 
-slides.style.backgroundSize = "cover";
 slides.style.background = "url(images/models/"+slide[0][0]+".png) no-repeat center";
 slide_caption.innerHTML=slide[0][1];
+slides.style.backgroundSize = "cover";
 
 //
 setInterval(slideshow, 4000);
@@ -64,8 +64,8 @@ for(let j = 0; j < total_slides; j++) {
 //
 function selected_slide(num) {
 
-	slides.style.backgroundSize = "cover";
 	slides.style.background = "url(images/models/"+slide[num][0]+".png) no-repeat center";
+	slides.style.backgroundSize = "cover";
 	slide_caption.innerHTML=slide[num][1];
 }
 
@@ -98,7 +98,7 @@ function toggle_slide(num) {
 	}
 
 	//
-	slides.style.backgroundSize = "cover";
 	slides.style.background = "url(images/models/"+slide[i][0]+".png) no-repeat center";
+	slides.style.backgroundSize = "cover";
 	slide_caption.innerHTML=slide[i][1];
 }

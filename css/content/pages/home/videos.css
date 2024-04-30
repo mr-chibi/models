@@ -11,7 +11,7 @@ nav#video-menu-wrapper ul#vid-menu {
 	list-style-type: none;
 }
 
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:768px) {
 	nav#video-menu-wrapper ul#vid-menu {
 		flex-direction: row;
 	}
@@ -29,11 +29,25 @@ nav#video-menu-wrapper ul#vid-menu figure {
 	box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.85);
 }
 
+@media only screen and (max-width:768px) {
+	nav#video-menu-wrapper ul#vid-menu figure:nth-child(1),
+	nav#video-menu-wrapper ul#vid-menu figure:nth-child(2) {
+		width: 30%;
+		height: 200px;
+	}
+
+	nav#video-menu-wrapper ul#vid-menu figure:nth-child(3) {
+		width: 90%;
+		height: 350px;
+	}
+}
+
 @media only screen and (max-width:425px) {
-	nav#video-menu-wrapper ul#vid-menu figure {
-		display: flex;
-		width: 45%;
-		height: 150px;
+	nav#video-menu-wrapper ul#vid-menu figure:nth-child(1),
+	nav#video-menu-wrapper ul#vid-menu figure:nth-child(2),
+	nav#video-menu-wrapper ul#vid-menu figure:nth-child(3) {
+		width: 90%;
+		height: 25vh;
 	}
 }
 
