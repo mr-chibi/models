@@ -13,7 +13,7 @@ function toggle_video(img) {
 	count_videos++;
 
 	// Display Figures foreach thumbnail:
-	video_menu.innerHTML+="<figure class='video_thumbnail' style='background:url(images/slides/"+img+".jpg) no-repeat center center; background-size: 100%; animation: toggle 1s;'><a href='#slideshow-menu'><figcaption class='caption'>Click to Watch</figcaption></a></figure>";
+	video_menu.innerHTML+="<figure class='video_thumbnail' style='background:url(images/slides/"+img+".jpg) no-repeat center center; background-size: 100%; animation: toggle 1s;'><a href='#video_highlight'><figcaption class='caption'>Click to Watch</figcaption></a></figure>";
 
 	// Fetch Thumbnails:
 	let thumbnails = document.getElementsByClassName("video_thumbnail");
