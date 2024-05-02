@@ -87,10 +87,16 @@ nav.navigation ul li#main_mobile_btn {
 
 	nav.navigation ul li#main_mobile_btn {
 		display: block;
-		left: 89%;
+		left: 87.5%;
 		width: 30px;
 		background: #D42102;
 		color: #fff;
+	}
+}
+
+@media only screen and (max-width:425px) {
+	nav.navigation ul li#main_mobile_btn {
+		left: 84.5%;
 	}
 }
 
