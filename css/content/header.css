@@ -57,7 +57,14 @@ nav.navigation ul {
 @media only screen and (max-width:768px) {
 	nav.navigation ul {
 		display: none;
-		flex-direction: column;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		flex-direction: column-reverse;
+		background: #202020;
+		z-index: 3;
 	}
 }
 
@@ -68,9 +75,47 @@ nav.navigation ul li {
 	text-transform: uppercase;
 }
 
+nav.navigation ul li#main_mobile_btn {
+	display: none;
+}
+
 @media only screen and (max-width:768px) {
 	nav.navigation ul li {
-		border: 1px solid red;
+		bottom: 150px;
+		padding: 3.5%;
+		border: 1px solid #404040;
+	}
+
+	nav.navigation ul li#main_mobile_btn {
+		display: block;
+		position: absolute;
+		top: 5%;
+		right: 5%;
+		width: 30px;
+		height: 30px;
+		align-content: center;
+		padding: 2%;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+		background: #353535;
+		color: #fefefe;
+	}
+}
+
+@media only screen and (max-width:575px) {
+	nav.navigation ul li {
+		bottom: 200px;
+		padding: 3.5%;
+		border: 1px solid #404040;
+	}
+}
+
+@media only screen and (max-width:425px) {
+	nav.navigation ul li {
+		bottom: 300px;
+		padding: 3.5%;
+		border: 1px solid #404040;
 	}
 }
 
@@ -90,6 +135,12 @@ nav.navigation ul li:after {
 	content: "/";
 	color: rgba(255, 255, 255, 0.50);
 	text-shadow: none;
+}
+
+@media only screen and (max-width:768px) {
+	nav.navigation ul li:after {
+		content: "";
+	}
 }
 
 nav.navigation ul li:hover a {
