@@ -10,7 +10,7 @@ header#heading {
 	top: 0px;
 	background: #151515;
 	border-bottom: 7px solid rgba(0, 0, 0, 0.65);
-	z-index: 1;
+	z-index: 2;
 }
 
 nav.navigation {

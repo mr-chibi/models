@@ -1,0 +1,47 @@
+@media only screen and (max-width:768px) {
+	aside.menu {
+		display: none;
+	}
+}
+
+aside.menu ul.scrollmenu {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	position: sticky;
+	top: 15%;
+	z-index: 1;
+}
+
+aside.menu ul.scrollmenu h1, aside.menu ul.scrollmenu h2, aside.menu ul.scrollmenu h3,
+aside.menu ul.scrollmenu h4, aside.menu ul.scrollmenu h5, aside.menu ul.scrollmenu h6 {
+	background: #694775;
+	color: #fefefe;
+}
+
+aside.menu ul.scrollmenu h1, aside.menu ul.scrollmenu h2, aside.menu ul.scrollmenu h3,
+aside.menu ul.scrollmenu h4, aside.menu ul.scrollmenu h5, aside.menu ul.scrollmenu h6,
+aside.menu ul.scrollmenu li {
+	padding: 3.5% 2.5%;
+	text-transform: uppercase;
+}
+
+aside.menu ul.scrollmenu li {
+	flex-grow: 1;
+	border-top: 1px solid #ccc;
+}
+
+aside.menu ul.scrollmenu li:hover {
+	transition: 500ms;
+	font-weight: bold;
+	border: 1px solid #aaa;
+	background: #EFFDFF;
+}
+
+aside.menu ul.scrollmenu li,
+aside.menu ul.scrollmenu li a {
+	color: #000;
+}

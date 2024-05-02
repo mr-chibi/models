@@ -2,6 +2,8 @@
 @import url('tags/font.css');
 @import url('tags/figures.css');
 @import url('tags/flex.css');
+@import url('tags/buttons.css');
+@import url('tags/borders.css');
 
 /**/
 @import url('animations/fade.css');

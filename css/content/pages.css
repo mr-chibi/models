@@ -2,6 +2,9 @@
 @import url('pages/home/videos.css');
 @import url('pages/home/slideshow.css');
 
+/**/
+@import url('pages/commands/menu.css');
+
 
 /**/
 .col-10 {
