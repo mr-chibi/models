@@ -1,5 +1,5 @@
 # List of Categories:
-execute as @s[scores={model_ui=1}] run function #models_menu:menu
+execute as @s[scores={model_ui=1}] run function #models_menu:categories
 execute as @s[scores={model_ui=2}] run function models_menu:nbt/bedroom
 execute as @s[scores={model_ui=3}] run function models_menu:nbt/kitchen
 execute as @s[scores={model_ui=4}] run function models_menu:nbt/dinning

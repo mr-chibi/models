@@ -1,9 +1,6 @@
 # Admin Commands [Enable]:
 function models_forge:scoreboards/commands/enable
 
-# Toggle Commands when "Admin Mode Forging":
-execute as @s[scores={forge_create=1..}] run function models_forge:commands/create
-
 #
 execute as @s[scores={forge_axis_x=..-1}] run function models_forge:commands/axis/x/init
 execute as @s[scores={forge_axis_x=1..}] run function models_forge:commands/axis/x/init
@@ -48,27 +45,15 @@ execute as @s[scores={forge_align_z=1..}] run function models_forge:commands/ali
 execute as @s[scores={forge_pallete=1..}] run function models_forge:commands/pallete/init
 
 #
+execute as @s[scores={forge_collision=1..}] run function models_forge:commands/collision/init
+execute as @s[scores={forge_collision_width=1..}] run function models_forge:commands/collision/scaling/width
+execute as @s[scores={forge_collision_height=..-1}] run function models_forge:commands/collision/scaling/height
+execute as @s[scores={forge_collision_height=1..}] run function models_forge:commands/collision/scaling/height
+
+#
 execute as @s[scores={forge_layers=1..}] run function models_forge:commands/layers/init
 execute as @s[scores={forge_add_layer=1..}] run function models_forge:commands/layers/add/init
 execute as @s[scores={forge_edit_layer=1..}] run function models_forge:commands/layers/edit/init
-
-#
-execute as @s[scores={forge_animation=1..}] run function models_forge:commands/animation/init
-
-#
-execute as @s[scores={forge_save=1..}] run function models_forge:commands/save
-
-# Update:
-execute as @s[scores={forge_update=1..}] run function models_forge:commands/update
-
-# Spawning Mechanic
-function models_forge:commands/spawn
-
-# Rendering Engine:
-execute as @s[tag=forge_render_copy] run function models_forge:tags/copy
-execute as @s[tag=forge_render_paste] run function models_forge:tags/paste
-execute as @s[tag=forge_render_save] run function models_forge:tags/save
-execute as @s[tag=forge_render_update] run function models_forge:tags/update
 
 # Forge GUI:
 execute unless entity @e[type=block_display,tag=forge_layer,tag=selected_forge_layer,sort=nearest,distance=0..5] run function models_forge:tags/gui/unselected

@@ -1,5 +1,5 @@
 # Particles:
-particle minecraft:flame ^ ^ ^ 0.1 0 0 0.2 0
+particle minecraft:flame ^ ^0.5 ^ 0.1 0 0 0.2 0
 
 # [Detect Message [Failure]]:
 execute unless score @s model_ids = @e[type=minecraft:block_display,tag=forge_layer,distance=..1,sort=nearest,limit=1] model_ids run tellraw @s [{"text": "Mr_Chibis Models", "color":"#632FF1"}, {"text": "] ", "color": "white"},{"text":"You may not remove other player's objects. Please, contact a server admin.", "color": "red"}]
@@ -13,8 +13,13 @@ execute if score @s model_ids = @e[type=minecraft:block_display,tag=forge_layer,
 # [Sounds]
 execute if score @s model_ids = @e[type=minecraft:block_display,tag=forge_layer,distance=..1,sort=nearest,limit=1] model_ids run playsound minecraft:block.bamboo_wood_door.close master @s ~ ~ ~ 2 0.75
 
+# Engine "Collision":
+execute if block ~ ~ ~ #models_engine:collision if entity @e[type=minecraft:block_display,tag=collision,distance=..1,sort=nearest] run setblock ~ ~ ~ minecraft:air
+
 # [Public Users]:
+execute if score @s model_ids = @e[type=minecraft:block_display,tag=forge_layer,distance=..1,sort=nearest,limit=1] model_ids run kill @e[type=minecraft:block_display,tag=collision,sort=nearest,distance=..1]
 execute if score @s model_ids = @e[type=minecraft:block_display,tag=forge_layer,distance=..1,sort=nearest,limit=1] model_ids run kill @e[type=minecraft:block_display,tag=forge_layer,sort=nearest,distance=..1]
+execute if score @s model_ids = @e[type=minecraft:block_display,tag=forge_layer,distance=..1,sort=nearest,limit=1] model_ids run kill @e[type=minecraft:block_display,tag=forge_model,sort=nearest,distance=..1]
 
 # Repeat:
-execute if block ~ ~ ~ minecraft:air positioned ^ ^0.150 ^1 positioned ^ ^0.12 ^ run function models_public:commands/remove
+execute if block ~ ~ ~ minecraft:air positioned ^ ^0.205 ^1 run function models_admin:commands/remove/init

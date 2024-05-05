@@ -37,6 +37,11 @@ scoreboard objectives remove forge_add_layer
 scoreboard objectives remove forge_edit_layer
 
 #
+scoreboard objectives remove forge_collision
+scoreboard objectives remove forge_collision_width
+scoreboard objectives remove forge_collision_height
+
+#
 scoreboard objectives remove forge_animation
 
 #
@@ -45,5 +50,6 @@ scoreboard objectives remove forge_save
 #
 scoreboard objectives remove forge_update
 
-#
-scoreboard objectives remove forge_spawn
+# [Forging Spawn Tool]:
+scoreboard objectives remove forge_use_spawnegg
+scoreboard objectives remove forge_drop_spawnegg

@@ -2,6 +2,9 @@
 function models_admin:scoreboards/commands/disable
 function models_public:scoreboards/commands/enable
 
+# Grant Recipes:
+function models_menu:recipes
+
 ##########################################
 # Commands:
 ##########################################
@@ -23,23 +26,25 @@ execute as @s[scores={forge_edit_layer=1..}] run function models_public:commands
 # Pasting Model Mechanics
 # Pasting Spawn Egg:
 ##########################################
-execute as @s[scores={model_paste=1..}] run function models_admin:commands/paste
+execute as @s[scores={model_paste=1..}] run function models_engine:commands/paste/init
 
 # Fetch Players ID:
 execute as @s[scores={model_paste=1..}] store success score @s model_ids run scoreboard players get @s model_ids
 
 # Rendering:
-execute as @s[tag=model_render_paste] run function models_admin:scoreboards/render
+execute as @s[tag=model_render_paste] run function models_engine:render/generate
 
 ##########################################
-# Forge Model Mechanics
 # Spawning Mechanic:
 ##########################################
-function models_forge:commands/spawn
+function models_engine:commands/spawn
 
 # Rendering Engine:
-execute as @s[tag=forge_render_paste] run function models_forge:tags/paste
+execute as @s[tag=forge_render_paste] run function models_engine:render/paste
 
 #
-function models_admin:tags/tools/selected_brushes
-function models_admin:tags/tools/raycasting
+function models_admin:tags/raycasting_brushes
+function models_admin:tags/selected_brushes
+
+# Engine "Collision":
+execute as @e[type=minecraft:block_display,tag=collision,distance=0..5,sort=nearest] at @s align xyz run function #models_engine:collision

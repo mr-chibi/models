@@ -33,6 +33,11 @@ scoreboard players enable @s[team=model_admin] forge_add_layer
 scoreboard players enable @s[team=model_admin] forge_layers
 scoreboard players enable @s[team=model_admin] forge_edit_layer
 
+# [Forging Tool Collision]:
+scoreboard players enable @s[team=model_admin] forge_collision
+scoreboard players enable @s[team=model_admin] forge_collision_width
+scoreboard players enable @s[team=model_admin] forge_collision_height
+
 # [Forging Animation]:
 scoreboard players enable @s[team=model_admin] forge_animation
 

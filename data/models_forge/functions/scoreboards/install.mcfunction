@@ -37,6 +37,11 @@ scoreboard objectives add forge_add_layer trigger
 scoreboard objectives add forge_edit_layer trigger
 
 #
+scoreboard objectives add forge_collision trigger
+scoreboard objectives add forge_collision_width trigger
+scoreboard objectives add forge_collision_height trigger
+
+#
 scoreboard objectives add forge_animation trigger
 
 # [Forging Tool Save]:
@@ -46,4 +51,5 @@ scoreboard objectives add forge_save trigger
 scoreboard objectives add forge_update trigger
 
 # [Forging Spawn Tool]:
-scoreboard objectives add forge_spawn minecraft.used:minecraft.allay_spawn_egg
+scoreboard objectives add forge_use_spawnegg minecraft.used:minecraft.allay_spawn_egg
+scoreboard objectives add forge_drop_spawnegg minecraft.dropped:minecraft.allay_spawn_egg
