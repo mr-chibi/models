@@ -40,7 +40,20 @@
 <section>
 		<div class="wrapper flex flex-wrap flex-row">
 			<div class="col-7">
-				<h2>Creating your first, Forge Model</h2>
+				<h2>Forging / Model Spawning Mechanics:</h2>
+				<article class="col-10 gray-border">
+					<h3 class="font-bold text-left">Creating Mechanic:</h3>
+					<ul>
+						<li>When you're creating models, you'll be given a spawn egg you can right click and place it on ground.</li>
+					</ul>
+
+					<h3 class="font-bold text-left">Throwing Mechanic:</h3>
+					<ul>
+						<li>If you want to spawn in models you're saved or using ui menu. Simply <b>"THROW"</b> the item on ground and it will spawn and delete item itself.</li>
+					</ul>
+				</article>
+
+				<h3>Creating your first, Forge Model</h3>
 				<article class="col-10 gray-border">
 					<h3 class="font-bold text-left">How do I create my first model?</h3>
 					<p>First, in game type the following command: <b>/trigger forge_create</b></p>
@@ -214,6 +227,36 @@
 					</ul>
 				</article>
 
+				<h3 id="collision">Collisions</h3>
+				<article class="col-10 gray-border">
+					<h3 class="font-bold text-left">Applying collisions types, width, & height.</h3>
+					<p>Making the blocks feel real to game by applying block collisions upon spawning. Collision blocks, cannot be broken by players. Only player that owns it can remove it or an admin.</p>
+
+					<p>The removal tool for the collisions is same <b>remove brush</b>. If you get any barriers or left over blocks use removal tool to simply remove the blocks.</p>
+
+					<h4>Collison Types:</h4>
+					<p>Now adding collision support for certain blocks and model types!!</p>
+					<ul>
+						<li><b>/trigger forge_collision set 1</b>&mdash; Removes collision from blocks.</li>
+						<li><b>/trigger forge_collision set 2</b>&mdash; Adds barrier collision.</li>
+						<li><b>/trigger forge_collision set 3</b>&mdash; Adds fence collision.</li>
+						<li><b>/trigger forge_collision set 4</b>&mdash; Adds slab collision.</li>
+						<li><b>/trigger forge_collision set 5</b>&mdash; Adds chain[axis=x] collision.</li>
+						<li><b>/trigger forge_collision set 6</b>&mdash; Adds chain[axis=y] collision.</li>
+						<li><b>/trigger forge_collision set 7</b>&mdash; Adds chain[axis=z] collision.</li>
+					</ul>
+
+					<h4>Collison Width:</h4>
+					<ul>
+						<li><b>/trigger forge_collision_width set 1-3</b>&mdash; Sets width of the collision and cannot excessed over 3 blocks.</li>
+					</ul>
+
+					<h4>Collison Height:</h4>
+					<ul>
+						<li><b>/trigger forge_collision_height set 1-3</b>&mdash; Sets height of the collision and cannot excessed over 3 blocks.</li>
+					</ul>
+				</article>
+
 				<h3 id="forge_upgrade">Forge Update Models</h3>
 				<article class="col-10 gray-border">
 					<h3 class="font-bold text-left">Upgrade older version data to latest version</h3>
@@ -248,6 +291,9 @@
 
 			<aside class="menu col-3">
 				<ul class="scrollmenu">
+					<h3 class="font-normal text-left">Model Mechanics</h3>
+					<li><a href="#top">Placing / Spawning</a></li>
+
 					<h3 class="font-normal text-left">Creating Model</h3>
 					<li><a href="#top">Creating a model</a></li>
 					<li><a href="#forge_axis">Axis, Scaling, & More..!</a></li>
@@ -258,6 +304,7 @@
 					<li><a href="#forge_layer_type">Viewing Layer Types</a></li>
 					<li><a href="#forge_edit_layers">Editing Layer</a></li>
 					<li><a href="#forge_copy_and_paste">Copy & Paste</a></li>
+					<li><a href="#collision">Collision</a></li>
 					<li><a href="#forge_animations">Animations</a></li>
 					<li><a href="#forge_selection">Selection</a></li>
 					<li><a href="#forge_worldedit_support">Worldedit Support</a></li>
