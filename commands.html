@@ -55,6 +55,49 @@
 					</ul>
 				</article>
 
+				<h2>Public Commands</h2>
+				<p>Commands regular players, can use in survival to use brushes, texture, & remove.</p>
+				<article class="col-10 gray-border">
+					<h3 class="font-bold text-left" id="model_public_commands">Understanding the code</h3>
+					<ul>
+						<li><b>/trigger model_sel</b> &mdash; Stops current selection for what player is editing.</li>
+						<li><b>/trigger model_copy</b> &mdash; Will copy closest model Player is near by and give player a new paste brush.</li>
+						<li><b>/trigger model_paste</b> &mdash; Toggles automaticly weither player has "right clicked" or "thrown minecraft:allay_spawn_egg" on the floor.</li>
+						<li><b>/trigger model_tools</b> &mdash; Grants Player's list of tools for texturing, removing, palleting, etc.</li>
+						<li><b>/trigger model_ui</b> &mdash; Gives Player toggling command inventory full of shulkers with custom models by category.</li>
+					</ul>
+				</article>
+
+
+				<h2>Model Brushes</h2>
+				<p>Types of brushes with descriptions.</p>
+				<article class="col-10 gray-border">
+					<h3 class="font-bold text-left" id="model_public_brushes">Understanding the code</h3>
+					<ul>
+						<li><b>Texture Brush</b> &mdash; Edits indivdual textures when using <b>/trigger forge_edit_layer set [layer]</b> command.</li>
+						<li><b>Primary Brush</b> &mdash; Edits all textures of primary layer on the model.</li>
+						<li><b>Secondary Brush</b> &mdash; Edits all textures of secondary layer on the model.</li>
+						<li><b>Triad Brush</b> &mdash; Edits all textures of triad layer on the model.</li>
+						<li><b>Eraser Brush</b> &mdash; <b>Right clicking</b> will remove the model and tell you in chat it has been removed can also remove collison blocks such as, <b>barriers</b>, <b>oak fence</b>, etc.</li>
+						<li><b>Paste Brush</b> &mdash; When using the command, <b>/trigger model_copy</b> it will copy nearest model and when <b>right clicking</b> with brush it will render and paste it in.</li>
+						<li><b>Sel Brush</b> &mdash; Stops all current selections from editing or creating.</li>
+					</ul>
+				</article>
+
+
+				<h2>Removing Models</h2>
+				<p>For Removing models in game.</p>
+				<article class="col-10 gray-border">
+					<h3 class="font-bold text-left" id="model_commands_remove">How do I remove models in game?</h3>
+					<ol>
+						<li>First, <b>/trigger model_tools</b> &mdash; gives player brushes.</li>
+						<li>Second, In your inventory look for the <b>Eraser Brush</b> place it in your <b>Main hand</b>.</li>
+						<li>Lastly, <b>Right click</b> with the <b>brush</b> at the <b>model</b> until it disappears tell you in chat. Ensure if it has collision to continue <b>right clicking</b> till <b>barriers</b> are removed.</li>
+						<li>Once, the <b>Model</b> has been removed you'll be given a spawn egg back with the data.</li>
+					</ol>
+				</article>
+
+
 				<h2>Admin Commands</h2>
 				<article class="col-10 gray-border">
 					<h3 class="font-bold text-left" id="model_admin_commands">Understanding the code</h3>
@@ -62,7 +105,6 @@
 						<li><b>/trigger model_sel</b> &mdash; Stops current selection for what player is editing.</li>
 						<li><b>/trigger model_copy</b> &mdash; Will copy closest model Player is near by and give player a new paste brush.</li>
 						<li><b>/trigger model_paste</b> &mdash; Toggles automaticly weither player has "right clicked" or "thrown minecraft:allay_spawn_egg" on the floor.</li>
-						<li><b>/trigger model_tools</b> &mdash; Grants Player's list of tools for texturing, removing, palleting, etc.</li>
 						<li><b>/trigger model_ui</b> &mdash; Gives Player toggling command inventory full of shulkers with custom models by category.</li>
 					</ul>
 				</article>
@@ -90,6 +132,11 @@
 				<ul class="scrollmenu">
 					<h3 class="font-normal text-left">Getting Started</h3>
 					<li><a href="#top">Enable/Disable Permissions</a></li>
+
+					<h3 class="font-normal text-left">Public Commands</h3>
+					<li><a href="#model_public_commands">Commands</a></li>
+					<li><a href="#model_public_brushes">Brushes</a></li>
+					<li><a href="#model_commands_remove">Removing Models</a></li>
 
 					<h3 class="font-normal text-left">Admin Commands</h3>
 					<li><a href="#model_admin_commands">Commands</a></li>
