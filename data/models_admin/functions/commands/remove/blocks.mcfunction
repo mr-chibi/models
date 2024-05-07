@@ -6,7 +6,7 @@ execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=white_gard
 execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=queen_bed_frame,sort=nearest,distance=..1] run function models_menu:give/queen_bed_frame
 
 # [Decorations]:
-execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=1x1_picture_frame,sort=nearest,distance=..1] run function models_menu:give/1_x_1_picture_frame
+execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=1x1_picture_frame,sort=nearest,distance=..1] run function models_menu:give/1x1_photo_frame
 execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=ship_wheel,sort=nearest,distance=..1] run function models_menu:give/ship_wheel
 execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=wooden_grandfather_clock,sort=nearest,distance=..1] run function models_menu:give/wooden_grandfather_clock
 
@@ -39,16 +39,16 @@ execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=wooden_man
 
 # [Kitchen]
 execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=chiseled_quartz_wooden_counter,sort=nearest,distance=..1] run function models_menu:give/chiseled_quartz_wooden_counter
-execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=wooden_metal_kitchen_shelves,sort=nearest,distance=..1] run function models_menu:give/kitchen/wooden_metal_kitchen_shelves
+execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=wooden_metal_kitchen_shelves,sort=nearest,distance=..1] run function models_menu:give/kitchen_display_shelf
 
 # [Living]
 execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=gray_living_chair,sort=nearest,distance=..1] run function models_menu:give/gray_living_chair
 execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=gray_living_sofa,sort=nearest,distance=..1] run function models_menu:give/gray_living_sofa
-execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=gray_wooden_table,sort=nearest,distance=..1] run function models_menu:give/gray_wooden_table
+execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=gray_living_table,sort=nearest,distance=..1] run function models_menu:give/gray_living_table
 
 # [Garden]:
-execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=wooden_empty_planterbox,sort=nearest,distance=..1] run function models_menu:give/wooden_empty_planterbox
-execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=wooden_farmland_planterbox,sort=nearest,distance=..1] run function models_menu:give/wooden_farmland_planterbox
+execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=wooden_empty_planterbox,sort=nearest,distance=..1] run function models_menu:give/planter_box_empty
+execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=wooden_farmland_planterbox,sort=nearest,distance=..1] run function models_menu:give/planter_box_farmland
 
 # [Tiles]:
 execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=stonebrick_tile,sort=nearest,distance=..1] run function models_menu:give/stonebrick_tile
