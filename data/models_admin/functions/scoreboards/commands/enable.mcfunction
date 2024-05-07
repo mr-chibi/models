@@ -7,6 +7,7 @@ scoreboard players enable @s[team=model_admin] model_texture
 scoreboard players enable @s[team=model_admin] model_primary_pallete
 scoreboard players enable @s[team=model_admin] model_secondary_pallete
 scoreboard players enable @s[team=model_admin] model_triad_pallete
+scoreboard players enable @s[team=model_admin] model_rotation
 scoreboard players enable @s[team=model_admin] model_give
 scoreboard players enable @s[team=model_admin] model_place
 scoreboard players enable @s[team=model_admin] model_sel

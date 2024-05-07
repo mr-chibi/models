@@ -10,6 +10,9 @@ scoreboard objectives remove model_texture
 scoreboard objectives remove model_primary_pallete
 scoreboard objectives remove model_secondary_pallete
 scoreboard objectives remove model_triad_pallete
+scoreboard objectives remove model_rotation
+
+#
 scoreboard objectives remove model_place
 scoreboard objectives remove model_sel
 scoreboard objectives remove model_copy

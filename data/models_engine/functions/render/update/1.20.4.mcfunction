@@ -10,7 +10,7 @@ execute if entity @e[type=minecraft:marker,distance=0..5,tag=forge_update_compil
 ##########################################################################
 # Build Data: [Models]
 ##########################################################################
-execute as @s[tag=update_forged_model] if entity @e[type=minecraft:marker,distance=0..5,tag=forge_update_compiler,sort=nearest,limit=1] if score @s model_render = max model_render run data modify entity @e[type=minecraft:marker,distance=0..5,tag=forge_update_compiler,sort=nearest,limit=1] data.layers insert 0 value {layer:0,axis:[],scale:[],angle:[],block:[],Tags:[]}
+execute as @s[tag=update_forged_model] if entity @e[type=minecraft:marker,distance=0..5,tag=forge_update_compiler,sort=nearest,limit=1] if score @s model_render = max model_render run data modify entity @e[type=minecraft:marker,distance=0..5,tag=forge_update_compiler,sort=nearest,limit=1] data.layers insert 0 value {layer:0,axis:[],scale:[],angle:[],block:[],Rotation:[],Tags:[]}
 
 ##########################################################################
 # Insert Data: [Models]
@@ -20,6 +20,7 @@ execute as @s[tag=update_forged_model] if entity @e[type=minecraft:marker,distan
 execute as @s[tag=update_forged_model] if entity @e[type=minecraft:marker,distance=0..5,tag=forge_update_compiler,sort=nearest,limit=1] if score @s model_render = max model_render as @e[type=minecraft:marker,distance=0..5,tag=forge_update_compiler,sort=nearest,limit=1] at @s run data modify entity @s data.layers[0].scale set from entity @s data.old_nbt[0].transformation.scale
 execute as @s[tag=update_forged_model] if entity @e[type=minecraft:marker,distance=0..5,tag=forge_update_compiler,sort=nearest,limit=1] if score @s model_render = max model_render as @e[type=minecraft:marker,distance=0..5,tag=forge_update_compiler,sort=nearest,limit=1] at @s run data modify entity @s data.layers[0].angle set from entity @s data.old_nbt[0].transformation.left_rotation
 execute as @s[tag=update_forged_model] if entity @e[type=minecraft:marker,distance=0..5,tag=forge_update_compiler,sort=nearest,limit=1] if score @s model_render = max model_render as @e[type=minecraft:marker,distance=0..5,tag=forge_update_compiler,sort=nearest,limit=1] at @s run data modify entity @s data.layers[0].block set from entity @s data.old_nbt[0].block_state.Name
+execute as @s[tag=update_forged_model] if entity @e[type=minecraft:marker,distance=0..5,tag=forge_update_compiler,sort=nearest,limit=1] if score @s model_render = max model_render as @e[type=minecraft:marker,distance=0..5,tag=forge_update_compiler,sort=nearest,limit=1] at @s run data modify entity @s data.layers[0].Rotation[0] set from entity @s data.old_nbt[0].Rotation
 execute as @s[tag=update_forged_model] if entity @e[type=minecraft:marker,distance=0..5,tag=forge_update_compiler,sort=nearest,limit=1] if score @s model_render = max model_render as @e[type=minecraft:marker,distance=0..5,tag=forge_update_compiler,sort=nearest,limit=1] at @s run data modify entity @s data.layers[0].Tags set from entity @s data.old_nbt[0].Tags
 
 

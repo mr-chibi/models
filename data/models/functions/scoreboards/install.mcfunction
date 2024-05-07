@@ -9,6 +9,9 @@ scoreboard objectives add model_texture trigger
 scoreboard objectives add model_primary_pallete trigger
 scoreboard objectives add model_secondary_pallete trigger
 scoreboard objectives add model_triad_pallete trigger
+scoreboard objectives add model_rotation trigger
+
+#
 scoreboard objectives add model_place trigger
 scoreboard objectives add model_sel trigger
 scoreboard objectives add model_copy trigger

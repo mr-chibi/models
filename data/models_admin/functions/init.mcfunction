@@ -18,6 +18,7 @@ execute as @s[scores={model_texture=1..}] run function models_admin:commands/tex
 execute as @s[scores={model_primary_pallete=1..}] run function models_admin:commands/primary_pallete
 execute as @s[scores={model_secondary_pallete=1..}] run function models_admin:commands/secondary_pallete
 execute as @s[scores={model_triad_pallete=1..}] run function models_admin:commands/triad_pallete
+execute as @s[scores={model_rotation=1..}] run function models_admin:commands/rotation/init
 execute as @s[scores={model_raycast_brush=1..},tag=modelRemove] run function models_admin:commands/remove/init
 execute as @s[scores={model_raycast_brush=1..},tag=modelRemove] run function models_admin:commands/remove/collision
 
