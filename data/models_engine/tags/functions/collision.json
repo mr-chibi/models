@@ -3,6 +3,7 @@
 		"models_engine:collision/barrier",
 		"models_engine:collision/fence",
 		"models_engine:collision/slab",
+		"models_engine:collision/stair",
 		"models_engine:collision/chain/x",
 		"models_engine:collision/chain/y",
 		"models_engine:collision/chain/z"

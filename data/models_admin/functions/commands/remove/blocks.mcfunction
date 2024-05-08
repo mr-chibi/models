@@ -13,6 +13,7 @@ execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=wooden_gra
 # [Slabs]:
 execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=universal_slab,sort=nearest,distance=..1] run function models_menu:give/universal_slab
 execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=universal_vertical_slab,sort=nearest,distance=..1] run function models_menu:give/universal_vertical_slab
+execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=universal_stair,sort=nearest,distance=..1] run function models_menu:give/universal_stair
 
 # [Desks]:
 execute if entity @e[type=minecraft:block_display,tag=forge_layer,tag=gray_wooden_desk,sort=nearest,distance=..1] run function models_menu:give/gray_wooden_desk

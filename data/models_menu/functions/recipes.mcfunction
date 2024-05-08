@@ -1,6 +1,7 @@
 #
 recipe give @s models_menu:universal_slab
 recipe give @s models_menu:universal_vertical_slab
+recipe give @s models_menu:universal_stair
 recipe give @s models_menu:wooden_grandfather_clock
 recipe give @s models_menu:gray_wooden_desk
 recipe give @s models_menu:kitchen_display_shelf
