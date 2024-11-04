@@ -7,15 +7,9 @@
     "zyz"
   ],
   "key": {
-    "x": {
-      "item": "minecraft:gray_wool"
-    },
-    "y": {
-      "item": "minecraft:cyan_terracotta"
-    },
-    "z": {
-      "item": "minecraft:gray_concrete"
-    }
+    "x": "minecraft:gray_wool",
+    "y": "minecraft:cyan_terracotta",
+    "z": "minecraft:gray_concrete"
   },
   "result": {
     "id": "minecraft:allay_spawn_egg",

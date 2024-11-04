@@ -7,15 +7,9 @@
     "xxx"
   ],
   "key": {
-    "x": {
-      "item": "minecraft:smooth_quartz"
-    },
-    "y": {
-      "item": "minecraft:glass_pane"
-    },
-    "z": {
-      "item": "minecraft:polished_andesite"
-    }
+    "x": "minecraft:smooth_quartz",
+    "y": "minecraft:glass_pane",
+    "z": "minecraft:polished_andesite"
   },
   "result": {
     "id": "minecraft:allay_spawn_egg",

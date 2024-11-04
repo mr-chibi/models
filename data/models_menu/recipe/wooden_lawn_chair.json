@@ -7,12 +7,8 @@
     "xyx"
   ],
   "key": {
-    "x": {
-      "item": "minecraft:spruce_fence"
-    },
-    "y": {
-      "item": "minecraft:spruce_slab"
-    }
+    "x": "minecraft:spruce_fence",
+    "y": "minecraft:spruce_slab"
   },
   "result": {
     "id": "minecraft:allay_spawn_egg",

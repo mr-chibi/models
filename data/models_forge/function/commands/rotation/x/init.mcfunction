@@ -1,12 +1,12 @@
 #####################################################################################
 # Update Forge Layers [Selected]
 #####################################################################################
-execute as @s[scores={forge_rotate_x=1..360}] if entity @e[type=block_display,tag=forge_layer,tag=selected_forge_layer,sort=nearest] as @e[type=minecraft:block_display,tag=forge_layer,tag=selected_forge_layer,sort=nearest,distance=0..3,limit=1] at @s store result entity @s Rotation[1] float 1 run scoreboard players get @p forge_rotate_x
+execute if score @s forge_rotate_x matches 1..360 if entity @e[type=block_display,tag=forge_layer,tag=selected_forge_layer,sort=nearest] as @e[type=minecraft:block_display,tag=forge_layer,tag=selected_forge_layer,sort=nearest,distance=0..3,limit=1] at @s store result entity @s Rotation[1] float 1 run scoreboard players get @p forge_rotate_x
 
 #####################################################################################
 # Update Model Layers [UnSelected]
 #####################################################################################
-execute as @s[scores={forge_rotate_x=1..360}] unless entity @e[type=block_display,tag=forge_model,tag=selected_forge_model,sort=nearest] as @e[type=minecraft:block_display,tag=forge_model,sort=nearest,distance=0..3,limit=1] at @s store result entity @s Rotation[1] float 1 run scoreboard players get @p forge_rotate_x
+execute if score @s forge_rotate_x matches 1..360 unless entity @e[type=block_display,tag=forge_model,tag=selected_forge_model,sort=nearest] as @e[type=minecraft:block_display,tag=forge_model,sort=nearest,distance=0..3,limit=1] at @s store result entity @s Rotation[1] float 1 run scoreboard players get @p forge_rotate_x
 
 #####################################################################################
 # Error Message

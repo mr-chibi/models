@@ -15,3 +15,4 @@ scoreboard players enable @s[team=model_admin] model_schematic
 scoreboard players enable @s[team=model_admin] model_copy
 scoreboard players enable @s[team=model_admin] model_paste
 scoreboard players enable @s[team=model_admin] model_ui
+scoreboard players enable @s[team=model_admin] forge_animation

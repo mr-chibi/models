@@ -7,9 +7,7 @@
     "x x"
   ],
   "key": {
-    "x": {
-      "item": "minecraft:stripped_dark_oak_wood"
-    }
+    "x": "minecraft:stripped_dark_oak_wood"
   },
   "result": {
     "id": "minecraft:allay_spawn_egg",

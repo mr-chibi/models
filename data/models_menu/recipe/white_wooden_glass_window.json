@@ -7,12 +7,8 @@
     "xyx"
   ],
   "key": {
-    "x": {
-      "item": "minecraft:dark_oak_wood"
-    },
-    "y": {
-      "item": "minecraft:glass_pane"
-    }
+    "x": "minecraft:dark_oak_wood",
+    "y": "minecraft:glass_pane"
   },
   "result": {
     "id": "minecraft:allay_spawn_egg",

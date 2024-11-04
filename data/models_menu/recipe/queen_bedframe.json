@@ -7,15 +7,9 @@
     "zzz"
   ],
   "key": {
-    "x": {
-      "item": "minecraft:gray_terracotta"
-    },
-    "y": {
-      "item": "minecraft:dark_oak_fence"
-    },
-    "z": {
-      "item": "minecraft:stripped_dark_oak_wood"
-    }
+    "x": "minecraft:gray_terracotta",
+    "y": "minecraft:dark_oak_fence",
+    "z": "minecraft:stripped_dark_oak_wood"
   },
   "result": {
     "id": "minecraft:allay_spawn_egg",

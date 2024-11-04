@@ -7,15 +7,9 @@
     "zzz"
   ],
   "key": {
-    "x": {
-      "item": "minecraft:chiseled_quartz_block"
-    },
-    "y": {
-      "item": "minecraft:mangrove_wood"
-    },
-    "z": {
-      "item": "minecraft:gray_terracotta"
-    }
+    "x": "minecraft:chiseled_quartz_block",
+    "y": "minecraft:mangrove_wood",
+    "z": "minecraft:gray_terracotta"
   },
   "result": {
     "id": "minecraft:allay_spawn_egg",

@@ -7,9 +7,7 @@
     "xx "
   ],
   "key": {
-    "x": {
-      "item": "minecraft:stone"
-    }
+    "x": "minecraft:stone"
   },
   "result": {
     "id": "minecraft:allay_spawn_egg",

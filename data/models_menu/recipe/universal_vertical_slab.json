@@ -7,9 +7,7 @@
     " x "
   ],
   "key": {
-    "x": {
-      "item": "minecraft:oak_slab"
-    }
+    "x": "minecraft:oak_slab"
   },
   "result": {
     "id": "minecraft:allay_spawn_egg",

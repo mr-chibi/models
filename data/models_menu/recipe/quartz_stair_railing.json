@@ -7,12 +7,8 @@
     "yyy"
   ],
   "key": {
-    "x": {
-      "item": "minecraft:quartz_pillar"
-    },
-    "y": {
-      "item": "minecraft:smooth_quartz"
-    }
+    "x": "minecraft:quartz_pillar",
+    "y": "minecraft:smooth_quartz"
   },
   "result": {
     "id": "minecraft:allay_spawn_egg",

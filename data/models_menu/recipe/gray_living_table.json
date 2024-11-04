@@ -7,12 +7,8 @@
     "y y"
   ],
   "key": {
-    "x": {
-      "item": "minecraft:cyan_terracotta"
-    },
-    "y": {
-      "item": "minecraft:gray_concrete"
-    }
+    "x": "minecraft:cyan_terracotta",
+    "y": "minecraft:gray_concrete"
   },
   "result": {
     "id": "minecraft:allay_spawn_egg",

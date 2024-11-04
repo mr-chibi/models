@@ -1,17 +1,17 @@
 #####################################################################################
 # Collision [Support]:
 #####################################################################################
-execute as @s[scores={model_rotation=1..360}] as @e[type=minecraft:block_display,distance=0..5,sort=nearest] at @s run function models_admin:commands/rotation/collision
+execute if score @s model_rotation matches 1..360 as @e[type=minecraft:block_display,distance=0..5,sort=nearest] at @s run function models_admin:commands/rotation/collision
 
 #####################################################################################
 # Update Forge Layers [Selected]
 #####################################################################################
-execute as @s[scores={model_rotation=1..360}] if entity @e[type=block_display,tag=forge_layer,distance=0..5,sort=nearest] as @e[type=minecraft:block_display,tag=forge_layer,distance=0..5,sort=nearest] at @s store result entity @s Rotation[0] float 1 run scoreboard players get @p model_rotation
+execute if score @s model_rotation matches 1..360 if entity @e[type=block_display,tag=forge_layer,distance=0..5,sort=nearest] as @e[type=minecraft:block_display,tag=forge_layer,distance=0..5,sort=nearest] at @s store result entity @s Rotation[0] float 1 run scoreboard players get @p model_rotation
 
 #####################################################################################
 # Update Model Layers [UnSelected]
 #####################################################################################
-execute as @s[scores={model_rotation=1..360}] unless entity @e[type=block_display,tag=forge_model,distance=0..5,sort=nearest] as @e[type=minecraft:block_display,tag=forge_model,distance=0..5,sort=nearest] at @s store result entity @s Rotation[0] float 1 run scoreboard players get @p model_rotation
+execute if score @s model_rotation matches 1..360 unless entity @e[type=block_display,tag=forge_model,distance=0..5,sort=nearest] as @e[type=minecraft:block_display,tag=forge_model,distance=0..5,sort=nearest] at @s store result entity @s Rotation[0] float 1 run scoreboard players get @p model_rotation
 
 #####################################################################################
 # Error Message

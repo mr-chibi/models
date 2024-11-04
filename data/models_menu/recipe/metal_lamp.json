@@ -7,15 +7,9 @@
     "xxx"
   ],
   "key": {
-    "x": {
-      "item": "minecraft:iron_ingot"
-    },
-    "y": {
-      "item": "minecraft:glass"
-    },
-    "z": {
-      "item": "minecraft:chain"
-    }
+    "x": "minecraft:iron_ingot",
+    "y": "minecraft:glass",
+    "z": "minecraft:chain"
   },
   "result": {
     "id": "minecraft:allay_spawn_egg",

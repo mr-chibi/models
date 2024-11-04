@@ -7,9 +7,7 @@
     "xxx"
   ],
   "key": {
-    "x": {
-      "item": "minecraft:spruce_slab"
-    }
+    "x": "minecraft:spruce_slab"
   },
   "result": {
     "id": "minecraft:allay_spawn_egg",

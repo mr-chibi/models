@@ -7,15 +7,9 @@
     "xzx"
   ],
   "key": {
-    "x": {
-      "item": "minecraft:stripped_dark_oak_wood"
-    },
-    "y": {
-      "item": "minecraft:stripped_birch_wood"
-    },
-    "z": {
-      "item": "minecraft:oak_planks"
-    }
+    "x": "minecraft:stripped_dark_oak_wood",
+    "y": "minecraft:stripped_birch_wood",
+    "z": "minecraft:oak_planks"
   },
   "result": {
     "id": "minecraft:allay_spawn_egg",

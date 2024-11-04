@@ -7,12 +7,8 @@
     "x x"
   ],
   "key": {
-    "x": {
-      "item": "minecraft:mangrove_wood"
-    },
-    "y": {
-      "item": "minecraft:mangrove_planks"
-    }
+    "x": "minecraft:mangrove_wood",
+    "y": "minecraft:mangrove_planks"
   },
   "result": {
     "id": "minecraft:allay_spawn_egg",

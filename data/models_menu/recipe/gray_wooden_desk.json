@@ -7,15 +7,9 @@
     "yzx"
   ],
   "key": {
-    "x": {
-      "item": "minecraft:acacia_wood"
-    },
-    "y": {
-      "item": "minecraft:gray_concrete"
-    },
-    "z": {
-      "item": "minecraft:gray_wool"
-    }
+    "x": "minecraft:acacia_wood",
+    "y": "minecraft:gray_concrete",
+    "z": "minecraft:gray_wool"
   },
   "result": {
     "id": "minecraft:allay_spawn_egg",

@@ -7,9 +7,7 @@
     "x  "
   ],
   "key": {
-    "x": {
-      "item": "minecraft:diorite_wall"
-    }
+    "x": "minecraft:diorite_wall"
   },
   "result": {
     "id": "minecraft:allay_spawn_egg",

@@ -1,14 +1,12 @@
 # Toggle Commands when player "interacts" with tool:
-execute if score @s[nbt={SelectedItem:{components:{"minecraft:custom_name":'{"color":"aqua","text":"Texture Brush"}'}, id: "minecraft:carrot_on_a_stick"}}] model_raycast_brush matches 1 run trigger model_texture
-execute if score @s[nbt={SelectedItem:{components:{"minecraft:custom_name":'{"color":"aqua","text":"Primary Pallete Brush"}'}, id: "minecraft:carrot_on_a_stick"}}] model_raycast_brush matches 1 run trigger model_primary_pallete
-execute if score @s[nbt={SelectedItem:{components:{"minecraft:custom_name":'{"color":"aqua","text":"Secondary Pallete Brush"}'}, id: "minecraft:carrot_on_a_stick"}}] model_raycast_brush matches 1 run trigger model_secondary_pallete
-execute if score @s[nbt={SelectedItem:{components:{"minecraft:custom_name":'{"color":"aqua","text":"Triad Pallete Brush"}'}, id: "minecraft:carrot_on_a_stick"}}] model_raycast_brush matches 1 run trigger model_triad_pallete
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:custom_name='{"text":"Texture Brush", "color": "aqua"}'] run trigger model_texture
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:custom_name='{"text":"Primary Pallete Brush", "color": "aqua"}'] run trigger model_primary_pallete
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:custom_name='{"text":"Secondary Pallete Brush", "color": "aqua"}'] run trigger model_secondary_pallete
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:custom_name='{"text":"Triad Pallete Brush", "color": "aqua"}'] run trigger model_triad_pallete
 
 # Holding Brush:
-tag @s[nbt={SelectedItem:{components:{"minecraft:custom_name":'{"color":"red","text":"Eraser Brush"}'}, id: "minecraft:carrot_on_a_stick"}}] add modelRemove
-
-# NOT Holding Brush:
-tag @s[nbt=!{SelectedItem:{components:{"minecraft:custom_name":'{"color":"red","text":"Eraser Brush"}'}, id: "minecraft:carrot_on_a_stick"}}] remove modelRemove
+execute if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[minecraft:custom_name='{"text":"Eraser Brush", "color": "red"}'] run tag @s add modelRemove
+execute unless items entity @s weapon.mainhand minecraft:carrot_on_a_stick[minecraft:custom_name='{"text":"Eraser Brush", "color": "red"}'] run tag @s remove modelRemove
 
 #
 scoreboard players set @s[scores={model_raycast_brush=1..}] model_raycast_brush 0

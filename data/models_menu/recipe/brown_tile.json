@@ -7,9 +7,7 @@
     "xx "
   ],
   "key": {
-    "x": {
-      "item": "minecraft:brown_mushroom_block"
-    }
+    "x": "minecraft:brown_mushroom_block"
   },
   "result": {
     "id": "minecraft:allay_spawn_egg",

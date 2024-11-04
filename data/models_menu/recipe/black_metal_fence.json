@@ -7,9 +7,7 @@
     "x  "
   ],
   "key": {
-    "x": {
-      "item": "minecraft:iron_bars"
-    }
+    "x": "minecraft:iron_bars"
   },
   "result": {
     "id": "minecraft:allay_spawn_egg",
