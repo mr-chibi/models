@@ -6,9 +6,6 @@ function models_engine:init
 function models_forge:init
 function models_animations:init
 
-# Grant Recipes:
-# function models_menu:recipes
-
 # Models Menu:
 execute if score @s model_ui matches 1.. run function models_menu:init
 

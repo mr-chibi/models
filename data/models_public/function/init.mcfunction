@@ -50,4 +50,4 @@ function models_admin:tags/raycasting_brushes
 function models_admin:tags/selected_brushes
 
 # Engine "Collision":
-execute as @e[type=minecraft:block_display,tag=collision,distance=0..5,sort=nearest] at @s align xyz run function #models_engine:collision
+function models_engine:collision/init

@@ -23,10 +23,4 @@ execute if entity @s[tag=forge_render_update,tag=model_1.20.4] run function mode
 execute if entity @s[tag=model_render_paste] run function models_engine:render/generate
 
 # Engine "Collision":
-execute as @e[type=minecraft:block_display,tag=barrier_collision,distance=..15,sort=nearest] at @s align xyz run function models_engine:collision/barrier
-execute as @e[type=minecraft:block_display,tag=fence_collision,distance=..15,sort=nearest] at @s align xyz run function models_engine:collision/fence
-execute as @e[type=minecraft:block_display,tag=slab_collision,distance=..15,sort=nearest] at @s align xyz run function models_engine:collision/slab
-execute as @e[type=minecraft:block_display,tag=stair_collision,distance=..15,sort=nearest] at @s align xyz run function models_engine:collision/stair
-execute as @e[type=minecraft:block_display,tag=chain_x_collision,distance=..15,sort=nearest] at @s align xyz run function models_engine:collision/chain/x
-execute as @e[type=minecraft:block_display,tag=chain_y_collision,distance=..15,sort=nearest] at @s align xyz run function models_engine:collision/chain/y
-execute as @e[type=minecraft:block_display,tag=chain_z_collision,distance=..15,sort=nearest] at @s align xyz run function models_engine:collision/chain/z
+function models_engine:collision/init
