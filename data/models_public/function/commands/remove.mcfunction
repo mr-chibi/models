@@ -14,7 +14,7 @@ execute if score @s model_ids = @e[type=minecraft:block_display,tag=forge_layer,
 execute if score @s model_ids = @e[type=minecraft:block_display,tag=forge_layer,distance=..1,sort=nearest,limit=1] model_ids run playsound minecraft:block.bamboo_wood_door.close master @s ~ ~ ~ 2 0.75
 
 # Engine "Collision":
-execute if block ~ ~ ~ #models_engine:collision if score @s model_ids = @e[type=minecraft:block_display,tag=forge_layer,distance=..1,sort=nearest,limit=1] model_ids if entity @e[type=minecraft:block_display,tag=collision,distance=..1,sort=nearest] run setblock ~ ~ ~ minecraft:air
+execute if block ~ ~ ~ #models_engine:collision if score @s model_ids = @e[type=minecraft:block_display,tag=forge_layer,distance=..1,sort=nearest,limit=1] model_ids if entity @e[type=minecraft:block_display,tag=collision,distance=..1,sort=nearest] run function models_admin:commands/rotation/remove_collision
 
 # [Public Users]:
 execute if score @s model_ids = @e[type=minecraft:block_display,tag=forge_layer,distance=..1,sort=nearest,limit=1] model_ids run kill @e[type=minecraft:block_display,tag=collision,sort=nearest,distance=..1]

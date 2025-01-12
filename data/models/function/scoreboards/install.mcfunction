@@ -18,6 +18,9 @@ scoreboard objectives add model_copy trigger
 scoreboard objectives add model_paste trigger
 scoreboard objectives add model_ui trigger
 
+#
+scoreboard objectives add model_rotate trigger
+
 # [Public User, Model]:
 scoreboard objectives add model_ids dummy
 

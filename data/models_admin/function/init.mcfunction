@@ -19,6 +19,9 @@ execute if score @s model_rotation matches 1.. run function models_admin:command
 execute if score @s[tag=modelRemove] model_raycast_brush matches 1.. run function models_admin:commands/remove/init
 execute if score @s[tag=modelRemove] model_raycast_brush matches 1.. run function models_admin:commands/remove/collision
 
+# Model [Rotate Tool] & [Move Tool]:
+execute if score @s model_rotate matches 1.. run function models_admin:commands/rotate/init
+
 # Toggle Commands when "Admin Mode Brush/Editing":
 execute if score @s model_sel matches 1.. run function models_admin:commands/sel
 

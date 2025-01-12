@@ -19,6 +19,9 @@ scoreboard objectives remove model_copy
 scoreboard objectives remove model_paste
 scoreboard objectives remove model_ui
 
+#
+scoreboard objectives remove model_rotate
+
 # [Public User, Model]:
 scoreboard objectives remove model_ids
 scoreboard objectives remove model_render

@@ -13,3 +13,7 @@ scoreboard players enable @s[team=!model_admin] model_primary_pallete
 scoreboard players enable @s[team=!model_admin] model_secondary_pallete
 scoreboard players enable @s[team=!model_admin] model_triad_pallete
 scoreboard players enable @s[team=!model_admin] model_paste
+
+# 
+scoreboard players enable @s[team=!model_admin] model_rotate
+scoreboard players enable @s[team=!model_admin] model_move

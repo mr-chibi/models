@@ -1,7 +1,7 @@
 #####################################################################################
 # Collision [Support]:
 #####################################################################################
-execute if score @s model_rotation matches 1..360 as @e[type=minecraft:block_display,distance=0..5,sort=nearest] at @s run function models_admin:commands/rotation/collision
+execute if score @s model_rotation matches 1..360 as @e[type=minecraft:block_display,distance=0..5,sort=nearest] at @s run function models_admin:commands/rotation/remove_collision
 
 #####################################################################################
 # Update Forge Layers [Selected]

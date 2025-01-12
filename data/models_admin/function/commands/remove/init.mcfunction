@@ -10,6 +10,9 @@ function models_admin:commands/remove/blocks
 # [Sounds]
 execute if entity @e[type=minecraft:block_display,tag=forge_layer,sort=nearest,distance=..1] run playsound minecraft:block.barrel.close master @s ~ ~ ~ 2 0.75
 
+# [Remove Collisison]
+execute if entity @e[type=minecraft:block_display,sort=nearest,tag=forge_layer,distance=..1] as @e[type=minecraft:block_display,sort=nearest,tag=forge_layer,distance=..1] at @s run function models_admin:commands/rotation/remove_collision
+
 # [Admin Users]:
 kill @e[type=minecraft:block_display,tag=collision,sort=nearest,distance=..1]
 kill @e[type=minecraft:block_display,tag=forge_layer,sort=nearest,distance=..1]

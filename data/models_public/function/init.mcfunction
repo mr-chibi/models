@@ -16,6 +16,7 @@ execute if score @s model_texture matches 1.. run function models_public:command
 execute if score @s model_primary_pallete matches 1.. run function models_public:commands/primary_pallete
 execute if score @s model_secondary_pallete matches 1.. run function models_public:commands/secondary_pallete
 execute if score @s model_triad_pallete matches 1.. run function models_public:commands/triad_pallete
+execute if score @s model_rotate matches 1.. run function models_public:commands/rotate
 execute if score @s[tag=modelRemove] model_raycast_brush matches 1.. run function models_public:commands/remove
 
 ##########################################
