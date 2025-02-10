@@ -1,3 +1,6 @@
+# [Forging Control inputs]:
+scoreboard players enable @s[team=model_admin] forge_tools
+
 # [Forging Tool Commands]:
 scoreboard players enable @s[team=model_admin] forge_create
 

@@ -1,5 +1,19 @@
+# [Forge Controls for building blocks]:
+scoreboard objectives remove forge_tools
+
 # [Forging Tools]:
 scoreboard objectives remove forge_create
+
+# [Hotkeys pressed by via user]:
+# [Forging Hotkey Axis]:
+scoreboard objectives remove forge_axis_x_rclick
+scoreboard objectives remove forge_axis_y_rclick
+scoreboard objectives remove forge_axis_z_rclick
+
+# [Forging Hotkey Scale]:
+scoreboard objectives remove forge_scale_x_rclick
+scoreboard objectives remove forge_scale_y_rclick
+scoreboard objectives remove forge_scale_z_rclick
 
 #
 scoreboard objectives remove forge_axis_x

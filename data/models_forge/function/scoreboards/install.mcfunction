@@ -1,5 +1,19 @@
+# [Forge Controls for building blocks]:
+scoreboard objectives add forge_tools trigger
+
 # [Forging Tool Commands]:
 scoreboard objectives add forge_create trigger
+
+# [Hotkeys pressed by via user]:
+# [Forging Hotkey Axis]:
+scoreboard objectives add forge_axis_x_rclick dummy
+scoreboard objectives add forge_axis_y_rclick dummy
+scoreboard objectives add forge_axis_z_rclick dummy
+
+# [Forging Hotkey Scale]:
+scoreboard objectives add forge_scale_x_rclick dummy
+scoreboard objectives add forge_scale_y_rclick dummy
+scoreboard objectives add forge_scale_z_rclick dummy
 
 # [Forging Tool Axis]:
 scoreboard objectives add forge_axis_x trigger

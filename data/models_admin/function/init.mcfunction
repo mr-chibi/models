@@ -25,6 +25,9 @@ execute if score @s model_rotate matches 1.. run function models_admin:commands/
 # Toggle Commands when "Admin Mode Brush/Editing":
 execute if score @s model_sel matches 1.. run function models_admin:commands/sel
 
+# Interact with Keyboard / Mouse [Keydown]:
+function #models_admin:controls
+
 # Interact with tools to "toggle" [Commands]:
 function models_admin:tags/selected_brushes
 function models_admin:tags/raycasting_brushes

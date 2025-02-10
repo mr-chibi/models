@@ -2,6 +2,9 @@
 function models_forge:scoreboards/commands/enable
 
 #
+execute if score @s forge_tools matches 1.. run function models_forge:commands/control_inputs/init
+
+#
 execute if score @s forge_axis_x matches ..-1 run function models_forge:commands/axis/x/init
 execute if score @s forge_axis_x matches 1.. run function models_forge:commands/axis/x/init
 
