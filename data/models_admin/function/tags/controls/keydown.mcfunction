@@ -23,6 +23,12 @@ execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minec
 execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:repeating_command_block",minecraft:custom_name='{"color":"blue","italic":false,"text":"Scale Z-"}'] run trigger forge_scale_z set -1
 
 #########################################################
+# Rotation: [Positive / Negtive Values]
+#########################################################
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:magenta_glazed_terracotta",minecraft:custom_name='{"color":"yellow","italic":false,"text":"Rotate Model+"}'] run trigger model_rotation set 1
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:magenta_glazed_terracotta",minecraft:custom_name='{"color":"yellow","italic":false,"text":"Rotate Model-"}'] run trigger model_rotation set -1
+
+#########################################################
 # Addition UI: (Add, Clear Selection, Save)
 #########################################################
 execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:scaffolding",minecraft:custom_name='{"color":"green","italic":false,"text":"Add Layer"}'] run trigger forge_add_layer

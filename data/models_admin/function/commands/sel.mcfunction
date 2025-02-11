@@ -4,6 +4,20 @@ execute as @e[type=minecraft:marker,distance=0..5,tag=forge_schematic] at @s run
 execute as @e[type=minecraft:marker,distance=0..5,tag=model_forge_copy_compiler] at @s run kill @s
 execute as @e[type=minecraft:marker,distance=0..5,tag=model_forge_paste_compiler] at @s run kill @s
 
+#
+scoreboard players reset @s forge_axis_x_rclick
+scoreboard players reset @s forge_axis_y_rclick
+scoreboard players reset @s forge_axis_z_rclick
+
+#
+scoreboard players reset @s forge_scale_x_rclick
+scoreboard players reset @s forge_scale_y_rclick
+scoreboard players reset @s forge_scale_z_rclick
+
+#
+scoreboard players reset @s forge_rotate_rclick
+
+
 # Remove Un-needed forge blocks:
 execute unless entity @e[type=block_display,tag=forge_model,tag=selected_forge_model,sort=nearest,distance=0..5] as @e[type=minecraft:block_display,tag=forge_model,sort=nearest,distance=0..3,limit=1] at @s run kill @s
 

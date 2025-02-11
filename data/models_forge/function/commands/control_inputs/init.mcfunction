@@ -8,6 +8,7 @@ clear @s minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:repeating_c
 clear @s minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:scaffolding",minecraft:custom_name="{\"text\": \"Add Layer\", \"color\": \"green\", \"italic\":false}"]
 clear @s minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:barrier",minecraft:custom_name="{\"text\": \"Cancel Selection\", \"color\": \"red\", \"italic\":false}"]
 clear @s minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:knowledge_book",minecraft:custom_name="{\"text\": \"Save Model\", \"color\": \"green\", \"italic\":false}"]
+clear @s minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:magenta_glazed_terracotta",minecraft:custom_name="{\"text\": \"Rotate Model+\", \"color\": \"yellow\", \"italic\":false}"]
 
 # Give Player Controls:
 give @s minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:red_candle",minecraft:custom_name="{\"text\": \"X Axis+\", \"color\": \"red\", \"italic\":false}",minecraft:lore=["{\"text\": \"Right click, to move model left/right\", \"color\": \"#c3c3c3\"}", "{\"text\": \"hit 'F' to swap to negitive values!\", \"color\": \"#4A6DEC\"}"]]
@@ -19,6 +20,7 @@ give @s minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:repeating_co
 give @s minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:scaffolding",minecraft:custom_name="{\"text\": \"Add Layer\", \"color\": \"green\", \"italic\":false}",minecraft:lore=["{\"text\": \"Right click, to add new layer!\", \"color\": \"#c3c3c3\"}", "{\"text\": \"Duplicates existing layer as a new layer move axis too see it!\", \"color\": \"#4A6DEC\"}"]]
 give @s minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:barrier",minecraft:custom_name="{\"text\": \"Cancel Selection\", \"color\": \"red\", \"italic\":false}",minecraft:lore=["{\"text\": \"Right click, cancel current selected layer!\", \"color\": \"#c3c3c3\"}"]]
 give @s minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:knowledge_book",minecraft:custom_name="{\"text\": \"Save Model\", \"color\": \"green\", \"italic\":false}",minecraft:lore=["{\"text\": \"Right click, to save model into spawn egg!\", \"color\": \"#c3c3c3\"}"]]
+give @s minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:magenta_glazed_terracotta",minecraft:custom_name="{\"text\": \"Rotate Model+\", \"color\": \"yellow\", \"italic\":false}",minecraft:lore=["{\"text\": \"Right click, to rotate model! (Whole Model)\", \"color\": \"#c3c3c3\"}"]]
 
 # Reset Command:
 scoreboard players set @s[scores={forge_tools=1..}] forge_tools 0

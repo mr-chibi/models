@@ -31,6 +31,13 @@ execute if items entity @s weapon.offhand minecraft:carrot_on_a_stick[minecraft:
 
 
 #########################################################
+# Rotation: [Positive Values]
+#########################################################
+execute if items entity @s weapon.offhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:magenta_glazed_terracotta",minecraft:custom_name='{"color":"yellow","italic":false,"text":"Rotate Model+"}'] run give @s minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:magenta_glazed_terracotta",minecraft:custom_name="{\"text\": \"Rotate Model-\", \"color\": \"yellow\", \"italic\":false}",minecraft:lore=["{\"text\": \"Right click, to rotate. (Whole Model)\", \"color\": \"#c3c3c3\"}", "{\"text\": \"hit 'F' to swap to positive values!\", \"color\": \"#4A6DEC\"}"]]
+execute if items entity @s weapon.offhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:magenta_glazed_terracotta",minecraft:custom_name='{"color":"yellow","italic":false,"text":"Rotate Model+"}'] run clear @s minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:magenta_glazed_terracotta",minecraft:custom_name="{\"text\": \"Rotate Model+\", \"color\": \"yellow\", \"italic\":false}"]
+
+
+#########################################################
 # Axis: [Negitive Values]
 #########################################################
 # [Negitive Values] [X]
@@ -60,3 +67,10 @@ execute if items entity @s weapon.offhand minecraft:carrot_on_a_stick[minecraft:
 # [Negitive Values] [Z Scaling]
 execute if items entity @s weapon.offhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:repeating_command_block",minecraft:custom_name='{"color":"blue","italic":false,"text":"Scale Z-"}'] run give @s minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:repeating_command_block",minecraft:custom_name="{\"text\": \"Scale Z+\", \"color\": \"blue\", \"italic\":false}",minecraft:lore=["{\"text\": \"Right click, to expand model forward/backwards\", \"color\": \"#c3c3c3\"}", "{\"text\": \"hit 'F' to swap to negitive values!\", \"color\": \"#4A6DEC\"}"]]
 execute if items entity @s weapon.offhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:repeating_command_block",minecraft:custom_name='{"color":"blue","italic":false,"text":"Scale Z-"}'] run clear @s minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:repeating_command_block",minecraft:custom_name="{\"text\": \"Scale Z-\", \"color\": \"blue\", \"italic\":false}"]
+
+
+#########################################################
+# Rotation: [Negitive Values]
+#########################################################
+execute if items entity @s weapon.offhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:magenta_glazed_terracotta",minecraft:custom_name='{"color":"yellow","italic":false,"text":"Rotate Model-"}'] run give @s minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:magenta_glazed_terracotta",minecraft:custom_name="{\"text\": \"Rotate Model+\", \"color\": \"yellow\", \"italic\":false}",minecraft:lore=["{\"text\": \"Right click, to rotate. (Whole Model)\", \"color\": \"#c3c3c3\"}", "{\"text\": \"hit 'F' to swap to negitive values!\", \"color\": \"#4A6DEC\"}"]]
+execute if items entity @s weapon.offhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:magenta_glazed_terracotta",minecraft:custom_name='{"color":"yellow","italic":false,"text":"Rotate Model-"}'] run clear @s minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:magenta_glazed_terracotta",minecraft:custom_name="{\"text\": \"Rotate Model-\", \"color\": \"yellow\", \"italic\":false}"]

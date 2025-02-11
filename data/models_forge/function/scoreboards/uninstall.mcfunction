@@ -15,6 +15,12 @@ scoreboard objectives remove forge_scale_x_rclick
 scoreboard objectives remove forge_scale_y_rclick
 scoreboard objectives remove forge_scale_z_rclick
 
+# [Forging Hotkey Rotation]:
+scoreboard objectives remove forge_rotate_rclick
+
+# [Forging Speed (Rotatiton / Movement)]:
+scoreboard objectives remove forge_speed
+
 #
 scoreboard objectives remove forge_axis_x
 scoreboard objectives remove forge_axis_y

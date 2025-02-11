@@ -1,5 +1,6 @@
 # [Forging Control inputs]:
 scoreboard players reset @s forge_tools
+scoreboard players reset @s forge_speed
 
 # [Forging Tool Commands]:
 scoreboard players reset @s forge_create

@@ -15,6 +15,12 @@ scoreboard objectives add forge_scale_x_rclick dummy
 scoreboard objectives add forge_scale_y_rclick dummy
 scoreboard objectives add forge_scale_z_rclick dummy
 
+# [Forging Hotkey Rotation]:
+scoreboard objectives add forge_rotate_rclick dummy
+
+# [Forging Speed (Rotatiton / Movement)]:
+scoreboard objectives add forge_speed trigger
+
 # [Forging Tool Axis]:
 scoreboard objectives add forge_axis_x trigger
 scoreboard objectives add forge_axis_y trigger
