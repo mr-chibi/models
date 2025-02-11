@@ -15,6 +15,11 @@ scoreboard players reset @s forge_scale_y_rclick
 scoreboard players reset @s forge_scale_z_rclick
 
 #
+scoreboard players reset @s forge_angle_x_rclick
+scoreboard players reset @s forge_angle_y_rclick
+scoreboard players reset @s forge_angle_z_rclick
+
+#
 scoreboard players reset @s forge_rotate_rclick
 
 

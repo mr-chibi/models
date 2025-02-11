@@ -31,6 +31,7 @@ scoreboard players reset @s forge_align_z
 
 # [Forging Tool Layering]:
 scoreboard players reset @s forge_add_layer
+scoreboard players reset @s forge_remove_layer
 
 # [Forging Tool Collision]:
 scoreboard players reset @s forge_collision

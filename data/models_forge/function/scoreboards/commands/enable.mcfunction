@@ -36,6 +36,7 @@ scoreboard players enable @s[team=model_admin] forge_pallete
 scoreboard players enable @s[team=model_admin] forge_add_layer
 scoreboard players enable @s[team=model_admin] forge_layers
 scoreboard players enable @s[team=model_admin] forge_edit_layer
+scoreboard players enable @s[team=model_admin] forge_remove_layer
 
 # [Forging Tool Collision]:
 scoreboard players enable @s[team=model_admin] forge_collision

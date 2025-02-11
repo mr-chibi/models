@@ -15,6 +15,11 @@ scoreboard objectives remove forge_scale_x_rclick
 scoreboard objectives remove forge_scale_y_rclick
 scoreboard objectives remove forge_scale_z_rclick
 
+# [Forging Hotkey Angle]:
+scoreboard objectives remove forge_angle_x_rclick
+scoreboard objectives remove forge_angle_y_rclick
+scoreboard objectives remove forge_angle_z_rclick
+
 # [Forging Hotkey Rotation]:
 scoreboard objectives remove forge_rotate_rclick
 

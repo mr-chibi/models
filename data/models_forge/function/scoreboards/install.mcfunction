@@ -15,6 +15,11 @@ scoreboard objectives add forge_scale_x_rclick dummy
 scoreboard objectives add forge_scale_y_rclick dummy
 scoreboard objectives add forge_scale_z_rclick dummy
 
+# [Forging Hotkey Angle]:
+scoreboard objectives add forge_angle_x_rclick dummy
+scoreboard objectives add forge_angle_y_rclick dummy
+scoreboard objectives add forge_angle_z_rclick dummy
+
 # [Forging Hotkey Rotation]:
 scoreboard objectives add forge_rotate_rclick dummy
 
@@ -55,6 +60,7 @@ scoreboard objectives add forge_total_layers dummy
 scoreboard objectives add forge_layers trigger
 scoreboard objectives add forge_add_layer trigger
 scoreboard objectives add forge_edit_layer trigger
+scoreboard objectives add forge_remove_layer trigger
 
 #
 scoreboard objectives add forge_collision trigger

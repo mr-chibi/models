@@ -89,15 +89,60 @@ execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minec
 
 
 #########################################################
-# Forge Hotkey Scoreboards (Add/Subtract) [Rotate]
+# Forge Hotkey Scoreboards (Add/Subtract) [Angle X]
 #########################################################
-execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:magenta_glazed_terracotta",minecraft:custom_name='{"color":"yellow","italic":false,"text":"Rotate Model+"}'] run scoreboard players add @s forge_rotate_rclick 1
-execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:magenta_glazed_terracotta",minecraft:custom_name='{"color":"yellow","italic":false,"text":"Rotate Model-"}'] run scoreboard players remove @s forge_rotate_rclick 1
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:redstone",minecraft:custom_name='{"color":"red","italic":false,"text":"Angle X+"}'] run scoreboard players add @s forge_angle_x_rclick 1
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:redstone",minecraft:custom_name='{"color":"red","italic":false,"text":"Angle X-"}'] run scoreboard players remove @s forge_angle_x_rclick 1
 
 # [Update Speed]
-execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:magenta_glazed_terracotta",minecraft:custom_name='{"color":"yellow","italic":false,"text":"Rotate Model+"}'] run scoreboard players operation @s forge_rotate_rclick += @s forge_speed
-execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:magenta_glazed_terracotta",minecraft:custom_name='{"color":"yellow","italic":false,"text":"Rotate Model-"}'] run scoreboard players operation @s forge_rotate_rclick -= @s forge_speed
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:redstone",minecraft:custom_name='{"color":"red","italic":false,"text":"Angle X+"}'] run scoreboard players operation @s forge_angle_x_rclick += @s forge_speed
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:redstone",minecraft:custom_name='{"color":"red","italic":false,"text":"Angle X-"}'] run scoreboard players operation @s forge_angle_x_rclick -= @s forge_speed
+
+# [Update Axis]
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:redstone",minecraft:custom_name='{"color":"red","italic":false,"text":"Angle X+"}'] run scoreboard players operation @s forge_angle_x = @s forge_angle_x_rclick
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:redstone",minecraft:custom_name='{"color":"red","italic":false,"text":"Angle X-"}'] run scoreboard players operation @s forge_angle_x = @s forge_angle_x_rclick
+
+
+#########################################################
+# Forge Hotkey Scoreboards (Add/Subtract) [Angle Y]
+#########################################################
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:gunpowder",minecraft:custom_name='{"color":"green","italic":false,"text":"Angle Y+"}'] run scoreboard players add @s forge_angle_y_rclick 1
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:gunpowder",minecraft:custom_name='{"color":"green","italic":false,"text":"Angle Y-"}'] run scoreboard players remove @s forge_angle_y_rclick 1
+
+# [Update Speed]
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:gunpowder",minecraft:custom_name='{"color":"green","italic":false,"text":"Angle Y+"}'] run scoreboard players operation @s forge_angle_y_rclick += @s forge_speed
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:gunpowder",minecraft:custom_name='{"color":"green","italic":false,"text":"Angle Y-"}'] run scoreboard players operation @s forge_angle_y_rclick -= @s forge_speed
+
+# [Update Axis]
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:gunpowder",minecraft:custom_name='{"color":"green","italic":false,"text":"Angle Y+"}'] run scoreboard players operation @s forge_angle_y = @s forge_angle_y_rclick
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:gunpowder",minecraft:custom_name='{"color":"green","italic":false,"text":"Angle Y-"}'] run scoreboard players operation @s forge_angle_y = @s forge_angle_y_rclick
+
+
+#########################################################
+# Forge Hotkey Scoreboards (Add/Subtract) [Angle Z]
+#########################################################
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:glowstone_dust",minecraft:custom_name='{"color":"blue","italic":false,"text":"Angle Z+"}'] run scoreboard players add @s forge_angle_z_rclick 1
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:glowstone_dust",minecraft:custom_name='{"color":"blue","italic":false,"text":"Angle Z-"}'] run scoreboard players remove @s forge_angle_z_rclick 1
+
+# [Update Speed]
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:glowstone_dust",minecraft:custom_name='{"color":"blue","italic":false,"text":"Angle Z+"}'] run scoreboard players operation @s forge_angle_z_rclick += @s forge_speed
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:glowstone_dust",minecraft:custom_name='{"color":"blue","italic":false,"text":"Angle Z-"}'] run scoreboard players operation @s forge_angle_z_rclick -= @s forge_speed
+
+# [Update Axis]
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:glowstone_dust",minecraft:custom_name='{"color":"blue","italic":false,"text":"Angle Z+"}'] run scoreboard players operation @s forge_angle_z = @s forge_angle_z_rclick
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:glowstone_dust",minecraft:custom_name='{"color":"blue","italic":false,"text":"Angle Z-"}'] run scoreboard players operation @s forge_angle_z = @s forge_angle_z_rclick
+
+
+#########################################################
+# Forge Hotkey Scoreboards (Add/Subtract) [Rotate]
+#########################################################
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:magenta_glazed_terracotta",minecraft:custom_name='{"color":"yellow","italic":false,"text":"Rotate Forge+"}'] run scoreboard players add @s forge_rotate_rclick 1
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:magenta_glazed_terracotta",minecraft:custom_name='{"color":"yellow","italic":false,"text":"Rotate Forge-"}'] run scoreboard players remove @s forge_rotate_rclick 1
+
+# [Update Speed]
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:magenta_glazed_terracotta",minecraft:custom_name='{"color":"yellow","italic":false,"text":"Rotate Forge+"}'] run scoreboard players operation @s forge_rotate_rclick += @s forge_speed
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:magenta_glazed_terracotta",minecraft:custom_name='{"color":"yellow","italic":false,"text":"Rotate Forge-"}'] run scoreboard players operation @s forge_rotate_rclick -= @s forge_speed
 
 # [Update Rotation]
-execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:magenta_glazed_terracotta",minecraft:custom_name='{"color":"yellow","italic":false,"text":"Rotate Model+"}'] run scoreboard players operation @s model_rotation = @s forge_rotate_rclick
-execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:magenta_glazed_terracotta",minecraft:custom_name='{"color":"yellow","italic":false,"text":"Rotate Model-"}'] run scoreboard players operation @s model_rotation = @s forge_rotate_rclick
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:magenta_glazed_terracotta",minecraft:custom_name='{"color":"yellow","italic":false,"text":"Rotate Forge+"}'] run scoreboard players operation @s forge_rotate = @s forge_rotate_rclick
+execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:item_model="minecraft:magenta_glazed_terracotta",minecraft:custom_name='{"color":"yellow","italic":false,"text":"Rotate Forge-"}'] run scoreboard players operation @s forge_rotate = @s forge_rotate_rclick
