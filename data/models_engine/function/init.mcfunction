@@ -8,7 +8,7 @@ execute if score @s forge_update matches 1.. run function models_engine:commands
 execute if score @s forge_animation matches 1.. run function models_engine:animation/init
 
 # Engine "Spawning" Mechanics:
-function models_engine:commands/spawn
+execute if entity @s[gamemode=creative] run function models_engine:commands/spawning/creative
 
 # Engine: "Render":
 execute if entity @s[tag=forge_render_copy] run function models_engine:render/copy
