@@ -17,6 +17,7 @@ scoreboard objectives remove model_place
 scoreboard objectives remove model_sel
 scoreboard objectives remove model_copy
 scoreboard objectives remove model_paste
+scoreboard objectives remove model_paste_rotation
 scoreboard objectives remove model_ui
 
 #

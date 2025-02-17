@@ -13,5 +13,8 @@ execute if items entity @s[scores={model_raycast_brush=1}] weapon.mainhand minec
 execute if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[minecraft:custom_name='{"text":"Eraser Brush", "color": "red"}'] run tag @s add modelRemove
 execute unless items entity @s weapon.mainhand minecraft:carrot_on_a_stick[minecraft:custom_name='{"text":"Eraser Brush", "color": "red"}'] run tag @s remove modelRemove
 
-#
+# Update [Paste Rotation]:
+execute if score @s model_paste_rotation matches 1.. run function models_admin:tags/update_paste_rotation
+
+# Check if Players [Score] is greater than "1" Reset (Right click):
 scoreboard players set @s[scores={model_raycast_brush=1..}] model_raycast_brush 0

@@ -16,6 +16,7 @@ scoreboard objectives add model_place trigger
 scoreboard objectives add model_sel trigger
 scoreboard objectives add model_copy trigger
 scoreboard objectives add model_paste trigger
+scoreboard objectives add model_paste_rotation trigger
 scoreboard objectives add model_ui trigger
 
 #
