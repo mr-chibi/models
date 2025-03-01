@@ -42,6 +42,7 @@ execute if entity @s[tag=model_render_paste] run function models_engine:render/g
 # Spawning Mechanic:
 ##########################################
 execute if entity @s[gamemode=survival] run function models_engine:commands/spawning/survival
+execute if entity @s[gamemode=creative] run function models_engine:commands/spawning/creative
 
 # Rendering Engine:
 execute if entity @s[tag=forge_render_paste] run function models_engine:render/paste
