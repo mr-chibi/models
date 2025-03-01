@@ -9,6 +9,7 @@ execute if score @s forge_animation matches 1.. run function models_engine:anima
 
 # Engine "Spawning" Mechanics:
 execute if entity @s[gamemode=creative] run function models_engine:commands/spawning/creative
+execute if entity @s[gamemode=survival] run function models_engine:commands/spawning/survival
 
 # Engine: "Render":
 execute if entity @s[tag=forge_render_copy] run function models_engine:render/copy
