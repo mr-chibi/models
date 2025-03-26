@@ -7,7 +7,8 @@ function models_forge:init
 function models_animations:init
 
 # Models Menu:
-execute if score @s model_ui matches 1.. run function models_menu:init
+function models_menu:init
+function #models_menu:recipes
 
 # Toggle Commands when "Admin Mode":
 execute if score @s model_tools matches 1.. run function models_admin:commands/tools

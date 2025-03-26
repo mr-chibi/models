@@ -6,7 +6,7 @@ function models_public:scoreboards/commands/enable
 function models_animations:init
 
 # Grant Recipes:
-function models_menu:recipes
+function #models_menu:recipes
 
 ##########################################
 # Commands:

@@ -3,7 +3,7 @@ execute if entity @e[type=minecraft:block_display,distance=0..5,tag=forge_model,
 execute if entity @e[type=minecraft:block_display,distance=0..5,tag=forge_layer,sort=nearest] run tag @s add saved_forged_layer
 
 #
-execute unless entity @e[type=minecraft:marker,distance=0..5,tag=forge_save_compiler,sort=nearest,limit=1] align xyz run summon minecraft:marker ~ ~ ~ {data:{layers:[]},Tags:["forge_save_compiler"]}
+execute unless entity @e[type=minecraft:marker,distance=0..5,tag=forge_save_compiler,sort=nearest,limit=1] align xyz run summon minecraft:marker ~ ~ ~ {data:{layers:[],sprite_rotation:[]},Tags:["forge_save_compiler"]}
 
 #
 execute if entity @s[tag=saved_forged_model] as @e[type=minecraft:marker,distance=0..5,tag=forge_save_compiler,sort=nearest,limit=1] at @s store result score @s forge_total_layers if entity @e[type=minecraft:block_display,distance=0..5,tag=forge_model,sort=nearest]

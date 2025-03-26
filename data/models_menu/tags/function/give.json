@@ -1,0 +1,23 @@
+{
+	"values": [
+		
+		// Housing:
+		"models_menu:categories/bedroom/give",
+		"models_menu:categories/kitchen/give",
+		"models_menu:categories/dinning/give",
+		"models_menu:categories/living/give",
+		"models_menu:categories/bath/give",
+		"models_menu:categories/office/give",
+
+		// Decoration
+		"models_menu:categories/misc/give",
+		"models_menu:categories/doors/give",
+		"models_menu:categories/tiles/give",
+		"models_menu:categories/windows/give",
+
+		// Exterior
+		"models_menu:categories/outdoor/give",
+		"models_menu:categories/fences/give",
+		"models_menu:categories/garden/give"
+	]
+}

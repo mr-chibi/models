@@ -67,9 +67,6 @@ scoreboard objectives remove forge_collision_width
 scoreboard objectives remove forge_collision_height
 
 #
-scoreboard objectives remove forge_animation
-
-#
 scoreboard objectives remove forge_save
 
 #

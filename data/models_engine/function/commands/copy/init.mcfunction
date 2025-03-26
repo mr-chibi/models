@@ -1,5 +1,5 @@
 # Clear Paste Brush:
-clear @s minecraft:brush[minecraft:custom_name="[{\"text\": \"Paste Brush\", \"color\": \"yellow\"}]",minecraft:lore=["{\"text\": \"Right click, paste in model from copy command!\", \"color\": \"#4A6DEC\"}"],minecraft:custom_data={Tags:["model_paste_brush"]}] 1
+clear @s minecraft:brush[minecraft:custom_name={"text": "Paste Brush", "color": "yellow"},minecraft:lore=[{"text": "Right click, paste in model from copy command!", "color": "#4A6DEC"}],minecraft:custom_data={Tags:["model_paste_brush"]}] 1
 
 # Forge Render Command:
 function models_engine:commands/copy/render

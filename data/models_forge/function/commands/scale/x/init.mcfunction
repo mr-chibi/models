@@ -8,7 +8,7 @@ tellraw @s[scores={forge_scale_x=..-1}] [{"text": "[", "color": "white"},{"text"
 tellraw @s[scores={forge_scale_x=..-1}] [{"text": "[", "color": "white"},{"text": "Mr_Chibis Models", "color":"#632FF1"}, {"text": "] ", "color": "white"},{"text":"Error, please modify your forge speed to resolve this issue.", "color": "red"}]
 
 # Update Message:
-tellraw @s[scores={forge_scale_x=1..61}] [{"text": "[", "color": "white"},{"text": "Mr_Chibis Models", "color":"#632FF1"}, {"text": "] ", "color": "white"},{"text":"Updated Scale X.", "color": "#A3A3A3"}]
+# tellraw @s[scores={forge_scale_x=1..61}] [{"text": "[", "color": "white"},{"text": "Mr_Chibis Models", "color":"#632FF1"}, {"text": "] ", "color": "white"},{"text":"Updated Scale X.", "color": "#A3A3A3"}]
 
 
 

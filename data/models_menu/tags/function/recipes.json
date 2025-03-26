@@ -1,0 +1,23 @@
+{
+	"values": [
+		
+		// Housing:
+		"models_menu:recipes/bedroom",
+		"models_menu:recipes/kitchen",
+		"models_menu:recipes/dinning",
+		"models_menu:recipes/living",
+		"models_menu:recipes/bath",
+		"models_menu:recipes/office",
+
+		// Decoration
+		"models_menu:recipes/misc",
+		"models_menu:recipes/doors",
+		"models_menu:recipes/tiles",
+		"models_menu:recipes/windows",
+
+		// Exterior
+		"models_menu:recipes/outdoor",
+		"models_menu:recipes/fences",
+		"models_menu:recipes/garden"
+	]
+}

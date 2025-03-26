@@ -67,9 +67,6 @@ scoreboard objectives add forge_collision trigger
 scoreboard objectives add forge_collision_width trigger
 scoreboard objectives add forge_collision_height trigger
 
-#
-scoreboard objectives add forge_animation trigger
-
 # [Forging Tool Save]:
 scoreboard objectives add forge_save trigger
 
