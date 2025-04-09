@@ -3,352 +3,392 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="Mr_Chibi's Models, Mr_Chibi's Models Wiki, Mr_Chibi's Models Datapack">
-	<meta name="description" content="Mr_Chibi's Models Datapack Forging players learning advanced commands to create 3D models in game to save, edit, animate or texture.">
-	<title>Mr_Chibi's Models Wiki &mdash; Forging</title>
-	<link rel="icon" type="image/x-icon" href="images/mr_chibi.png">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta name="description" content="Mr_Chibi's Models, Forge & Create custom models!">
+	<meta name="keywords" content="Mr_Chibi's Models, Mr_Chibi's Models Forge, Mr_Chibi's Forge and Create">
+	<title>Mr_Chibi's Models &mdash; Forging</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/config.css">
 </head>
-<body id="top">
-	<header id="heading">
-		<div class="wrapper">
-			<nav class="navigation">
-				<h3 id="logo">Mr_Chibi's Models Wiki <span id="mobile_btn"></span></h3>
+<body>
+	<header class="heading">
+		<nav class="navigation">
+			<ul class="logo_menu">
+				<li>Mr_Chibi's Models</li>
+			</ul>
 
-				<ul id="main_menu">
-					<li><a href="https://www.patreon.com/mr_chibi" target="_blank">Donate</a></li>
-					<li><a href="https://www.planetminecraft.com/data-pack/models-6051152/" target="_blank">PMC</a></li>
-					<li><a href="https://github.com/mr-chibi/models/releases" target="_blank">Downloads</a></li>
-					<li><a href="forging.html" class="active">Forging</a></li>
-					<li><a href="commands.html">Commands</a></li>
-					<li><a href="index.html">Home</a></li>
-					<li id="main_mobile_btn">X</li>
-				</ul>
-			</nav>
-		</div>
+			<ul class="mobile_menu">
+				<li id="mobile_btn"></li>
+			</ul>
+
+			<ul class="main_menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="commands.html">Commands</a></li>
+				<li class="active"><a href="forging.html">Forging</a></li>
+				<li><a href="https://modrinth.com/datapack/models/versions" target="_blank">Downloads</a></li>
+				<li><a href="https://ko-fi.com/mrchibis" target="_blank">Ko-Fi</a></li>
+			</ul>
+		</nav>
 	</header>
 
-	<section style="background: #090909; color: #fefefe;">
-		<div class="wrapper">
-			<article class="col-10">
-				<h1 align="center">Forging Models & Assets</h1>
-				<p align="center">Reading this page you'll learn how to Create, Save, Edit, Animate, Collisions, Group & Texture!</p>
-			</article>
-		</div>
-	</section>
-
-<section>
-		<div class="wrapper flex flex-wrap flex-row">
-			<div class="col-7">
-				<h2>Forging / Model Spawning Mechanics:</h2>
-				<article class="col-10 gray-border">
-					<h3 class="font-bold text-left">Creative Mode, Mechanics:</h3>
-					<ul>
-						<li>When you're creating models, you'll be given a spawn egg you can <b>right click and place it on ground.</b></li>
-						<li>You can <b>right click spawn egg</b> to place models or just <b>throw them</b>!</li>
-					</ul>
-
-					<h3 class="font-bold text-left">Survival Mode, Mechanics:</h3>
-					<ul>
-						<li>If you want to spawn in models you're saved or using ui menu. Simply <b>"THROW"</b> the item on ground and it will spawn and delete item itself.</li>
-					</ul>
-				</article>
-
-				<h3>Creating your first, Forge Model</h3>
-				<article class="col-10 gray-border">
-					<h3 class="font-bold text-left">How do I create my first model?</h3>
-					<p>First, in game type the following command: <b>/trigger forge_create</b></p>
-					<ul>
-						<li>Next, Right click the Forge Model Spawn Egg on ground.</li>
-					</ul>
-				</article>
-
-				<h3>Adjusting Model "Axis", "Scaling", & More..!</h3>
-				<article class="col-10 gray-border">
-					<h3 id="forge_axis">Forge Model Axis</h3>
-					<p>Commands below are for Forge Axis</p>
-
-					<ul>
-						<li><b>/trigger forge_axis_x set [value]</b> &mdash; Moves X axis on model, min is "-20" & max cap will be "61" (3 Blocks) for each number it moves 0.05 block meters.</li>
-						
-						<li><b>/trigger forge_axis_y set [value]</b> &mdash; Moves Y axis on model, min is "-20" & max cap will be "61" (3 Blocks) for each number it moves 0.05 block meters.</li>
-						
-						<li><b>/trigger forge_axis_z set [value]</b> &mdash; Moves Z axis on model, min is "-20" & max cap will be "61" (3 Blocks) for each number it moves 0.05 block meters.</li>
-					</ul>
-
-					<h3 id="forge_scaling">Forge Model Scaling</h3>
-					<p>Commands below are for Forge Scale</p>
-					<ul>
-						<li><b>/trigger forge_scale_x set [value]</b> &mdash; Moves X scale on model max cap will be "61" (3 Blocks) for each number it moves 0.05 block meters.</li>
-
-						<li><b>/trigger forge_scale_y set [value]</b> &mdash; Moves Y scale on model max cap will be "61" (3 Blocks) for each number it moves 0.05 block meters.</li>
-
-						<li><b>/trigger forge_scale_z set [value]</b> &mdash; Moves Z scale on model max cap will be "61" (3 Blocks) for each number it moves 0.05 block meters.</li>
-					</ul>
-
-					<h3 id="forge_pallete_type">Forge Texturing Palletes</h3>
-					<p>This sets Forge Model pallete, when Player, is editing it only edit that specific model for that texture.</p>
-					<ul>
-						<li><b>/trigger forge_pallete set 1</b> &mdash; Sets forge texture pallete to "<b>None</b>".</li>
-						<li><b>/trigger forge_pallete set 2</b> &mdash; Sets forge texture pallete to "<b>Primary pallete</b>".</li>
-						<li><b>/trigger forge_pallete set 3</b> &mdash; Sets forge texture pallete to "<b>Secondary pallete</b>".</li>
-						<li><b>/trigger forge_pallete set 4</b> &mdash; Sets forge texture pallete to "<b>Triad pallete</b>".</li>
-					</ul>
-
-					<h3 id="forge_angles">Forge Angles</h3>
-					<p>New Angle tool which allows players, to specify what angle they want model to be.</p>
-					<ul>
-						<li><b>/trigger forge_angle_x set [value]</b> &mdash; rotates angles on axis x min is "-20" & max value 61.</li>
-
-						<li><b>/trigger forge_angle_y set [value]</b> &mdash; rotates angles on axis y min is "-20" & max value 61.</li>
-
-						<li><b>/trigger forge_angle_z set [value]</b> &mdash; rotates angles on axis z min is "-20" & max value 61.</li>
-					</ul>
-
-					<h3 id="forge_rotation">Forge Rotation</h3>
-					<p>Command no, longer rotates whole objects it now functions into forge creation tool.</p>
-					<ul>
-						<li><b>/trigger forge_rotate set [value]</b> rotates angles on axis y max value 360.</li>
-						<li><b>/trigger forge_rotate_x set [value]</b> rotates angles on axis x max value 360.</li>
-
-						<li><b>/trigger forge_angle_y set [value]</b> &mdash; rotates angles on axis y min is "-20" & max value 61.</li>
-
-						<li><b>/trigger forge_angle_z set [value]</b> &mdash; rotates angles on axis z min is "-20" & max value 61.</li>
-					</ul>
-
-					<h3 id="forge_align">Forge Align</h3>
-					<p>New Align tool allows players, easier way of align objects by matching their values.</p>
-					<ul>
-						<li><b>/trigger forge_align_x</b> set values <b>axis x</b> to match axis x.</li>
-
-						<li><b>/trigger forge_align_y</b> set values <b>axis y</b> to match axis y.</li>
-						
-						<li><b>/trigger forge_align_z</b> set values <b>axis z</b> to match axis z.</li>
-					</ul>
-
-
-					<h3 id="forge_brushes">Brush Palletes</h3>
-					<p>Player's can choose which type of box they would like in their inventory by using values.</p>
-					<ul>
-						<li><b>Texture Brush</b> &mdash; "new" command, changes how layer texturing works! You can texture each individual layer. It will remove any "Primary", "Secondary", & "Triad" Pallete types.</li>
-						<li><b>Primary Brush</b> &mdash; Right clicking, will change models "layer 1" textures.</li>
-						<li><b>Secondary Brush</b> &mdash; Right clicking, will change models "layer 2" textures.</li>
-						<li><b>Triad Brush</b> &mdash; Right clicking, will change models "layer 3" textures.</li>
-						<li><b>Eraser Brush</b> &mdash; Right clicking, will remove model.</li>
-					</ul>
-				</article>
-
-				<h3 id="forge_add_layer">Forge Add Layer</h3>
-				<article class="col-10 gray-border">
-					<h3 class="font-bold text-left">How do I another layer into my model?</h3>
-					<p>When you add layer into forge mode. It will duplicate itself into current position of the orginal object you've created. Adjust the <b>Axis</b> to see it.</p>
-					<ul>
-						<li><b>/trigger forge_add_layer</b> &mdash; Clones current object player editing and saves it duplicates it to edit next object.</li>
-					</ul>
-				</article>
-
-				<h3 id="forge_save">Forge Save</h3>
-				<article class="col-10 gray-border">
-					<h3 class="font-bold text-left">Commands below are for Forge Model Saving Model</h3>
-					<p>When you add layer into forge mode. It will duplicate itself into current position of the orginal object you've created. Adjust the <b>Axis</b> to see it.</p>
-					<ul>
-						<li>When you finish making your model, ensure you add the final layer using the following command, <b>/trigger forge_add_layer.</b></li>
-						
-						<li>Next, <b>/trigger model_sel</b> this will stop allowing to add layers into model.</li>
-
-						<li>Next, type following command, "<b>/trigger forge_layers</b>" It will display list of layers player can edit.</li>
-						
-						<li>Next, with command, "<b>/trigger forge_edit_layer set [layer]</b>" Players, can edit layer one at time and define palletes, scale, axis and more.
-						
-						<li>Finally, <b>/trigger forge_save</b> &mdash; Saves Model into a spawn egg.</li>
-					</ul>
-				</article>
-
-				<h3 id="forge_layer_type">Forge Viewing Layers by pallete type</h3>
-				<article class="col-10 gray-border">
-					<h3 class="font-bold text-left">Show Pallete types selecting layers.</h3>
-					<p>Depending on what number player types in 1-4 will show layers in chat of the model.</p>
-					<ul>
-						<li><b>/trigger forge_layers set 1</b> &mdash; Defines layers by type, example "<b>1</b>" being "<b>None</b>".</li>
-						<li><b>/trigger forge_layers set 2</b> &mdash; Defines layers by type, example "<b>2</b>" being "<b>Primary Pallete</b>".</li>
-						<li><b>/trigger forge_layers set 3</b> &mdash; Defines layers by type, example "<b>3</b>" being "<b>Secondary Pallete</b>".</li>
-						<li><b>/trigger forge_layers set 4</b> &mdash; Defines layers by type, example "<b>4</b>" being "<b>Triad Pallete</b>".</li>
-					</ul>
-				</article>
-
-				<h3 id="forge_edit_layers">Forge Editing/Removing Layers</h3>
-				<article class="col-10 gray-border">
-					<h3 class="font-bold text-left">How do I Edit/Remove layer into my model?</h3>
-					<p>When you <b>place</b> or <b>stop a selection</b> on a model you can edit the existing layers.</p>
-					<ul>
-						<li><b>/trigger forge_edit_layer set [layer]</b> &mdash; Selects Layer Player, wants to edit while in creation mode.</li>
-						<li><b>/trigger forge_remove_layer set [layer]</b> &mdash; Removes the selected layer you want to remove.</li>
-					</ul>
-				</article>
-
-				<h3 id="forge_copy_and_paste">Forge Copy & Paste</h3>
-				<article class="col-10 gray-border">
-					<h3 class="font-bold text-left">How do I use the copy/paste brush?</h3>
-					<p>When the Player, types in <b>/trigger model_copy</b> it will update the paste brush and contain components data for pasteing. Rendering for coping and pasting takes 0.2 milliseconds less than "1" second in ticks.</p>
-
-					<ul>
-						<li><b>/trigger model_copy</b> &mdash; Will copy all the layers from model in game and display in chat to copy the render.</li>
-						<li><b>Paste Brush</b> &mdash; Will paste all the layers from forge model in game and display in chat to render in.</li>
-					</ul>
-				</article>
-
-				<h3 id="forge_animations">Forge Animations</h3>
-				<article class="col-10 gray-border">
-					<h3 class="font-bold text-left">How to add Animations into my model? </h3>
-					<p>Commands below are for Model Animations. The way Player, faces is how animation will toggle.</p>
-
-					<ul>
-						<li><b>/trigger forge_animation</b> or <b>/trigger forge_animation set 1</b> - Will reset and removal all animation tags.</li>
-						<li><b>/trigger forge_animation set 2</b> &mdash; Will add "door animation" w/ door opening & closing sound effects.</li>
-					</ul>
-				</article>
-
-				<h3 id="forge_selection">Forge Selection</h3>
-				<article class="col-10 gray-border">
-					<h3 class="font-bold text-left">How to stop current selection? </h3>
-					<p>Stops all selections for creating model and resets all model brush tools in players inventory.</p>
-
-					<ul>
-						<li><b>/trigger model_sel</b> &mdash; Removes current selected model player currently editing & hides GUI above hotbar.</li>
-					</ul>
-				</article>
-
-				<h3 id="forge_worldedit_support">Forge Compatible with Worldedit</h3>
-				<article class="col-10 gray-border">
-					<h3 class="font-bold text-left">What commands do I have type for worldedit?</h3>
-					<p>Worldedit just copies the entities and pastes entities and air.</p>
-
-					<ul>
-						<li>Copy command: <b>//copy -e</b></li>
-						<li>Paste Command: <b>//paste -ea</b></li>
-					</ul>
-				</article>
-
-				<h3 id="collision">Collisions</h3>
-				<article class="col-10 gray-border">
-					<h3 class="font-bold text-left">Applying collisions types, width, & height.</h3>
-					<p>Making the blocks feel real to game by applying block collisions upon spawning. Collision blocks, cannot be broken by players. Only player that owns it can remove it or an admin.</p>
-
-					<p>The removal tool for the collisions is same <b>remove brush</b>. If you get any barriers or left over blocks use removal tool to simply remove the blocks.</p>
-
-					<h4>Collison Types:</h4>
-					<p>Now adding collision support for certain blocks and model types!!</p>
-					<ul>
-						<li><b>/trigger forge_collision set 1</b>&mdash; Removes collision from blocks.</li>
-						<li><b>/trigger forge_collision set 2</b>&mdash; Adds barrier collision.</li>
-						<li><b>/trigger forge_collision set 3</b>&mdash; Adds fence collision.</li>
-						<li><b>/trigger forge_collision set 4</b>&mdash; Adds slab collision.</li>
-						<li><b>/trigger forge_collision set 5</b>&mdash; Adds stair collision.</li>
-						<li><b>/trigger forge_collision set 6</b>&mdash; Adds chain[axis=x] collision.</li>
-						<li><b>/trigger forge_collision set 7</b>&mdash; Adds chain[axis=y] collision.</li>
-						<li><b>/trigger forge_collision set 8</b>&mdash; Adds chain[axis=z] collision.</li>
-					</ul>
-
-					<h4>Collison Width:</h4>
-					<ul>
-						<li><b>/trigger forge_collision_width set 1-3</b>&mdash; Sets width of the collision and cannot excessed over 3 blocks.</li>
-					</ul>
-
-					<h4>Collison Height:</h4>
-					<ul>
-						<li><b>/trigger forge_collision_height set 1-3</b>&mdash; Sets height of the collision and cannot excessed over 3 blocks.</li>
-					</ul>
-				</article>
-
-				<h3 id="forge_upgrade">Forge Update Models</h3>
-				<article class="col-10 gray-border">
-					<h3 class="font-bold text-left">Upgrade older version data to latest version</h3>
-					<p>Converter for old data to be updated to lastest data if pack with commands!</p>
-
-					<ul>
-						<li><b>/trigger forge_update set 1</b> &mdash; turns any <b>1.20.4</b> old model code data into new format introduced in last few updates of 1.20.4.</li>
-						<li><b>/trigger forge_update set 2</b> &mdash; upgrades the code into pack version, <b>1.20.6</b> format</li>
-					</ul>
-				</article>
-
-				<h3 id="forge_ui">Forge Models UI Menu</h3>
-				<article class="col-10 gray-border">
-					<h3 class="font-bold text-left">Shulkerbox Menu of models by categories</h3>
-					<p>Player's can choose which type of box they would like in their inventory by using values.</p>
-
-					<ul>
-						<li>type in for example, "<b>/trigger model_ui</b>" you'll receive all models.</li>
-						<li>type in for example, "<b>/trigger model_ui set 2</b>" you'll receive "<b>Bedroom</b>".</li>
-						<li>type in for example, "<b>/trigger model_ui set 3</b>" you'll receive "<b>Kitchen</b>".</li>
-						<li>type in for example, "<b>/trigger model_ui set 4</b>" you'll receive "<b>Dinning</b>".</li>
-						<li>type in for example, "<b>/trigger model_ui set 5</b>" you'll receive "<b>Living</b>".</li>
-						<li>type in for example, "<b>/trigger model_ui set 6</b>" you'll receive "<b>Decoration</b>".</li>
-						<li>type in for example, "<b>/trigger model_ui set 7</b>" you'll receive "<b>Exterior</b>".</li>
-						<li>type in for example, "<b>/trigger model_ui set 8</b>" you'll receive "<b>Doors</b>".</li>
-						<li>type in for example, "<b>/trigger model_ui set 9</b>" you'll receive "<b>Fences</b>".</li>
-						<li>type in for example, "<b>/trigger model_ui set 10</b>" you'll receive "<b>Garden</b>".</li>
-						<li>type in for example, "<b>/trigger model_ui set 11</b>" you'll receive "<b>Windows</b>".</li>
-					</ul>
+	<main>
+		<section style="background: url('images/living-room-1.png') center center no-repeat; background-size:cover">
+			<div class="flex-wrapper-row padding-5">
+				<article class="col-10 text-center">
+					<h1 class="text-shadow">Forging Models & Assets</h1>
+					<p class="text-shadow">Reading this page you'll learn how to Create, Save, Edit, Animate, Collisions, Group & Texture!</p>
 				</article>
 			</div>
+		</section>
 
-			<aside class="menu col-3">
-				<ul class="scrollmenu">
-					<h3 class="font-normal text-left">Model Mechanics</h3>
-					<li><a href="#top">Placing / Spawning</a></li>
+		<section>
+			<div class="flex-wrapper-row padding-3">
+				<div class="col-8">
+					<h4 class="text-italic">Model Mechanics</h4>
+					<h2 class="container-title">Placing / Spawning</h2>
+					<article class="container-wrapper col-10 gray-border">
+						<h3 class="font-bold text-left">Creative Mode, Mechanics:</h3>
+						<ul>
+							<li>When you're creating models, you'll be given a spawn egg you can <b>right click and place it on ground.</b></li>
+							<li>You can <b>right click spawn egg</b> to place models or just <b>throw them</b>!</li>
+						</ul>
 
-					<h3 class="font-normal text-left">Creating Model</h3>
-					<li><a href="#top">Creating a model</a></li>
-					<li><a href="#forge_axis">Axis, Scaling, & More..!</a></li>
-					<li><a href="#forge_add_layer">Adding Layers</a></li>
-					<li><a href="#forge_save">Saving Model</a></li>
-
-					<h3 class="font-normal text-left">Editing Model</h3>
-					<li><a href="#forge_layer_type">Viewing Layer Types</a></li>
-					<li><a href="#forge_edit_layers">[Edit/Remove] Layer</a></li>
-					<li><a href="#forge_copy_and_paste">Copy & Paste</a></li>
-					<li><a href="#collision">Collision</a></li>
-					<li><a href="#forge_animations">Animations</a></li>
-					<li><a href="#forge_selection">Selection</a></li>
-					<li><a href="#forge_worldedit_support">Worldedit Support</a></li>
-
-					<h3 class="font-normal text-left">Misc Tools</h3>
-					<li><a href="#forge_upgrade">Upgrade Model Version</a></li>
-					<li><a href="#forge_ui">Model UI</a></li>
-				</ul>
-			</aside>
-		</div>
-	</section>
+						<h3 class="font-bold text-left">Survival Mode, Mechanics:</h3>
+						<ul>
+							<li>If you want to spawn in models you're saved or using ui menu. Simply <b>"THROW"</b> the item on ground and it will spawn and delete item itself.</li>
+						</ul>
+					</article>
 
 
-	<section class="footer-nav">
-		<div class="wrapper">
-			<nav class="navigation">
-				<h3 id="logo">Mr_Chibi's Models Wiki</h3>
+					<h2 class="container-title" id="forge_tool_mechanics">Forge Tool Mechanics</h2>
+					<article class="container-wrapper col-10 gray-border">
+						<h3 class="font-bold text-left"></h3>
+						<p>Need more information on tool mechanics? Watch our homepage video! <a href="index.html#video">[click here]</a>!</p>
 
-				<ul id="main_menu">
-					<li><a href="https://www.patreon.com/mr_chibi" target="_blank">Donate</a></li>
-					<li><a href="https://www.planetminecraft.com/data-pack/models-6051152/" target="_blank">PMC</a></li>
-					<li><a href="https://github.com/mr-chibi/models/releases" target="_blank">Downloads</a></li>
-					<li><a href="forging.html">Forging</a></li>
-					<li><a href="commands.html">Commands</a></li>
-					<li><a href="index.html" class="active">Home</a></li>
-				</ul>
-			</nav>
-		</div>
-	</section>
+						<h3 class="font-bold text-left" id="model_forge_icons">Axis Icons (X,Y,Z)</h3>
+						<ul>
+							<li>[<b>Red Candle</b>] &mdash; Adjusting positive values and hitting the "F" will swap them to negative values.</li>
+							<li>[<b>Green Candle</b>] &mdash; Adjusting positive values and hitting the "F" will swap them to negative values.</li>
+							<li>[<b>Blue Candle</b>] &mdash; Adjusting positive values and hitting the "F" will swap them to negative values.</li>
+						</ul>
 
-	<footer class="footer">
-		<div class="wrapper">
-			<p>
-				&copy; 2024 Mr_Chibi's Models. All Rights Reserved.<br>
-				NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.<br>
-				<a href="https://www.minecraft.net/" target="_blank">Minecraft</a> is copyright <a href="https://www.minecraft.net/" target="_blank">Mojang Studios</a> and is not affiliated with this site.<br>
-			</p>
-		</div>
+						<h3 class="font-bold text-left">Scaling Icons (X,Y,Z)</h3>
+						<ul>
+							<li>[<b>Command Block</b>] &mdash; Adjusting positive values and hitting the "F" will swap them to negative values.</li>
+							<li>[<b>Chain Command Block</b>] &mdash; Adjusting positive values and hitting the "F" will swap them to negative values.</li>
+							<li>[<b>Repeating Command Block</b>] &mdash; Adjusting positive values and hitting the "F" will swap them to negative values.</li>
+						</ul>
+
+						<h3 class="font-bold text-left">Angle Icons (X,Y,Z)</h3>
+						<ul>
+							<li>[<b>Redstone Dust</b>] &mdash; Adjusting positive values and hitting the "F" will swap them to negative values.</li>
+							<li>[<b>Gun Powder</b>] &mdash; Adjusting positive values and hitting the "F" will swap them to negative values.</li>
+							<li>[<b>Glowstone Dust</b>] &mdash; Adjusting positive values and hitting the "F" will swap them to negative values.</li>
+						</ul>
+
+						<h3 class="font-bold text-left">Misc Icons (Add, Rotate, Clear Selection, Save)</h3>
+						<ul>	
+							<li>[<b>Scaffolding</b>] &mdash; Creates a new layer in the Forge Creation Mode.</li>
+							<li>[<b>Magenta Glazed Terracotta</b>] &mdash; Right clicking rotates (Forge Model).</li>
+							<li>[<b>Barrier</b>] &mdash; Cancels Current Selected Model/Forge Layer.</li>
+							<li>[<b>Knowledge Book</b>] &mdash; Saves Forge layers into model.</li>
+						</ul>
+					</article>
+
+
+					<h2 class="container-title">Model Tool Mechanics</h2>
+					<article class="container-wrapper col-10 gray-border">
+						<h3 class="font-bold text-left" id="model_tool_mechanics">How these types of brushes work!</h3>
+						<p>Types of brushes with descriptions.</p>
+
+						<ul>
+							<li><b>Texture Brush</b> &mdash; Edits indivdual textures when using <b>/trigger forge_edit_layer set [layer]</b> command.</li>
+							<li><b>Primary Brush</b> &mdash; Edits all textures of primary layer on the model.</li>
+							<li><b>Secondary Brush</b> &mdash; Edits all textures of secondary layer on the model.</li>
+							<li><b>Triad Brush</b> &mdash; Edits all textures of triad layer on the model.</li>
+							<li><b>Eraser Brush</b> &mdash; <b>Right clicking</b> will remove the model and tell you in chat it has been removed can also remove collison blocks such as, <b>barriers</b>, <b>oak fence</b>, etc.</li>
+							<li><b>Paste Brush</b> &mdash; When using the command, <b>/trigger model_copy</b> it will copy nearest model and when <b>right clicking</b> with brush it will render and paste it in.</li>
+							<li><b>Sel Brush</b> &mdash; Stops all current selections from editing or creating.</li>
+						</ul>
+					</article>
+
+
+					<h4 class="text-italic">Creating Models</h4>
+					<h3 class="container-title">Forge Create</h3>
+					<article class="container-wrapper col-10 gray-border">
+						<h3 class="font-bold text-left">How do I create my first model?</h3>
+						<p>First, in game type the following command: <b>/trigger forge_create</b></p>
+						<ul>
+							<li>Next, Right click the Forge Model Spawn Egg on ground.</li>
+						</ul>
+					</article>
+
+					<h3 class="container-title">Axis, Scaling, & More..</h3>
+					<article class="container-wrapper col-10 gray-border">
+						<h3 id="forge_axis">Forge Model Axis</h3>
+						<p>Commands below are for Forge Axis</p>
+
+						<ul>
+							<li><b>/trigger forge_axis_x set [value]</b> &mdash; Moves X axis on model, min is "-20" & max cap will be "61" (3 Blocks) for each number it moves 0.05 block meters.</li>
+							
+							<li><b>/trigger forge_axis_y set [value]</b> &mdash; Moves Y axis on model, min is "-20" & max cap will be "61" (3 Blocks) for each number it moves 0.05 block meters.</li>
+							
+							<li><b>/trigger forge_axis_z set [value]</b> &mdash; Moves Z axis on model, min is "-20" & max cap will be "61" (3 Blocks) for each number it moves 0.05 block meters.</li>
+						</ul>
+
+						<h3 id="forge_scaling">Forge Model Scaling</h3>
+						<p>Commands below are for Forge Scale</p>
+						<ul>
+							<li><b>/trigger forge_scale_x set [value]</b> &mdash; Moves X scale on model max cap will be "61" (3 Blocks) for each number it moves 0.05 block meters.</li>
+
+							<li><b>/trigger forge_scale_y set [value]</b> &mdash; Moves Y scale on model max cap will be "61" (3 Blocks) for each number it moves 0.05 block meters.</li>
+
+							<li><b>/trigger forge_scale_z set [value]</b> &mdash; Moves Z scale on model max cap will be "61" (3 Blocks) for each number it moves 0.05 block meters.</li>
+						</ul>
+
+						<h3 id="forge_pallete_type">Forge Texturing Palletes</h3>
+						<p>This sets Forge Model pallete, when Player, is editing it only edit that specific model for that texture.</p>
+						<ul>
+							<li><b>/trigger forge_pallete set 1</b> &mdash; Sets forge texture pallete to "<b>None</b>".</li>
+							<li><b>/trigger forge_pallete set 2</b> &mdash; Sets forge texture pallete to "<b>Primary pallete</b>".</li>
+							<li><b>/trigger forge_pallete set 3</b> &mdash; Sets forge texture pallete to "<b>Secondary pallete</b>".</li>
+							<li><b>/trigger forge_pallete set 4</b> &mdash; Sets forge texture pallete to "<b>Triad pallete</b>".</li>
+						</ul>
+
+						<h3 id="forge_angles">Forge Angles</h3>
+						<p>New Angle tool which allows players, to specify what angle they want model to be.</p>
+						<ul>
+							<li><b>/trigger forge_angle_x set [value]</b> &mdash; rotates angles on axis x min is "-20" & max value 61.</li>
+
+							<li><b>/trigger forge_angle_y set [value]</b> &mdash; rotates angles on axis y min is "-20" & max value 61.</li>
+
+							<li><b>/trigger forge_angle_z set [value]</b> &mdash; rotates angles on axis z min is "-20" & max value 61.</li>
+						</ul>
+
+						<h3 id="forge_rotation">Forge Rotation</h3>
+						<p>Command no, longer rotates whole objects it now functions into forge creation tool.</p>
+						<ul>
+							<li><b>/trigger forge_rotate set [value]</b> rotates angles on axis y max value 360.</li>
+							<li><b>/trigger forge_rotate_x set [value]</b> rotates angles on axis x max value 360.</li>
+
+							<li><b>/trigger forge_angle_y set [value]</b> &mdash; rotates angles on axis y min is "-20" & max value 61.</li>
+
+							<li><b>/trigger forge_angle_z set [value]</b> &mdash; rotates angles on axis z min is "-20" & max value 61.</li>
+						</ul>
+
+						<h3 id="forge_align">Forge Align</h3>
+						<p>New Align tool allows players, easier way of align objects by matching their values.</p>
+						<ul>
+							<li><b>/trigger forge_align_x</b> set values <b>axis x</b> to match axis x.</li>
+
+							<li><b>/trigger forge_align_y</b> set values <b>axis y</b> to match axis y.</li>
+							
+							<li><b>/trigger forge_align_z</b> set values <b>axis z</b> to match axis z.</li>
+						</ul>
+
+
+						<h3 id="forge_brushes">Brush Palletes</h3>
+						<p>Player's can choose which type of box they would like in their inventory by using values.</p>
+						<ul>
+							<li><b>Texture Brush</b> &mdash; "new" command, changes how layer texturing works! You can texture each individual layer. It will remove any "Primary", "Secondary", & "Triad" Pallete types.</li>
+							<li><b>Primary Brush</b> &mdash; Right clicking, will change models "layer 1" textures.</li>
+							<li><b>Secondary Brush</b> &mdash; Right clicking, will change models "layer 2" textures.</li>
+							<li><b>Triad Brush</b> &mdash; Right clicking, will change models "layer 3" textures.</li>
+							<li><b>Eraser Brush</b> &mdash; Right clicking, will remove model.</li>
+						</ul>
+					</article>
+
+					<h3 class="container-title" id="forge_add_layer">Adding Layers</h3>
+					<article class="container-wrapper col-10 gray-border">
+						<h3 class="font-bold text-left">How do I another layer into my model?</h3>
+						<p>When you add layer into forge mode. It will duplicate itself into current position of the orginal object you've created. Adjust the <b>Axis</b> to see it.</p>
+						<ul>
+							<li><b>/trigger forge_add_layer</b> &mdash; Clones current object player editing and saves it duplicates it to edit next object.</li>
+						</ul>
+					</article>
+
+					<h3 class="container-title" id="forge_save">Saving Model</h3>
+					<article class="container-wrapper col-10 gray-border">
+						<h3 class="font-bold text-left">Commands below are for Forge Model Saving Model</h3>
+						<p>When you add layer into forge mode. It will duplicate itself into current position of the orginal object you've created. Adjust the <b>Axis</b> to see it.</p>
+						<ul>
+							<li>When you finish making your model, ensure you add the final layer using the following command, <b>/trigger forge_add_layer.</b></li>
+							
+							<li>Next, <b>/trigger model_sel</b> this will stop allowing to add layers into model.</li>
+
+							<li>Next, type following command, "<b>/trigger forge_layers</b>" It will display list of layers player can edit.</li>
+							
+							<li>Next, with command, "<b>/trigger forge_edit_layer set [layer]</b>" Players, can edit layer one at time and define palletes, scale, axis and more.
+							
+							<li>Finally, <b>/trigger forge_save</b> &mdash; Saves Model into a spawn egg.</li>
+						</ul>
+					</article>
+
+
+					<h4 class="text-italic">Editing Models</h4>
+					<h3 class="container-title" id="forge_layer_type">Viewing Layer Types</h3>
+					<article class="container-wrapper col-10 gray-border">
+						<h3 class="font-bold text-left">Show Pallete types selecting layers.</h3>
+						<p>Depending on what number player types in 1-4 will show layers in chat of the model.</p>
+						<ul>
+							<li><b>/trigger forge_layers set 1</b> &mdash; Defines layers by type, example "<b>1</b>" being "<b>None</b>".</li>
+							<li><b>/trigger forge_layers set 2</b> &mdash; Defines layers by type, example "<b>2</b>" being "<b>Primary Pallete</b>".</li>
+							<li><b>/trigger forge_layers set 3</b> &mdash; Defines layers by type, example "<b>3</b>" being "<b>Secondary Pallete</b>".</li>
+							<li><b>/trigger forge_layers set 4</b> &mdash; Defines layers by type, example "<b>4</b>" being "<b>Triad Pallete</b>".</li>
+						</ul>
+					</article>
+
+					<h3 class="container-title" id="forge_edit_layers">[Edit / Remove] Layers</h3>
+					<article class="container-wrapper col-10 gray-border">
+						<h3 class="font-bold text-left">How do I Edit/Remove layer into my model?</h3>
+						<p>When you <b>place</b> or <b>stop a selection</b> on a model you can edit the existing layers.</p>
+						<ul>
+							<li><b>/trigger forge_edit_layer set [layer]</b> &mdash; Selects Layer Player, wants to edit while in creation mode.</li>
+							<li><b>/trigger forge_remove_layer set [layer]</b> &mdash; Removes the selected layer you want to remove.</li>
+						</ul>
+					</article>
+
+					<h3 class="container-title" id="forge_copy_and_paste">Copy & Paste</h3>
+					<article class="container-wrapper col-10 gray-border">
+						<h3 class="font-bold text-left">How do I use the copy/paste brush?</h3>
+						<p>When the Player, types in <b>/trigger model_copy</b> it will update the paste brush and contain components data for pasteing. Rendering for coping and pasting takes 0.2 milliseconds less than "1" second in ticks.</p>
+
+						<ul>
+							<li><b>/trigger model_copy</b> &mdash; Will copy all the layers from model in game and display in chat to copy the render.</li>
+							<li><b>Paste Brush</b> &mdash; Will paste all the layers from forge model in game and display in chat to render in.</li>
+						</ul>
+					</article>
+
+
+					<h3 class="container-title" id="collision">Collisions</h3>
+					<article class="container-wrapper col-10 gray-border">
+						<h3 class="font-bold text-left">Applying collisions types, width, & height.</h3>
+						<p>Making the blocks feel real to game by applying block collisions upon spawning. Collision blocks, cannot be broken by players. Only player that owns it can remove it or an admin.</p>
+
+						<p>The removal tool for the collisions is same <b>remove brush</b>. If you get any barriers or left over blocks use removal tool to simply remove the blocks.</p>
+
+						<h4>Collison Types:</h4>
+						<p>Now adding collision support for certain blocks and model types!!</p>
+						<ul>
+							<li><b>/trigger forge_collision set 1</b>&mdash; Removes collision from blocks.</li>
+							<li><b>/trigger forge_collision set 2</b>&mdash; Adds barrier collision.</li>
+							<li><b>/trigger forge_collision set 3</b>&mdash; Adds fence collision.</li>
+							<li><b>/trigger forge_collision set 4</b>&mdash; Adds slab collision.</li>
+							<li><b>/trigger forge_collision set 5</b>&mdash; Adds stair collision.</li>
+							<li><b>/trigger forge_collision set 6</b>&mdash; Adds chain[axis=x] collision.</li>
+							<li><b>/trigger forge_collision set 7</b>&mdash; Adds chain[axis=y] collision.</li>
+							<li><b>/trigger forge_collision set 8</b>&mdash; Adds chain[axis=z] collision.</li>
+						</ul>
+
+						<h4>Collison Width:</h4>
+						<ul>
+							<li><b>/trigger forge_collision_width set 1-3</b>&mdash; Sets width of the collision and cannot excessed over 3 blocks.</li>
+						</ul>
+
+						<h4>Collison Height:</h4>
+						<ul>
+							<li><b>/trigger forge_collision_height set 1-3</b>&mdash; Sets height of the collision and cannot excessed over 3 blocks.</li>
+						</ul>
+					</article>
+
+
+					<h3 class="container-title" id="forge_animations">Animations</h3>
+					<article class="container-wrapper col-10 gray-border">
+						<h3 class="font-bold text-left">How to add Animations into my model? </h3>
+						<p>More information coming soon!</p>
+					</article>
+
+
+					<h3 class="container-title" id="forge_selection">Selection</h3>
+					<article class="container-wrapper col-10 gray-border">
+						<h3 class="font-bold text-left">How to stop current selection? </h3>
+						<p>Stops all selections for creating model and resets all model brush tools in players inventory.</p>
+
+						<ul>
+							<li><b>/trigger model_sel</b> &mdash; Removes current selected model player currently editing & hides GUI above hotbar.</li>
+						</ul>
+					</article>
+
+					<h3 class="container-title" id="forge_worldedit_support">Worldedit Support</h3>
+					<article class="container-wrapper col-10 gray-border">
+						<h3 class="font-bold text-left">What commands do I have type for worldedit?</h3>
+						<p>Worldedit just copies the entities and pastes entities and air.</p>
+
+						<ul>
+							<li>Copy command: <b>//copy -e</b></li>
+							<li>Paste Command: <b>//paste -ea</b></li>
+						</ul>
+					</article>
+
+
+					<h4 class="text-italic">Misc Tools</h4>
+					<h3 class="container-title" id="forge_upgrade">Upgrade Model Version</h3>
+					<article class="container-wrapper col-10 gray-border">
+						<h3 class="font-bold text-left">Upgrade older version data to latest version</h3>
+						<p>Converter for old data to be updated to lastest data if pack with commands!</p>
+
+						<ul>
+							<li><b>/trigger forge_update set 1</b> &mdash; turns any <b>1.20.4</b> old model code data into new format introduced in last few updates of 1.20.4.</li>
+							<li><b>/trigger forge_update set 2</b> &mdash; upgrades the code into pack version, <b>1.20.6</b> format</li>
+						</ul>
+					</article>
+				</div>
+
+
+				<aside class="menu col-2">
+					<ul class="scrollmenu">
+						<h4 class="font-normal text-left">Model Mechanics</h3>
+						<li><a href="#top">Placing / Spawning</a></li>
+						<li><a href="#top">Forge Tool Mechanics</a></li>
+						<li><a href="#top">Model Tool Mechanics</a></li>
+
+						<h4 class="font-normal text-left">Creating Models</h3>
+						<li><a href="#top">Forge Create</a></li>
+						<li><a href="#forge_axis">Axis, Scaling, & More..!</a></li>
+						<li><a href="#forge_add_layer">Adding Layers</a></li>
+						<li><a href="#forge_save">Saving Model</a></li>
+
+						<h4 class="font-normal text-left">Editing Models</h3>
+						<li><a href="#forge_layer_type">Viewing Layer Types</a></li>
+						<li><a href="#forge_edit_layers">[Edit / Remove] Layers</a></li>
+						<li><a href="#forge_copy_and_paste">Copy & Paste</a></li>
+						<li><a href="#collision">Collision</a></li>
+						<li><a href="#forge_animations">Animations</a></li>
+						<li><a href="#forge_selection">Selection</a></li>
+						<li><a href="#forge_worldedit_support">Worldedit Support</a></li>
+
+						<h4 class="font-normal text-left">Misc Tools</h3>
+						<li><a href="#forge_upgrade">Upgrade Model Version</a></li>
+					</ul>
+				</aside>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<nav class="navigation flex-wrapper-row">
+			<ul class="logo_menu">
+				<li>Mr_Chibi's Models</li>
+			</ul>
+
+			<ul class="main_menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="commands.html">Commands</a></li>
+				<li class="active"><a href="forging.html">Forging</a></li>
+				<li><a href="https://modrinth.com/datapack/models/versions" target="_blank">Downloads</a></li>
+				<li><a href="https://ko-fi.com/mrchibis" target="_blank">Ko-Fi</a></li>
+			</ul>
+		</nav>
 	</footer>
 
-	<script type="text/javascript" src="js/mobile_btn.js"></script>
-	<script type="text/javascript" src="js/return_to_top.js"></script>
+	<section class="footer-info">
+		<div class="flex-wrapper-col">
+			<p>&copy; 2024 &mdash; 2025 Mr_Chibi's Models | All Rights Reserved.<br>
+			NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.<br>
+			<a href="https://www.minecraft.net/" target="_blank">Minecraft</a> is copyright <a href="https://www.minecraft.net/" target="_blank">Mojang Studios</a> and is not affiliated with this site.</p>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="js/mobile.js"></script>
+	<script type="text/javascript" src="js/toggle.js"></script>
 </body>
 </html>

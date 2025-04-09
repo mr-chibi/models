@@ -1,0 +1,27 @@
+footer {
+	padding: 1% 0%;
+	background: #151515;
+	border-top: 1px double rgba(255, 255, 255, 0.10);
+	border-bottom: 1px double rgba(255, 255, 255, 0.10);
+}
+
+@media screen and (max-width:575px) {
+	footer nav.navigation ul {
+		display: flex;
+	}
+}
+
+section.footer-info {
+	margin: auto;
+	padding: 1%;
+	background: #202020;
+	border-top: 1px solid #454545;
+}
+
+section.footer-info p {
+	padding: 1.5% 1%;
+}
+
+section.footer-info p a {
+	color: aqua;
+}

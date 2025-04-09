@@ -1,0 +1,31 @@
+h1,h2,h3,h4,h5,h6,button {
+	text-transform: uppercase;
+}
+
+h1 { font-size: 22px }
+h2 { font-size: 20px }
+h3 { font-size: 18px }
+h4 { font-size: 16px }
+h5 { font-size: 14px }
+h6 { font-size: 12px }
+
+@media screen and (max-width: 575px) {
+	h1 { font-size: 20px }
+	h2 { font-size: 18px }
+	h3 { font-size: 16px }
+	h4 { font-size: 14px }
+	h5 { font-size: 12px }
+	h6 { font-size: 10px }
+}
+
+.text-italic { font-style: italic; }
+.text-bold { font-weight: bold; }
+.text-normal { font-weight: normal; }
+
+.text-center { text-align:center; }
+.text-left { text-align:left; }
+.text-right { text-align:right; }
+
+.text-shadow {
+	text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.75);
+}

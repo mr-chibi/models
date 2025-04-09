@@ -1,0 +1,92 @@
+ul.scrollmenu {
+	position: sticky;
+	padding: 0;
+	margin: 0;
+	top: 15%;
+	list-style-type: none;
+}
+
+ul.scrollmenu h4 {
+	margin: 0;
+	padding: 7% 5%;
+	background: rgba(0, 0, 0, 0.50);
+}
+
+ul.scrollmenu li {
+	padding: 5%;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+}
+
+ul.scrollmenu li:hover {
+	transition: 500ms ease;
+	border-bottom: 1px solid gold;
+}
+
+ul.scrollmenu li:hover,
+ul.scrollmenu li:hover a {
+	color: gold;
+}
+
+
+ul.scrollmenu li a {
+	color: #dedede;
+}
+
+.container-title {
+	position: relative;
+	margin: 0;
+	padding: 2%;
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	cursor: pointer;
+}
+
+@media screen and (max-width:575px) {
+	.container-title {
+		padding: 3.5% 2%;
+	}
+}
+
+.container-title:after {
+	position: absolute;
+	padding: 2%;
+	top: 0;
+	right: 0;
+	content: " + ";
+}
+
+.container-title:hover {
+	transition: 500ms ease;
+	background: rgba(255, 255, 255, 0.15);
+}
+
+.container-wrapper {
+	display: none;
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	border-top: none;
+}
+
+.container-wrapper:hover {
+	transition: 500ms ease;
+	background: rgba(255, 255, 255, 0.05);
+}
+
+.container-wrapper:hover h1, .container-wrapper:hover h2, .container-wrapper:hover h3,
+.container-wrapper:hover h4, .container-wrapper:hover h5, .container-wrapper:hover h6 {
+	transition: 1000ms ease;
+	color: aqua;
+}
+
+.container-wrapper:hover b {
+	transition: 1000ms ease;
+	color: gold;
+}
+
+.container-wrapper a {
+	color: aqua;
+}
+
+@media screen and (max-width:575px) {
+	.menu {
+		display: none;
+	}
+}

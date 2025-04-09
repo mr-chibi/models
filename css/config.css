@@ -1,0 +1,16 @@
+/* Animation */
+@import url('tags/animation.css');
+
+/* Tags */
+@import url('tags/buttons.css');
+@import url('tags/figure.css');
+@import url('tags/text.css');
+
+/* Templates */
+@import url('templates/header.css');
+@import url('templates/content.css');
+@import url('templates/footer.css');
+
+/* Pages */
+@import url('pages/home.css');
+@import url('pages/wiki.css');

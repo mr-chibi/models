@@ -3,220 +3,176 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="Mr_Chibi's Models, Mr_Chibi's Models Wiki, Mr_Chibi's Models Datapack">
-	<meta name="description" content="Mr_Chibi's Models Datapack Wiki Commands, allowing players to learn and use basic commands.">
-	<title>Mr_Chibi's Models Wiki &mdash; Commands</title>
-	<link rel="icon" type="image/x-icon" href="images/mr_chibi.png">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta name="description" content="Mr_Chibi's Models, Commands list of information how to use!">
+	<meta name="keywords" content="Mr_Chibi's Models, Mr_Chibi's Models Commands, Mr_Chibi's Models Help">
+	<title>Mr_Chibi's Models &mdash; Commands</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/config.css">
 </head>
-<body id="top">
-	<header id="heading">
-		<div class="wrapper">
-			<nav class="navigation">
-				<h3 id="logo">Mr_Chibi's Models Wiki <span id="mobile_btn"></span></h3>
+<body>
+	<header class="heading">
+		<nav class="navigation">
+			<ul class="logo_menu">
+				<li>Mr_Chibi's Models</li>
+			</ul>
 
-				<ul id="main_menu">
-					<li><a href="https://www.patreon.com/mr_chibi" target="_blank">Donate</a></li>
-					<li><a href="https://www.planetminecraft.com/data-pack/models-6051152/" target="_blank">PMC</a></li>
-					<li><a href="https://github.com/mr-chibi/models/releases" target="_blank">Downloads</a></li>
-					<li><a href="forging.html">Forging</a></li>
-					<li><a href="commands.html" class="active">Commands</a></li>
-					<li><a href="index.html">Home</a></li>
-					<li id="main_mobile_btn">X</li>
-				</ul>
-			</nav>
-		</div>
+			<ul class="mobile_menu">
+				<li id="mobile_btn"></li>
+			</ul>
+
+			<ul class="main_menu">
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="commands.html">Commands</a></li>
+				<li><a href="forging.html">Forging</a></li>
+				<li><a href="https://modrinth.com/datapack/models/versions" target="_blank">Downloads</a></li>
+				<li><a href="https://ko-fi.com/mrchibis" target="_blank">Ko-Fi</a></li>
+			</ul>
+		</nav>
 	</header>
 
-	<section style="background: #090909; color: #fefefe;">
-		<div class="wrapper">
-			<article class="col-10">
-				<h1 align="center">Models Player Commands</h1>
-				<p align="center">You'll find information here about how to use commands and small descriptions about how they functions and what they do.</p>
+	<main>
+		<section style="background: url('images/garden-1.png') center center no-repeat; background-size:cover;">
+			<article class="flex-wrapper-row padding-5">
+				<div class="col-10 text-center">
+					<h1 class="text-shadow">Models Player Commands</h1>
+					<p class="text-shadow">You'll find information here about how to use commands and small descriptions about how they functions and what they do.</p>
+				</div>
 			</article>
-		</div>
-	</section>
+		</section>
 
-	<section>
-		<div class="wrapper flex flex-wrap flex-row">
-			<div class="col-7">
-				<h2 id="getting_started">Getting Started</h2>
-				<article class="col-10 gray-border">
-					<h3 class="font-bold text-left">How do I enable Admin Commands?</h3>
-					<ul>
-						<li>If you're a <b>Server Operator</b> you can grant yourself or another player permissions by doing the following command, "<b>/team join model_admin [username]</b>"</li>
+		<section>
+			<div class="flex-wrapper-row padding-3">
+				<div class="col-8">
+					<h4 class="text-italic">Getting Started</h4>
+					<h2 class="container-title" id="getting_started">Adding Permissions</h2>
+					<article class="container-wrapper col-10 gray-border">
+						<h3 class="font-bold text-left">How do I enable Admin Commands?</h3>
+						<ul>
+							<li>If you're a <b>Server Operator</b> you can grant yourself or another player permissions by doing the following command, "<b>/team join model_admin [username]</b>"</li>
+						</ul>
+					</article>
+
+					<h3 class="container-title font-bold text-left">Removing Permissions</h3>
+					<article class="container-wrapper col-10 gray-border">
+						<ul>
+							<li>If you're a <b>Server Operator</b> you can also remove the permissions from the player, by doing the following command, "<b>/team leave [username]</b>"</li>
+						</ul>
+					</article>
+
+					<h4 class="text-italic">Public Commands</h4>
+					<h2 class="container-title">Commands</h2>
+					<article class="container-wrapper col-10 gray-border">
+						<h3 class="font-bold text-left" id="model_public_commands">Understanding the code</h3>
+						<p>Commands regular players, can use in survival to use brushes, texture, & remove.</p>
+
+						<ul>
+							<li><b>/trigger model_tools</b> &mdash; Grants Player's list of tools for texturing, removing, palleting, etc.</li>
+							<li><b>/trigger model_paste_rotation</b> &mdash; Toggling it once will <b>[Enable]</b> feature to paste saved rotated models, but toggling again will <b>[Disable]</b> feature.</li>
+						</ul>
+					</article>
+
+
+					<h2 class="container-title">Brushes</h2>
+					<article class="container-wrapper col-10 gray-border">
+						<h3 class="font-bold text-left" id="model_public_brushes">How these types of brushes work!</h3>
+						<p>Types of brushes with descriptions.</p>
+
+						<ul>
+							<li><b>Texture Brush</b> &mdash; Edits indivdual textures when using <b>/trigger forge_edit_layer set [layer]</b> command.</li>
+							<li><b>Primary Brush</b> &mdash; Edits all textures of primary layer on the model.</li>
+							<li><b>Secondary Brush</b> &mdash; Edits all textures of secondary layer on the model.</li>
+							<li><b>Triad Brush</b> &mdash; Edits all textures of triad layer on the model.</li>
+							<li><b>Eraser Brush</b> &mdash; <b>Right clicking</b> will remove the model and tell you in chat it has been removed can also remove collison blocks such as, <b>barriers</b>, <b>oak fence</b>, etc.</li>
+							<li><b>Paste Brush</b> &mdash; When using the command, <b>/trigger model_copy</b> it will copy nearest model and when <b>right clicking</b> with brush it will render and paste it in.</li>
+							<li><b>Sel Brush</b> &mdash; Stops all current selections from editing or creating.</li>
+						</ul>
+					</article>
+
+
+					<h2 class="container-title">Removing Models</h2>
+					<article class="container-wrapper col-10 gray-border">
+						<h3 class="font-bold text-left" id="model_commands_remove">How do I remove models in game?</h3>
+						<p>For Removing models in game.</p>
+
+						<ol>
+							<li>First, <b>/trigger model_tools</b> &mdash; gives player brushes.</li>
+							<li>Second, In your inventory look for the <b>Eraser Brush</b> place it in your <b>Main hand</b>.</li>
+							<li>Lastly, <b>Right click</b> with the <b>brush</b> at the <b>model</b> until it disappears tell you in chat. Ensure if it has collision to continue <b>right clicking</b> till <b>barriers</b> are removed.</li>
+							<li>Once, the <b>Model</b> has been removed you'll be given a spawn egg back with the data.</li>
+						</ol>
+					</article>
+
+					<h4 class="text-italic">Admin Commands</h4>
+					<h2 class="container-title">Commands</h2>
+					<article class="container-wrapper col-10 gray-border">
+						<h3 class="font-bold text-left" id="model_admin_commands">What do these commands do?</h3>
+						<ul>
+							<li><b>/trigger model_sel</b> &mdash; Stops current selection for what player is editing.</li>
+							<li><b>/trigger model_copy</b> &mdash; Will copy closest model Player is near by and give player a new paste brush.</li>
+							<li><b>/trigger model_paste</b> &mdash; Toggles automaticly weither player has "right clicked" or "thrown minecraft:allay_spawn_egg" on the floor.</li>
+							<li><b>/trigger model_rotation</b> &mdash; min value of <b>1</b> and max value of <b>360</b>. Rotates entire model.</li>
+							<li><b>/trigger model_ui</b> &mdash; Text box GUI appears players can interact with it and get custom model eggs!</li>
+						</ul>
+					</article>
+
+					<h4 class="text-italic">Forge Mode</h4>
+					<h2 class="container-title">Commands</h2>
+					<article class="container-wrapper col-10 gray-border">
+						<h3 class="font-bold text-left" id="model_forge_commands">What do these commands do?</h3>
+						<ul>
+							<li><b>/trigger forge_tools</b> &mdash; Grants Model Admin tools for easier forge creation without typing commands.</li>
+							<li><b>/trigger forge_speed</b> &mdash; Speeds the objects <b>[Movement or Rotation]</b> using forge tools. Players, can set it to any value.</li>
+						</ul>
+					</article>
+				</div>
+
+				<aside class="menu col-2">
+					<ul class="scrollmenu">
+						<h4 class="font-normal text-left">Getting Started</h3>
+						<li><a href="#top">Adding Permissions</a></li>
+						<li><a href="#top">Removing Permissions</a></li>
+
+						<h4 class="font-normal text-left">Public Commands</h3>
+						<li><a href="#model_public_commands">Commands</a></li>
+						<li><a href="#model_public_brushes">Brushes</a></li>
+						<li><a href="#model_commands_remove">Removing Models</a></li>
+
+						<h4 class="font-normal text-left">Admin Commands</h3>
+						<li><a href="#model_admin_commands">Commands</a></li>
+
+						<h4 class="font-normal text-left">Forge Mode</h3>
+						<li><a href="#model_forge_commands">Commands</a></li>
 					</ul>
-				</article>
-
-				<article class="col-10 gray-border">
-					<h3 class="font-bold text-left">How do I disable Admin Commands?</h3>
-					<ul>
-						<li>If you're a <b>Server Operator</b> you can also remove the permissions from the player, by doing the following command, "<b>/team leave [username]</b>"</li>
-					</ul>
-				</article>
-
-				<h2>Public Commands</h2>
-				<p>Commands regular players, can use in survival to use brushes, texture, & remove.</p>
-				<article class="col-10 gray-border">
-					<h3 class="font-bold text-left" id="model_public_commands">Understanding the code</h3>
-					<ul>
-						<li><b>/trigger model_tools</b> &mdash; Grants Player's list of tools for texturing, removing, palleting, etc.</li>
-						<li><b>/trigger model_paste_rotation</b> &mdash; Toggling it once will <b>[Enable]</b> feature to paste saved rotated models, but toggling again will <b>[Disable]</b> feature.</li>
-					</ul>
-				</article>
-
-
-				<h2>Model Brushes</h2>
-				<p>Types of brushes with descriptions.</p>
-				<article class="col-10 gray-border">
-					<h3 class="font-bold text-left" id="model_public_brushes">How these types of brushes work!</h3>
-					<ul>
-						<li><b>Texture Brush</b> &mdash; Edits indivdual textures when using <b>/trigger forge_edit_layer set [layer]</b> command.</li>
-						<li><b>Primary Brush</b> &mdash; Edits all textures of primary layer on the model.</li>
-						<li><b>Secondary Brush</b> &mdash; Edits all textures of secondary layer on the model.</li>
-						<li><b>Triad Brush</b> &mdash; Edits all textures of triad layer on the model.</li>
-						<li><b>Eraser Brush</b> &mdash; <b>Right clicking</b> will remove the model and tell you in chat it has been removed can also remove collison blocks such as, <b>barriers</b>, <b>oak fence</b>, etc.</li>
-						<li><b>Paste Brush</b> &mdash; When using the command, <b>/trigger model_copy</b> it will copy nearest model and when <b>right clicking</b> with brush it will render and paste it in.</li>
-						<li><b>Sel Brush</b> &mdash; Stops all current selections from editing or creating.</li>
-					</ul>
-				</article>
-
-
-				<h2>Removing Models</h2>
-				<p>For Removing models in game.</p>
-				<article class="col-10 gray-border">
-					<h3 class="font-bold text-left" id="model_commands_remove">How do I remove models in game?</h3>
-					<ol>
-						<li>First, <b>/trigger model_tools</b> &mdash; gives player brushes.</li>
-						<li>Second, In your inventory look for the <b>Eraser Brush</b> place it in your <b>Main hand</b>.</li>
-						<li>Lastly, <b>Right click</b> with the <b>brush</b> at the <b>model</b> until it disappears tell you in chat. Ensure if it has collision to continue <b>right clicking</b> till <b>barriers</b> are removed.</li>
-						<li>Once, the <b>Model</b> has been removed you'll be given a spawn egg back with the data.</li>
-					</ol>
-				</article>
-
-				<h2>Admin Commands [Models]</h2>
-				<article class="col-10 gray-border">
-					<h3 class="font-bold text-left" id="model_admin_commands">What do these commands do?</h3>
-					<ul>
-						<li><b>/trigger model_sel</b> &mdash; Stops current selection for what player is editing.</li>
-						<li><b>/trigger model_copy</b> &mdash; Will copy closest model Player is near by and give player a new paste brush.</li>
-						<li><b>/trigger model_paste</b> &mdash; Toggles automaticly weither player has "right clicked" or "thrown minecraft:allay_spawn_egg" on the floor.</li>
-						<li><b>/trigger model_rotation</b> &mdash; min value of <b>1</b> and max value of <b>360</b>. Rotates entire model.</li>
-						<li><b>/trigger model_ui</b> &mdash; Gives Player toggling command inventory full of shulkers with custom models by category.</li>
-					</ul>
-				</article>
-
-				<h2 id="model_ui_commands">Model UI Commands</h2>
-				<p>Player's can choose which type of box they would like in their inventory by using values.</p>
-				<article class="col-10 gray-border">
-					<ul>
-						<li>type in for example, "<b>/trigger model_ui</b>" you'll receive all models.</li>
-						<li>type in for example, "<b>/trigger model_ui set 2</b>" you'll receive "<b>Bedroom</b>".</li>
-						<li>type in for example, "<b>/trigger model_ui set 3</b>" you'll receive "<b>Kitchen</b>".</li>
-						<li>type in for example, "<b>/trigger model_ui set 4</b>" you'll receive "<b>Dinning</b>".</li>
-						<li>type in for example, "<b>/trigger model_ui set 5</b>" you'll receive "<b>Living</b>".</li>
-						<li>type in for example, "<b>/trigger model_ui set 6</b>" you'll receive "<b>Decoration</b>".</li>
-						<li>type in for example, "<b>/trigger model_ui set 7</b>" you'll receive "<b>Exterior</b>".</li>
-						<li>type in for example, "<b>/trigger model_ui set 8</b>" you'll receive "<b>Doors</b>".</li>
-						<li>type in for example, "<b>/trigger model_ui set 9</b>" you'll receive "<b>Fences</b>".</li>
-						<li>type in for example, "<b>/trigger model_ui set 10</b>" you'll receive "<b>Garden</b>".</li>
-						<li>type in for example, "<b>/trigger model_ui set 11</b>" you'll receive "<b>Windows</b>".</li>
-					</ul>
-				</article>
-
-				<h2>Admin [Forge Commands]:</h2>
-				<article class="col-10 gray-border">
-					<h3 class="font-bold text-left" id="model_forge_commands">What do these commands do?</h3>
-					<ul>
-						<li><b>/trigger forge_tools</b> &mdash; Grants Model Admin tools for easier forge creation without typing commands.</li>
-						<li><b>/trigger forge_speed</b> &mdash; Speeds the objects <b>[Movement or Rotation]</b> using forge tools. Players, can set it to any value.</li>
-					</ul>
-				</article>
-
-				<h2>Admin [Forge Icons]</h2>
-				<article class="col-10 gray-border">
-					<h3 class="font-bold text-left" id="model_forge_icons">Axis Icons (X,Y,Z)</h3>
-					<ul>
-						<li>[<b>Red Candle</b>] &mdash; Adjusting positive values and hitting the "F" will swap them to negative values.</li>
-						<li>[<b>Green Candle</b>] &mdash; Adjusting positive values and hitting the "F" will swap them to negative values.</li>
-						<li>[<b>Blue Candle</b>] &mdash; Adjusting positive values and hitting the "F" will swap them to negative values.</li>
-					</ul>
-
-					<h3 class="font-bold text-left">Scaling Icons (X,Y,Z)</h3>
-					<ul>
-						<li>[<b>Command Block</b>] &mdash; Adjusting positive values and hitting the "F" will swap them to negative values.</li>
-						<li>[<b>Chain Command Block</b>] &mdash; Adjusting positive values and hitting the "F" will swap them to negative values.</li>
-						<li>[<b>Repeating Command Block</b>] &mdash; Adjusting positive values and hitting the "F" will swap them to negative values.</li>
-					</ul>
-
-					<h3 class="font-bold text-left">Angle Icons (X,Y,Z)</h3>
-					<ul>
-						<li>[<b>Redstone Dust</b>] &mdash; Adjusting positive values and hitting the "F" will swap them to negative values.</li>
-						<li>[<b>Gun Powder</b>] &mdash; Adjusting positive values and hitting the "F" will swap them to negative values.</li>
-						<li>[<b>Glowstone Dust</b>] &mdash; Adjusting positive values and hitting the "F" will swap them to negative values.</li>
-					</ul>
-
-					<h3 class="font-bold text-left">Misc Icons (Add, Rotate, Clear Selection, Save)</h3>
-					<ul>	
-						<li>[<b>Scaffolding</b>] &mdash; Creates a new layer in the Forge Creation Mode.</li>
-						<li>[<b>Magenta Glazed Terracotta</b>] &mdash; Right clicking rotates (Forge Model).</li>
-						<li>[<b>Barrier</b>] &mdash; Cancels Current Selected Model/Forge Layer.</li>
-						<li>[<b>Knowledge Book</b>] &mdash; Saves Forge layers into model.</li>
-					</ul>
-				</article>
+				</aside>
 			</div>
+		</section>
+	</main>
 
-			<aside class="menu col-3">
-				<ul class="scrollmenu">
-					<h3 class="font-normal text-left">Getting Started</h3>
-					<li><a href="#top">Enable/Disable Permissions</a></li>
+	<footer>
+		<nav class="navigation flex-wrapper-row">
+			<ul class="logo_menu">
+				<li>Mr_Chibi's Models</li>
+			</ul>
 
-					<h3 class="font-normal text-left">Public Commands</h3>
-					<li><a href="#model_public_commands">Commands</a></li>
-					<li><a href="#model_public_brushes">Brushes</a></li>
-					<li><a href="#model_commands_remove">Removing Models</a></li>
-
-					<h3 class="font-normal text-left">Admin Commands</h3>
-					<li><a href="#model_admin_commands">Commands</a></li>
-					<li><a href="#model_ui_commands">Model UI Commands</a></li>
-
-					<h3 class="font-normal text-left">Forge Mode + Icons</h3>
-					<li><a href="#model_forge_commands">Commands</a></li>
-					<li><a href="#model_forge_icons">Forge Icons</a></li>
-				</ul>
-			</aside>
-		</div>
-	</section>
-
-
-	<section class="footer-nav">
-		<div class="wrapper">
-			<nav class="navigation">
-				<h3 id="logo">Mr_Chibi's Models Wiki</h3>
-
-				<ul id="main_menu">
-					<li><a href="https://www.patreon.com/mr_chibi" target="_blank">Donate</a></li>
-					<li><a href="https://www.planetminecraft.com/data-pack/models-6051152/" target="_blank">PMC</a></li>
-					<li><a href="https://github.com/mr-chibi/models/releases" target="_blank">Downloads</a></li>
-					<li><a href="forging.html">Forging</a></li>
-					<li><a href="commands.html">Commands</a></li>
-					<li><a href="index.html" class="active">Home</a></li>
-				</ul>
-			</nav>
-		</div>
-	</section>
-
-	<footer class="footer">
-		<div class="wrapper">
-			<p>
-				&copy; 2024 Mr_Chibi's Models. All Rights Reserved.<br>
-				NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.<br>
-				<a href="https://www.minecraft.net/" target="_blank">Minecraft</a> is copyright <a href="https://www.minecraft.net/" target="_blank">Mojang Studios</a> and is not affiliated with this site.<br>
-			</p>
-		</div>
+			<ul class="main_menu">
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="commands.html">Commands</a></li>
+				<li><a href="forging.html">Forging</a></li>
+				<li><a href="https://modrinth.com/datapack/models/versions" target="_blank">Downloads</a></li>
+				<li><a href="https://ko-fi.com/mrchibis" target="_blank">Ko-Fi</a></li>
+			</ul>
+		</nav>
 	</footer>
 
-	<script type="text/javascript" src="js/mobile_btn.js"></script>
-	<script type="text/javascript" src="js/return_to_top.js"></script>
+	<section class="footer-info">
+		<div class="flex-wrapper-col">
+			<p>&copy; 2024 &mdash; 2025 Mr_Chibi's Models | All Rights Reserved.<br>
+			NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.<br>
+			<a href="https://www.minecraft.net/" target="_blank">Minecraft</a> is copyright <a href="https://www.minecraft.net/" target="_blank">Mojang Studios</a> and is not affiliated with this site.</p>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="js/mobile.js"></script>
+	<script type="text/javascript" src="js/toggle.js"></script>
 </body>
 </html>
