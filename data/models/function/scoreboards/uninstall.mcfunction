@@ -9,12 +9,12 @@ scoreboard objectives remove model_fps
 scoreboard objectives remove model_add_rotation_frame
 scoreboard objectives remove model_collision_frame
 scoreboard objectives remove model_collision_frame_type
+scoreboard objectives remove model_collision_delay_frame
 scoreboard objectives remove model_sound_frame_1
 scoreboard objectives remove model_sound_frame_2
-scoreboard objectives remove model_sound_1
-scoreboard objectives remove model_sound_2
 scoreboard objectives remove model_sound_pitch_1
 scoreboard objectives remove model_sound_pitch_2
+scoreboard objectives remove model_sound_info
 
 # [Commands]
 scoreboard objectives remove model_tools

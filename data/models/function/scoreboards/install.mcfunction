@@ -8,12 +8,12 @@ scoreboard objectives add model_fps trigger
 scoreboard objectives add model_add_rotation_frame trigger
 scoreboard objectives add model_collision_frame trigger
 scoreboard objectives add model_collision_frame_type trigger
+scoreboard objectives add model_collision_delay_frame trigger
 scoreboard objectives add model_sound_frame_1 trigger
 scoreboard objectives add model_sound_frame_2 trigger
-scoreboard objectives add model_sound_1 trigger
-scoreboard objectives add model_sound_2 trigger
 scoreboard objectives add model_sound_pitch_1 trigger
 scoreboard objectives add model_sound_pitch_2 trigger
+scoreboard objectives add model_sound_info trigger
 
 # [Commands]:
 scoreboard objectives add model_tools trigger

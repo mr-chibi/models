@@ -1,7 +1,5 @@
 {
 	"values": [
-		
-		// Housing:
 		"models_menu:categories/bedroom/init",
 		"models_menu:categories/kitchen/init",
 		"models_menu:categories/dinning/init",
@@ -9,13 +7,11 @@
 		"models_menu:categories/bath/init",
 		"models_menu:categories/office/init",
 
-		// Decoration
 		"models_menu:categories/misc/init",
 		"models_menu:categories/doors/init",
 		"models_menu:categories/tiles/init",
 		"models_menu:categories/windows/init",
 
-		// Exterior
 		"models_menu:categories/outdoor/init",
 		"models_menu:categories/fences/init",
 		"models_menu:categories/garden/init"

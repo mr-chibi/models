@@ -1,7 +1,5 @@
 {
 	"values": [
-		
-		// Housing:
 		"models_admin:commands/remove/models/bedroom",
 		"models_admin:commands/remove/models/kitchen",
 		"models_admin:commands/remove/models/dinning",
@@ -9,13 +7,11 @@
 		"models_admin:commands/remove/models/bath",
 		"models_admin:commands/remove/models/office",
 
-		// Decoration
 		"models_admin:commands/remove/models/misc",
 		"models_admin:commands/remove/models/doors",
 		"models_admin:commands/remove/models/tiles",
 		"models_admin:commands/remove/models/windows",
 
-		// Exterior
 		"models_admin:commands/remove/models/outdoor",
 		"models_admin:commands/remove/models/fences",
 		"models_admin:commands/remove/models/garden"

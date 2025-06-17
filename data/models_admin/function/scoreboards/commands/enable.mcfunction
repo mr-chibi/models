@@ -6,12 +6,12 @@ scoreboard players enable @s[team=model_admin] model_fps
 scoreboard players enable @s[team=model_admin] model_add_rotation_frame
 scoreboard players enable @s[team=model_admin] model_collision_frame
 scoreboard players enable @s[team=model_admin] model_collision_frame_type
+scoreboard players enable @s[team=model_admin] model_collision_delay_frame
 scoreboard players enable @s[team=model_admin] model_sound_frame_1
 scoreboard players enable @s[team=model_admin] model_sound_frame_2
-scoreboard players enable @s[team=model_admin] model_sound_1
-scoreboard players enable @s[team=model_admin] model_sound_2
 scoreboard players enable @s[team=model_admin] model_sound_pitch_1
 scoreboard players enable @s[team=model_admin] model_sound_pitch_2
+scoreboard players enable @s[team=model_admin] model_sound_info
 
 # Enable Commands:
 scoreboard players enable @s[team=model_admin] model_tools

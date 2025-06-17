@@ -24,4 +24,4 @@ execute if entity @s[tag=forge_render_update,tag=model_1.21.4] run function mode
 execute if entity @s[tag=model_render_paste] run function models_engine:render/generate
 
 # Engine "Collision":
-function models_engine:collision/init
+execute as @e[type=minecraft:block_display,distance=0..3] at @s unless score @s model_total_sprites matches 1.. run function models_engine:collision/init

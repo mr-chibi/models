@@ -52,4 +52,4 @@ function models_admin:tags/raycasting_brushes
 function models_admin:tags/selected_brushes
 
 # Engine "Collision":
-function models_engine:collision/init
+execute as @e[type=minecraft:block_display,distance=0..3] at @s unless score @s model_total_sprites matches 1.. run function models_engine:collision/init
